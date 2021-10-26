@@ -100,6 +100,48 @@
 
 ## __Working Flow__
 
+## __Set up Firebase SDK Client__
+
+__Version SDK `"firebase": "^9.1.0",`__
+
+> firebase.config.ts
+
+```ts
+import { FirebaseOptions } from "firebase/app";
+const firebaseOptions: FirebaseOptions = {
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    measurementId: process.env.REACT_APP_MEASUREMENT_ID,
+    appId: process.env.REACT_APP_APP_ID,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+};
+
+export default firebaseOptions;
+```
+
+> firebase.ts
+
+```ts
+import { initializeApp, FirebaseApp } from "firebase/app";
+import firebaseOptions from "./firebase.config";
+
+const firebaseApp: FirebaseApp = initializeApp(firebaseOptions);
+
+export default firebaseApp;
+```
+
+> Use firebase auth\
+firebase.auth.ts
+
+```ts
+import { getAuth } from "firebase/auth";
+import firebaseApp from "./firebase";
+const auth = getAuth(firebaseApp);
+export default auth;
+```
+
 ## __Run__
 
 Value `script` file `package.json`
@@ -199,38 +241,6 @@ npm run start:dev
 
 __Port default__ is 3000 __(path:[Default host server](http://localhost:3000))__
 
-#### \- Deployment with __Docker compose__
-
-> __Dockerfile__ : Dockerfile.prod __(`path:./docker/Dockerfile.dev`)__
-
-```Dockerfile
-FROM node:latest
-
-WORKDIR /app
-
-COPY package.json /app
-
-RUN yarn install
-
-COPY . /app
-
-CMD [ "yarn","run","start:dev" ]
-```
-
-> __docker-compose__ file : docker-compose.dev.yml __(`path:./docker-compose.dev.yml`)__
-
-```yml
-version: "3.5"
-services:
-  app: 
-    build:
-      context: ./
-      dockerfile: ./docker/Dockerfile.dev
-    container_name: se06
-    ports:
-      - 80:3000
-```
-
 #### \- Deployment with __Docker compose__ (Dev)
 
 > __Dockerfile__ : Dockerfile.prod __(`path:./docker/Dockerfile.dev`)__
@@ -274,7 +284,7 @@ docker-compose -f docker-compose.dev.yml up -d
 Deployment not include __HTTPS__
 
 > File config value environment production is __.env.prod__ \
-Required set up value in file
+Required set up value in file \
 Setup project Firebase
 
 ```ini
