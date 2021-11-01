@@ -1,0 +1,147 @@
+p{
+    margin: 0px;
+}
+a:hover{
+    cursor: pointer;
+}
+.row{
+    margin-top: 30px;
+}
+/* carousel */
+.carousel-item img{
+    height: 300px;
+}
+.carousel-control-prev {
+    left: 20px;
+    justify-content: flex-start;
+}
+.carousel-control-next {
+    right: 20px;
+    justify-content: flex-end;
+}
+/* form product */
+.col-category{
+    padding: 10px 15px;
+}
+.category-laptop{
+    background-image: url(../images/img-home/laptop.jpg);
+}
+.category-clothes{
+    background-image: url(../images/img-home/clothes.jpg);
+}
+.category-shoe {
+    background-image: url(../images/img-home/shoe.jpg);
+}
+.category-home-furnitures{
+    background-image: url(../images/img-home/house-furnitures.jpg);
+}
+.category-cosmetic{
+    background-image: url(../images/img-home/cosmetic.jpg);
+}
+.category{
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+.category p{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.category a{
+    position: absolute;
+    bottom: 30px;
+    left: 22%;
+    text-decoration: underline !important;
+    font-size: 13px;
+}
+.product{
+    padding: 10px 15px;
+}
+.img-product{
+    text-align: center;
+}
+.img-product img{
+    width: 80%;
+}
+.product h5{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.in-stock{
+    color: #78A962;
+    align-items: baseline;
+    font-size: 13px;
+}
+.in-stock i{
+    margin-right: 5px;
+}
+.checked{
+    color: #E9A426;
+    font-size: 10px;
+}
+.checked5{
+    color: #CACDD8;
+}
+.star{
+    align-items: center;
+}
+.star p{
+    color: #A2A6B0;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.cost{
+    color: #666;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+.sale{
+    font-size: 16px;
+}
+.row-new{
+    display: none;
+}
+@media (max-width: 992px) {
+    .carousel-item img {
+        height: 220px;
+        max-inline-size: -webkit-fill-available;
+    }
+    .product-4, .product-5{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 160px;
+    }
+    .product-3{
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 130px;
+    }
+    .category{
+        padding: 75px;
+        background-position: center;
+    }
+    .category p {
+        top: 35%;
+        left: 38%;
+        font-size: 24px;
+    }
+    .category a {
+        bottom: 20px;
+        left: 37%;
+    }
+    .row-new{
+        display: flex;
+    }
+}
