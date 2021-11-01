@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+body {
+    background-color: #FFFFFF;
+    /* border: 1px solid #aa2828; */
+    box-sizing: border-box;
+}
+
+.header {
+    height: 80px;
+}
+
+.main {
+    height: 850px;
+}
+
+.main .right {
+    width: 45%;
+    float: right;
+    height: 100%;
+}
+
+.main .left {
+    width: 55%;
+    float: right;
+    height: 100%;
+}
+
+.main .right .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      height: 100%;
+ 
+}
+.wrap {
+    float: right;
+    margin-top: 240px;
+    margin-right: 40px;
+
+}
+
+
+.wrap #click {
+    background: #40AD87;
+    width: 245px;
+    height: 50px;
+    color: #FFFFFF;
+    border-radius: 50px;
+    border: 1px solid #40AD87;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+}
+.wrap  #click:hover  {
+    cursor: pointer;
+    background-color: #39d19c;
+
+}
+
+.wrap #title {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 96px;
+}
+
+.wrap #content {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.wrap #content,#title{
+    letter-spacing: 0px;
+    text-align: left;
+} 
+
+@media screen and (max-width:1200px){
+    .main{
+        height: 900px;
+    }
+    .main .right {
+        width: 100%;
+        height: 40%;
+        margin-top: 100px;
+    }
+    .right img{
+        width: 500px;
+    }
+    .main .left{
+        width: 100%;
+        height: 80%;
+        clear: both;
+    }
+    .wrap {
+       margin-top: 0px;
+       margin-right: 0px;
+    }
+    .main .left .wrap  #title{
+        text-align: center;
+        width: 100%;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 90px;
+        margin-top: 70px;
+    }
+    .wrap #content{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .wrap .button{
+        width: 100%;
+
+    }
+    .wrap .button #click {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 50px;
+        border-radius: 50px;
+    
+    }
+    .main .left .wrap {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:992px) {
+    .right img{
+        width: 450px;
+    }
+    .wrap #title {
+        font-size: 56px;
+        font-weight: 500;
+        line-height: 90px;
+    }
+    
+    .wrap #content {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+    }  
+    .wrap #click {
+        background: #40AD87;
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+    
+    }
+
+}
+@media screen and (max-width:768px) {
+    .main{
+        height: 600px;
+    }
+    .right img{
+        width: 350px;
+    }
+    .wrap #title {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 90px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .wrap #content {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+    }  
+    .wrap #click {
+        background: #40AD87;
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+    
+    }
+}
+@media screen and (max-width:576px) {
+
+    .wrap #content {
+        visibility: hidden;
+        display: none;
+    }
+    .wrap #title{
+        margin-bottom: 80px;
+        padding-top: 80px;
+      
+    }
+   
+    
+}
+/* header css */
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 8px #000;
+    z-index: 1;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo .logo__text h1 {
+    font-size: 24px;
+    color: #40AD87;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+.container .search-bar {
+    width: 686px;
+    height: 36px;
+    position: relative;
+}
+
+.search-bar .search-bar__input {
+    background-color: #eee;
+    border-radius: 12px;
+    color: #ccc;
+    width: 100%;
+    height: 100%;
+    padding: 0 12px;
+    border: none;
+    outline: none;
+    line-height: 36px;
+}
+
+.search-bar .search-bar__input:focus {
+    color: #000;
+}
+
+.search-bar .fa-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    cursor: pointer;
+}
+
+.container .nav {
+    margin: 0 24px;
+}
+
+.nav .nav-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-list .list-item {
+    padding: 0 12px;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.list-item a:hover {
+    color: #40AD87;
+}
+
+.container .icon {
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.container .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .btn-signin button,
+.button .btn-signup button {
+    background: #E3FAF2;
+    width: 84px;
+    color: #40AD87;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    /* Second Nav */
+    margin-left: 24px;
+}
+
+.button button:hover {
+    color: #fff;
+    background-color: #40AD87;
+}
+
+.container .nav-btn {
+    display: none;
+    font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+    .button,
+    .search-bar,
+    .nav,
+    .icon {
+        display: none!important;
+    }
+    .nav-btn {
+        display: block!important;
+    }
+    .container {
+        justify-content: space-between!important;
+    }
+    .fa-bars:before {
+        content: "\f0c9";
+    }
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        justify-content: start!important;
+        padding: 0 24px;
+    }
+    .container .search-bar {
+        width: 686px;
+        margin: 0 24px;
+    }
+    .nav,
+    .button {
+        display: none!important;
+    }
+    .container {
+        position: relative!important;
+    }
+    .nav-btn {
+        display: block!important;
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+}
+
