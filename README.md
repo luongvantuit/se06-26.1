@@ -1,7 +1,5 @@
 # __SE06__
 
-> Project website e-commerce use framework front end ReactJS, back end Spring Boot. Database use MongoDB, tools auth Firebase
-
 ## __Tools__
 
 <!-- ### __IDE__
