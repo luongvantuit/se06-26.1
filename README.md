@@ -4,7 +4,7 @@
 
 ## __Tools__
 
-### __IDE__
+<!-- ### __IDE__
 
 * __IntelliJ IDEA Ultimate__
 
@@ -12,7 +12,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/2048px-IntelliJ_IDEA_Icon.svg.png" alt="IntelliJ IDEA Image" height="120px">
 <p>
 
-> __Description__: __`IntelliJ IDEA`__ is an __Integrated Development Environment (IDE)__ written in Java for developing computer software. It is developed by __`JetBrains`__ (formerly known as IntelliJ), and is available as an Apache 2 Licensed community edition, and in a proprietary commercial edition. Both can be used for commercial development.
+> __Description__: __`IntelliJ IDEA`__ is an __Integrated Development Environment (IDE)__ written in Java for developing computer software. It is developed by __`JetBrains`__ (formerly known as IntelliJ), and is available as an Apache 2 Licensed community edition, and in a proprietary commercial edition. Both can be used for commercial development. -->
 
 * __Visual Studio Code__
 
@@ -32,13 +32,13 @@
 
 > __Description__: __`Typescript`__ is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of __`JavaScript`__ and adds optional static typing to the language. __TypeScript__ is designed for the development of large applications and transcompiles to JavaScript. As __TypeScript__ is a superset of JavaScript, existing JavaScript programs are also valid __TypeScript__ programs.
 
-* __Java__
+<!-- * __Java__
 
 <p align="center">
     <img src="https://icon-library.com/images/icon-java/icon-java-6.jpg"alt="Java Image" height="120px">
 <p>
 
-> __Description__: __`Java`__ is a __`high-level`__, __`class-based`__, __`object-oriented programming language`__ that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.Java applications are typically compiled to bytecode that can run on any __`Java virtual machine (JVM)`__ regardless of the underlying computer architecture.
+> __Description__: __`Java`__ is a __`high-level`__, __`class-based`__, __`object-oriented programming language`__ that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.Java applications are typically compiled to bytecode that can run on any __`Java virtual machine (JVM)`__ regardless of the underlying computer architecture. -->
 
 ### __Frameworks__
 
@@ -50,13 +50,13 @@
 
 > __Description__: __`ReactJS`__ is a free and open-source front-end __`JavaScript`__ library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies.
 
-* __Spring Boot__
+<!-- * __Spring Boot__
 
 <p align="center">
     <img src="https://pivotal.gallerycdn.vsassets.io/extensions/pivotal/vscode-boot-dev-pack/0.1.0/1629148309593/Microsoft.VisualStudio.Services.Icons.Default"alt="Spring Boot Image" height="120px">
 <p>
 
-> __Description__: __`Spring Boot`__ is an open source __`Java-based`__ framework used to create a micro Service. It is developed by Pivotal Team and is used to build stand-alone and production ready spring applications.
+> __Description__: __`Spring Boot`__ is an open source __`Java-based`__ framework used to create a micro Service. It is developed by Pivotal Team and is used to build stand-alone and production ready spring applications. -->
 
 ### __Auth Tools__
 
@@ -68,7 +68,7 @@
 
 > __Description__: __`Firebase`__ is a platform developed by __`Google`__ for creating mobile and web applications. It was originally an independent company founded in 2011. In 2014, Google acquired the platform and it is now their flagship offering for app development.
 
-### __Databases__
+<!-- ### __Databases__
 
 * __MongoDB__
 
@@ -76,7 +76,7 @@
     <img src="https://ahana.io/wp-content/uploads/2021/05/mongo-logo.png"alt="MongoDB Image" height="120px">
 <p>
 
-> __Description__: __`MongoDB`__ is a source-available cross-platform document-oriented database program. Classified as a __`NoSQL`__ database program, MongoDB uses __`JSON-like`__ documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the __`Server Side Public License (SSPL)`__.
+> __Description__: __`MongoDB`__ is a source-available cross-platform document-oriented database program. Classified as a __`NoSQL`__ database program, MongoDB uses __`JSON-like`__ documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the __`Server Side Public License (SSPL)`__. -->
 
 ### __Containerization__
 
