@@ -29,3 +29,5 @@ yarn-error.log*
 
 *.lock
 *-lock.json
+
+/.idea
