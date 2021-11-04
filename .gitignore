@@ -30,4 +30,5 @@ yarn-error.log*
 *.lock
 *-lock.json
 
+# Jetbrain
 /.idea
