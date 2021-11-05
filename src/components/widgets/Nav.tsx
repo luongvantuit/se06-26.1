@@ -11,7 +11,8 @@ const Header = () => {
         <div>
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#"><div className="logo ">
+                <a className="navbar-brand" href="#">
+                    <div className="logo ">
                             <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_620:2976)">
                                     <path d="M4.44336 3.77778L8.22114 0H23.3322L27.11 3.77778L19.5545 11.3333H11.9989L4.44336 3.77778Z" fill="#008254"/>
@@ -30,10 +31,11 @@ const Header = () => {
                                 </clipPath>
                                 </defs>
                             </svg>
-                            <div className="logo logo__text">
-                                <h1>SE06</h1>
-                            </div>
-                        </div></a>
+                        <div className="logo logo__text">
+                            <h1>SE06</h1>
+                        </div>
+                    </div>
+                </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i className="fas fa-bars"></i>
                 </button>

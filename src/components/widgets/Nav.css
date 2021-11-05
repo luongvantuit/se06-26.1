@@ -139,10 +139,8 @@ header .container-fluid {
     background-color: #40AD87;
 }
 
-.container-fluid .nav-btn {
-    display: none;
-    font-size: 24px;
-    float: right;
+.container-fluid .navbar-toggler {
+    border: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -162,7 +160,7 @@ header .container-fluid {
 
 @media screen and (max-width: 1024px) {
     .container-fluid {
-        justify-content: start!important;
+        justify-content: space-between!important;
         padding: 0 24px;
     }
     .container-fluid .search-bar {
