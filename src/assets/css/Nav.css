@@ -22,6 +22,10 @@ header {
     z-index: 1;
 }
 
+.navbar {
+    box-shadow: 0 0 8px;
+}
+
 header .container-fluid {
     display: flex;
     align-items: center;
@@ -43,29 +47,32 @@ header .container-fluid {
     margin: 0 12px;
 }
 
-.container-fluid .search-bar {
-    width: 686px;
+.collapse .d-flex {
     height: 36px;
     position: relative;
+    padding: 0;
 }
 
-.search-bar .search-bar__input {
-    background-color: #eee;
+.d-flex input {
+    width: 686px;
     border-radius: 12px;
-    color: #ccc;
-    width: 100%;
-    height: 100%;
+    font-size: 12px;
+    background-color: #eee;
     padding: 0 12px;
     border: none;
     outline: none;
     line-height: 36px;
 }
 
-.search-bar .search-bar__input:focus {
+.d-flex button {
+    display: none;
+}
+
+.d-flex input:focus {
     color: #000;
 }
 
-.search-bar .fa-search {
+.d-flex .fa-search {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -117,6 +124,16 @@ header .container-fluid {
     justify-content: center;
 }
 
+.button a {
+    color: #40AD87;
+    text-decoration: none;
+}
+
+button>a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
 .button .btn-signin button,
 .button .btn-signup button {
     background: #E3FAF2;
@@ -141,25 +158,38 @@ header .container-fluid {
 
 .container-fluid .navbar-toggler {
     border: none;
+    outline: none;
 }
 
-@media screen and (max-width: 768px) {
-    .button,
-    .search-bar,
-    .nav,
-    .icon {
-        display: none!important;
-    }
-    .container-fluid {
-        justify-content: space-between!important;
-    }
+.container-fluid .navbar-toggler:focus {
+    box-shadow: none;
 }
 
 
 /* Responsive */
 
-@media screen and (max-width: 1024px) {
-    .container-fluid {
+@media screen and (max-width: 767px) {
+    .d-flex input {
+        width: 100%;
+    }
+    .d-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .d-flex button {
+        display: block;
+        font-size: 10px;
+        padding: 0 4px;
+        height: 36px;
+    }
+    .fa-search {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1023px) {
+    /* .container-fluid {
         justify-content: space-between!important;
         padding: 0 24px;
     }
@@ -173,7 +203,7 @@ header .container-fluid {
     }
     .container-fluid {
         position: relative!important;
-    }
+    } */
     /* .nav-btn {
         display: block!important;
         position: absolute;
