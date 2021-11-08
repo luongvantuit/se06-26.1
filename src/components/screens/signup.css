@@ -1,0 +1,335 @@
+#main {}
+
+#main .breadcrumb {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+/* .active {
+    color: #40AD87;
+    text-decoration: none;
+
+} */
+.acon{
+    color: #40AD87 !important;
+}
+.from-button {
+    background-color: white;
+    border-color: white;
+    border-radius: 7px;
+    outline: none;
+    border: 1px;
+    height: 40px;
+    margin-right: 5px;
+}
+.from-button.one {
+    width: 180px;
+}
+.from-button.two {
+    width: 210px;
+}
+.copyright {
+    font-size: 13px;
+}
+.p {
+    color: #000;
+}
+.active {
+    padding-top: 30px;
+    text-align: center;
+    outline: none;
+    
+}
+.breadcrumb a,
+.breadcrumb li {
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.breadcrumb a:hover {
+    color: #40AD87;
+}
+
+.breadcrumb i {
+    font-size: 8px;
+    padding: 0 6px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: "";
+}
+
+form {
+    color: #000;
+    background-color: #F5F7FF;
+    border: none;
+    outline: none;
+    padding: 60px;
+}
+
+form .form-header {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+form .form-note {
+    font-size: 14px;
+    color: #000;
+}
+
+form .form-group {}
+
+.form-group label span {
+    color: red;
+}
+
+.form-control:focus {
+    color: #000;
+    background-color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-group .form-control {
+    outline: none;
+    border: 1px solid #A2A6B0;
+    border-radius: 4px;
+}
+
+form .form-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-button .form__forgot-password {
+    text-align: center;
+}
+
+.form-button .form__forgot-password a {
+    margin-left: 48px;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+}
+
+.form-button .form__forgot-password a:hover {
+    text-decoration: none;
+    color: #40AD87;
+}
+
+.form-control .list {
+    margin-left: 16px;
+}
+
+button {
+    height: 48px;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    background-color: #40AD87;
+    color: #fff;
+}
+.button .btn-google {
+    background-color: #fff !important;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.button .form__forgot-password a {
+    color: #000;
+}
+
+.button .form__forgot-password a:hover {
+    color: #40AD87;
+    text-decoration: none;
+}
+
+.container .item__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    border-radius: 20px;
+    color: #fff;
+    margin: 12px;
+}
+
+.container .item__header i {
+    font-size: 24px;
+}
+
+.container .item__content {
+    text-align: center;
+    color: #000;
+}
+
+.item__content .content__body {
+    color: #4D4D4D;
+}
+
+.icon-wrapper--circle {
+    background-color: #40AD87;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.subscription {
+    margin: 32px 0;
+}
+
+.subscription h3 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.subscription .email-input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 4px;
+    background-color: #000;
+    outline: none;
+    border: 1px solid #fff;
+}
+
+.subscription .email-input:focus {
+    color: #fff;
+}
+
+.subscription button {
+    width: 100%;
+}
+
+.category {}
+
+.category .category__header {
+    font-weight: 600;
+    color: #fff;
+}
+
+.category ul {
+    padding-left: 0;
+}
+
+.category .list-item {
+    list-style-type: none;
+}
+
+.category li a {
+    color: #808081;
+}
+
+.category__list .list-item span {
+    color: #40AD87;
+}
+
+.socials .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socials .socials-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials .socials-group i {
+    margin-right: 12px;
+}
+
+.socials .socials-group i:hover {
+    cursor: pointer;
+}
+
+.socials .payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.payment .brand {
+    background-color: #CCDEFF;
+    padding: 0 12px;
+    height: 24px;
+    margin: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+
+/* Resposive */
+
+@media screen and (max-width: 767px) {
+    .button,
+    .search-bar,
+    .nav,
+    .icon {
+        display: none!important;
+    }
+    .nav-btn {
+        display: block!important;
+    }
+    .container {
+        justify-content: space-between!important;
+    }
+    form {
+        padding: 16px;
+    }
+    .copyright p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1024px) {
+    .container {
+        justify-content: start!important;
+        padding: 0 24px;
+    }
+    .container .search-bar {
+        width: 686px;
+        margin: 0 24px;
+    }
+    .nav,
+    .button {
+        display: none!important;
+    }
+    .container {
+        position: relative!important;
+    }
+    .nav-btn {
+        display: block!important;
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .copyright p {
+        font-size: 12px;
+    }
+}
