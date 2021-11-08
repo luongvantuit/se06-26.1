@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import '../screens/signup.css' 
-import facebook from '../screens/img/facebook.svg' 
-import search from '../screens/img/search.svg'
+import '../../assets/css/signup.css' 
+import facebook from '../../assets/img/facebook.svg' 
+import search from '../../assets/img/search.svg'
 
 export default function SignUpScreen() {
     return (

@@ -1,11 +1,14 @@
 import React from 'react'
-import '../screens/signin.css'
+import { NavLink } from 'react-router-dom'
+import '../../assets/css/signin.css'
+
 
 export default function SignInScreen() {
     return (
         <div>
             <div id="main">
                 <div className="container">
+                    
                     <nav aria-label="breadcrumb">
                         <ol className="breadcrumb  mb-5 mt-4">
                             <li className="breadcrumb-item"><a href="#">Home</a><i className="fas fa-chevron-right"></i></li>
@@ -34,10 +37,10 @@ export default function SignInScreen() {
                                     <input type="checkbox" className="form-check-input" id="exampleCheck1"></input>
                                     <label className="form-check-label" htmlFor="exampleCheck1">Remember Password</label>
                                 </div>
-                                <div className="button mt-4">
-                                    <button className="form__btn col-md-4">Sign in</button>
-                                    <div className="form__forgot-password col-md-8">
-                                        <a href="#">Forgot your password ?</a>
+                                <div className="form-button mt-4 row">
+                                    <button className="form__btn col-md-4 col-sm-12">Sign in</button>
+                                    <div className="form__forgot-password col-md-8 col-sm-12 mb-3">
+                                        <NavLink to='/' href="#">Forgot your password ?</NavLink>
                                     </div>
                                 </div>
                             </form>
