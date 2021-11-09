@@ -1,9 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavLink } from 'react-router-dom';
-import { NavigationBarItem } from 'typescript';
-import { Navbar,Container,NavDropdown,  } from 'react-bootstrap';
-
 import '../../assets/css/Nav.css'
 
 const Header = () => {

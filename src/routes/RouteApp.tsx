@@ -28,7 +28,6 @@ export default function RouteApp() {
                     {/* <CartScreen></CartScreen> */}
                 </Route>
                 <Route exact path='/SignInScreen'>
-            
                     <SignInScreen></SignInScreen>
                 </Route>
                 <Route exact path='/SignUpScreen'>
