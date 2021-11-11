@@ -142,11 +142,11 @@ export default function Footer () {
                     </div>
                     <div className="row socials">
                         <div className="container">
-                            <div className="socials-group text-white">
+                            <div className="socials-group text-white ">
                                 <i className="fab fa-facebook-square"></i>
                                 <i className="fab fa-instagram"></i>
                             </div>
-                            <div className="payment align-items-center">
+                            <div className="payment align-items-center ">
                                 <div className="brand">
                                     <img src={payment1} alt="" />
                                 </div>
@@ -163,7 +163,7 @@ export default function Footer () {
                                     <img src={payment5} alt="" />
                                 </div>
                             </div>
-                            <div className="copyright">
+                            <div className="copyright mb-0">
                                 <p>Copyright <i className="far fa-copyright"></i> 2021 SE06 Co Ltd.</p>
                             </div>
                         </div>

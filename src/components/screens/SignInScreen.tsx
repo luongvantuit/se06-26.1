@@ -61,7 +61,7 @@ export default function SignInScreen() {
                                             <li className="list__item">Track orders and more</li>
                                         </ul>
 
-                                        <button className="btn-signup col-md-7">Create account</button>
+                                        <button className="form-button col-sm-12">Create account</button>
                                     </div>
                                     
                                 </form>

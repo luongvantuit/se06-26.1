@@ -1,4 +1,10 @@
-#main {}
+.hidden-nav {
+    display: none;
+}
+
+#main {
+    margin-top: 80px;
+}
 
 #main .breadcrumb {
     display: flex;
@@ -70,6 +76,7 @@ form .form-button {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .form-button .form__forgot-password {
@@ -164,6 +171,9 @@ button:hover {
     .nav-btn {
         display: block!important;
     }
+    .hidden-nav {
+        display: block;
+    }
     .container {
         justify-content: space-between!important;
     }
@@ -191,7 +201,8 @@ button:hover {
         margin: 0 24px;
     }
     .nav,
-    .button {
+    .button,
+    .icon {
         display: none!important;
     }
     .container {
@@ -205,6 +216,9 @@ button:hover {
         transform: translateY(-50%);
     }
     .copyright p {
+        font-size: 12px;
+    }
+    #emailHelp .form-text {
         font-size: 12px;
     }
 }
