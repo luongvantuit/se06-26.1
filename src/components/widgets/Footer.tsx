@@ -5,23 +5,24 @@ import payment2 from '../../assets/img/payment-methods/light/payment2.svg'
 import payment3 from '../../assets/img/payment-methods/light/payment3.svg'
 import payment4 from '../../assets/img/payment-methods/light/payment4.svg'
 import payment5 from '../../assets/img/payment-methods/light/payment5.svg'
+// import 'bootstrap'
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-export default function Footer () {
+export default function Footer () { 
     return (
         <div>
             <div className="footer pt-5">
                 <div className="container">
                     <div className="row subscription display-flex justify-content-center align-items-center ">
-                        <div className="col-md-7 col-sm-12">
+                        <div className="col-lg-7 col-md-12 col-sm-12">
                             <h3>Subscribe To Our Lastest Deal, Products,...</h3>
                         </div>
-                        <div className="col-md-5 col-sm-12">
+                        <div className="col-lg-5 col-md-12 col-sm-12">
                             <div className="row display-flex justify-content-center align-items-center">
-                                <div className="col-md-9 col-sm-8">
+                                <div className="col-9 col-sm-8">
                                     <input type="email" className="email-input" placeholder="Your email"></input>
                                 </div>
-                                <div className="col-md-3 col-sm-4">
+                                <div className="col-3 col-sm-4">
                                     <button type="submit">Subscribe</button>
                                 </div>
                             </div>
@@ -142,11 +143,11 @@ export default function Footer () {
                     </div>
                     <div className="row socials">
                         <div className="container">
-                            <div className="socials-group text-white ">
+                            <div className="socials-group text-white">
                                 <i className="fab fa-facebook-square"></i>
                                 <i className="fab fa-instagram"></i>
                             </div>
-                            <div className="payment align-items-center ">
+                            <div className="payment align-items-center">
                                 <div className="brand">
                                     <img src={payment1} alt="" />
                                 </div>
@@ -163,7 +164,7 @@ export default function Footer () {
                                     <img src={payment5} alt="" />
                                 </div>
                             </div>
-                            <div className="copyright mb-0">
+                            <div className="copyright mb-0  text-center">
                                 <p>Copyright <i className="far fa-copyright"></i> 2021 SE06 Co Ltd.</p>
                             </div>
                         </div>

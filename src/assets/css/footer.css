@@ -1,6 +1,7 @@
 .footer {
     background-color: #000;
     color: #fff;
+    /* width: 100%; */
 }
 
 .subscription {
@@ -52,6 +53,10 @@
     color: #40AD87;
 }
 
+.socials {
+    padding-bottom: 16px;
+}
+
 .socials .container {
     display: flex;
     align-items: center;
@@ -94,6 +99,7 @@
 }
 
 @media screen and (max-width: 767px) {
+    .footer {}
     .email-input {
         margin-bottom: 24px;
         margin-top: 24px;
@@ -101,11 +107,17 @@
     .subscription h3 {
         font-size: 20px;
     }
+    .socials .container {
+        justify-content: space-between!important;
+    }
 }
 
 @media screen and (min-width:768px)and (max-width: 1024px) {
     .email-input {
         margin-bottom: 24px;
         margin-top: 24px;
+    }
+    .socials .container {
+        justify-content: space-between!important;
     }
 }

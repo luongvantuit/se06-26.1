@@ -180,8 +180,15 @@ button:hover {
     form .form-button {
         flex-direction: column-reverse;
     }
+    form .form__btn {
+        padding: 0 36px;
+    }
     form .form__forgot-password {
-        font-size: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .form-button .form__forgot-password a {
+        margin-left: 0;
     }
     form {
         padding: 16px;

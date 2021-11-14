@@ -181,9 +181,12 @@ button>a:hover {
     .fa-search {
         display: none;
     }
+    .hidden-nav {
+        display: block;
+    }
 }
 
-@media screen and (min-width: 768px)and (max-width: 1023px) {
+@media screen and (min-width: 768px)and (max-width: 1024px) {
     /* .container-fluid {
         justify-content: space-between!important;
         padding: 0 24px;
@@ -206,4 +209,11 @@ button>a:hover {
         top: 50%;
         transform: translateY(-50%);
     } */
+    .hidden-nav {
+        display: block!important;
+    }
+    .d-flex input {
+        width: 100%;
+        margin-left: 24px;
+    }
 }

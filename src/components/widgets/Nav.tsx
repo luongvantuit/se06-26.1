@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap'
+import 'bootstrap'
 import { NavLink } from 'react-router-dom';
 import '../../assets/css/Nav.css'
 
