@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter , Route,Switch} from 'react-router-dom'
+import { HashRouter , Switch, Route} from 'react-router-dom'
 import Header from '../components/widgets/Nav'
 import SignInScreen from '../components/screens/SignInScreen'
 import SignUpScreen from '../components/screens/SignUpScreen'
@@ -7,11 +7,10 @@ import HomeScreen from '../components/screens/HomeScreen'
 import ContactScreen from '../components/screens/ContactScreen'
 import ServiceScreen from '../components/screens/ServiceScreen'
 
-
 export default function RouteApp() {
     return (
         <HashRouter>
-           <Header />
+            <Header />
             <Switch>
                 <Route exact path='/HomeScreen'>
                     <HomeScreen></HomeScreen>
@@ -29,14 +28,13 @@ export default function RouteApp() {
                     {/* <CartScreen></CartScreen> */}
                 </Route>
                 <Route exact path='/SignInScreen'>
-            
                     <SignInScreen></SignInScreen>
                 </Route>
                 <Route exact path='/SignUpScreen'>
                     <SignUpScreen></SignUpScreen>
                 </Route>
-
             </Switch> 
+
         </HashRouter>
     )
 }
