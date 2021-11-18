@@ -5,7 +5,41 @@
     align-items: center;
     /* justify-content: center; */
 }
+/* .active {
+    color: #40AD87;
+    text-decoration: none;
 
+} */
+.acon{
+    color: #40AD87 !important;
+}
+.from-button {
+    background-color: white;
+    border-color: white;
+    border-radius: 7px;
+    outline: none;
+    border: 1px;
+    height: 40px;
+    margin-right: 5px;
+}
+.from-button.one {
+    width: 180px;
+}
+.from-button.two {
+    width: 210px;
+}
+.copyright {
+    font-size: 13px;
+}
+.p {
+    color: #000;
+}
+.active {
+    padding-top: 30px;
+    text-align: center;
+    outline: none;
+    
+}
 .breadcrumb a,
 .breadcrumb li {
     color: #000;
@@ -103,6 +137,9 @@ button {
     text-decoration: none;
     background-color: #40AD87;
     color: #fff;
+}
+.button .btn-google {
+    background-color: #fff !important;
 }
 
 button:hover {
@@ -245,6 +282,7 @@ button:hover {
     border-radius: 4px;
 }
 
+
 /* Resposive */
 
 @media screen and (max-width: 767px) {
@@ -257,26 +295,8 @@ button:hover {
     .nav-btn {
         display: block!important;
     }
-    .hidden-nav {
-        display: block;
-    }
     .container {
         justify-content: space-between!important;
-    }
-    form .form-button {
-        flex-direction: column-reverse;
-    }
-    form .form__forgot-password {
-        font-size: 10px;
-    form .form__btn {
-        padding: 0 36px;
-    }
-    form .form__forgot-password {
-        font-size: 12px;
-        text-align: center;
-    }
-    .form-button .form__forgot-password a {
-        margin-left: 0;
     }
     form {
         padding: 16px;
@@ -296,8 +316,7 @@ button:hover {
         margin: 0 24px;
     }
     .nav,
-    .button,
-    .icon {
+    .button {
         display: none!important;
     }
     .container {
@@ -311,9 +330,6 @@ button:hover {
         transform: translateY(-50%);
     }
     .copyright p {
-        font-size: 12px;
-    }
-    #emailHelp .form-text {
         font-size: 12px;
     }
 }
