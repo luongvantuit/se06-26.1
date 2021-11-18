@@ -1,5 +1,11 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavLink } from 'react-router-dom';
+import { NavigationBarItem } from 'typescript';
+import { Navbar,Container,NavDropdown,  } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import '../widgets/Nav.css'
+
 import 'bootstrap'
 import { NavLink } from 'react-router-dom';
 import '../../assets/css/Nav.css'
@@ -57,6 +63,7 @@ const Header = () => {
                         <li className="nav-item ">
                             <NavLink to='/ContactScreen' className="nav-link " href="#">Contact Us</NavLink>                            
                         </li>
+
                         <li className="nav-item hidden-nav">
                             <NavLink to='/' className="nav-link " href="#">Cart</NavLink>                            
                         </li>

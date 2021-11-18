@@ -33,8 +33,8 @@ export default function RouteApp() {
                 <Route exact path='/SignUpScreen'>
                     <SignUpScreen></SignUpScreen>
                 </Route>
+            </Switch> 
 
-            </Switch>
         </HashRouter>
     )
 }

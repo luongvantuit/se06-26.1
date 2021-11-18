@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom'
 import '../../assets/css/signin.css'
 
 
-
 export default function SignInScreen() {
     return (
         <div>
@@ -60,7 +59,6 @@ export default function SignInScreen() {
                                             <li className="list__item">Keep more than one address</li>
                                             <li className="list__item">Track orders and more</li>
                                         </ul>
-
                                         <button className="form-button col-sm-12">Create account</button>
                                     </div>
                                     
@@ -126,10 +124,6 @@ export default function SignInScreen() {
                     </div>
                 </div>
             </div>
-            {/* <!-- Body --> */}
-
-            {/* <!-- Footer --> */}
-            
         </div>
     )
 }
