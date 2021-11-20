@@ -7,6 +7,7 @@ import clothes from '../../assets/img/home/clothes_1.jpg'
 import shoes from '../../assets/img/home/shoe_1.jpg'
 import furnitures from '../../assets/img/home/house-furnitures_1.jpg'
 import cosmetic from '../../assets/img/home/cosmetic_1.jpg'
+import Footer from '../widgets/Footer'
 
 export default function HomeScreen() {
     return (
@@ -674,7 +675,7 @@ export default function HomeScreen() {
                             </div>
                 </div>
             </div>
-            <div className="footer pt-5">
+            {/* <div className="footer pt-5">
                 <div className="container">
                     <div className="row subscription display-flex justify-content-center align-items-center ">
                         <div className="col-md-7 col-sm-12">
@@ -861,7 +862,7 @@ export default function HomeScreen() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
         
     )

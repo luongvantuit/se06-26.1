@@ -70,6 +70,7 @@ form .form-button {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .form-button .form__forgot-password {
@@ -245,6 +246,7 @@ button:hover {
     border-radius: 4px;
 }
 
+
 /* Resposive */
 
 @media screen and (max-width: 767px) {
@@ -268,6 +270,7 @@ button:hover {
     }
     form .form__forgot-password {
         font-size: 10px;
+    }
     form .form__btn {
         padding: 0 36px;
     }
