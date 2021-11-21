@@ -13,7 +13,16 @@ body {
 
 
 /* header css */
-
+.me-auto{
+    margin-left: auto;
+    margin-right: auto !important;
+}
+.me-auto .nav-item{
+    align-self: center;
+}
+.nav-link{
+    text-align: center;
+}
 .navbar {
     width: 100%;
     box-shadow: 0 0 8px;
@@ -50,7 +59,7 @@ header .container-fluid {
 }
 
 .d-flex input {
-    width: 686px;
+    width: 550px;
     border-radius: 12px;
     font-size: 12px;
     background-color: #eee;
@@ -90,10 +99,6 @@ header .container-fluid {
 
 .nav-list .list-item {
     padding: 0 12px;
-}
-
-.navbar-nav {
-    margin-left: 24px;
 }
 
 .navbar-nav .display-none {
@@ -162,6 +167,26 @@ button>a:hover {
 
 
 /* Responsive */
+@media screen and (max-width: 1400px) {
+    .d-flex input {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .d-flex input {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .d-flex input {
+        width: 300px;
+    }
+    .button .btn-signin button, .button .btn-signup button{
+        margin-left: 18px;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .d-flex input {
@@ -186,34 +211,3 @@ button>a:hover {
     }
 }
 
-@media screen and (min-width: 768px)and (max-width: 1024px) {
-    /* .container-fluid {
-        justify-content: space-between!important;
-        padding: 0 24px;
-    }
-    .container-fluid .search-bar {
-        width: 686px;
-        margin: 0 24px;
-    }
-    .nav,
-    .button {
-        display: none!important;
-    }
-    .container-fluid {
-        position: relative!important;
-    } */
-    /* .nav-btn {
-        display: block!important;
-        position: absolute;
-        right: 24px;
-        top: 50%;
-        transform: translateY(-50%);
-    } */
-    .hidden-nav {
-        display: block!important;
-    }
-    .d-flex input {
-        width: 100%;
-        margin-left: 24px;
-    }
-}

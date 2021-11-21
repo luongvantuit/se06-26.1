@@ -54,7 +54,7 @@ header .container-fluid {
 }
 
 .d-flex .input {
-    width: 686px;
+    width: 600px;
     border-radius: 12px;
     font-size: 12px;
     background-color: #eee;
@@ -183,6 +183,10 @@ button>a:hover {
     box-shadow: none;
 }
 
+.hidden-nav{
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .button,
     .search-bar,
@@ -192,6 +196,9 @@ button>a:hover {
     }
     .container-fluid {
         justify-content: space-between!important;
+    }
+    .hidden-nav{
+        display: block;
     }
 }
 
