@@ -106,11 +106,9 @@ form .form-button {
 }
 
 .form-button .form__forgot-password {
-    text-align: center;
 }
 
 .form-button .form__forgot-password a {
-    margin-left: 48px;
     text-decoration: none;
     text-align: center;
     color: #000;
