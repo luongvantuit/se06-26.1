@@ -142,7 +142,6 @@ header .container-fluid {
     justify-content: center;
 }
 
-
 .button a {
     color: #40AD87;
     text-decoration: none;
@@ -152,6 +151,7 @@ button>a:hover {
     color: #fff;
     text-decoration: none;
 }
+
 .button .btn-signin button,
 .button .btn-signup button {
     background: #E3FAF2;
@@ -183,7 +183,7 @@ button>a:hover {
     box-shadow: none;
 }
 
-.hidden-nav{
+.hidden-nav {
     display: none;
 }
 
@@ -197,7 +197,7 @@ button>a:hover {
     .container-fluid {
         justify-content: space-between!important;
     }
-    .hidden-nav{
+    .hidden-nav {
         display: block;
     }
 }
@@ -223,8 +223,9 @@ button>a:hover {
     .fa-search {
         display: none;
     }
+    .hidden-nav {
+        display: block;
+    }
 }
 
-@media screen and (min-width: 768px)and (max-width: 1023px) {
-    
-}
+@media screen and (min-width: 768px)and (max-width: 1023px) {}

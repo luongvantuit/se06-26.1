@@ -70,8 +70,7 @@ form .form-button {
     width: 100%;
     display: flex;
     align-items: center;
-    place-content: center;
-    margin-left: 0px !important;
+    justify-content: center;
 }
 
 .form-button .form__forgot-password {
@@ -249,10 +248,36 @@ button:hover {
     border-radius: 4px;
 }
 
+
 /* Resposive */
 
-@media screen and (max-width: 768px) {
-    .form-button .form__forgot-password {
+@media screen and (max-width: 767px) {
+    .button,
+    .search-bar,
+    .nav,
+    .icon {
+        display: none!important;
+    }
+    .nav-btn {
+        display: block!important;
+    }
+    .hidden-nav {
+        display: block;
+    }
+    .container {
+        justify-content: space-between!important;
+    }
+    form .form-button {
+        flex-direction: column-reverse;
+    }
+    form .form__forgot-password {
+        font-size: 10px;
+    }
+    form .form__btn {
+        padding: 0 36px;
+    }
+    form .form__forgot-password {
+        font-size: 12px;
         text-align: center;
         margin-top: 10px !important;
     }
