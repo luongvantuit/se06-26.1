@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+    box-sizing: border-box;
+    font-family: "Poppins";
+    font-style: normal;
+}
+@mixin distance {
+    margin: 0px 200px 0px 200px;
+}
+@mixin distance_res--first {
+    margin:0px 100px 0px 100px;
+}
+@mixin distance_res--next {
+    margin:0px 50px 0px 50px;
+}
+@mixin distance_res--last {
+    margin:0;
+}
+body {
+    background-color: #ffffff;
+    /* border: 1px solid #aa2828; */
+    box-sizing: border-box;
+}
+.section__2 {
+    padding-left: 190px;
+    margin-top: 100px;
+}
+.section__3 {
+    .section__3--left {
+        padding-left: 200px;
+    }
+    .section__3--right {
+        padding-left: 40px;
+    }
+    .section__3-component {
+        background: #f5f7ff;
+        padding-right: 20px;
+        display: inline-block;
+        z-index: 1;
+        height: 450px;
+    }
+}
+.btn {
+    width: 151px;
+    height: 50px;
+    color: #ffffff;
+    border-radius: 50px;
+    background: #40ad87;
+    border: #40ad87;
+}
+.btn:hover {
+    color: #ffffff;
+    background-color: #81d6b8;
+}
+.section__3--right{
+   
+
+    .item__icon img {
+        opacity: 0.3;
+    }
+    .item__inf--bold {
+        margin-bottom: 0px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .item__inf--small {
+        font-weight: 100;
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .item__inf--small-color {
+        color: #0156ff;
+        font-weight: 100;
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .item {
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    .item__icon {
+        padding-right: 15px;
+    }
+}
+.section__4{
+    background: #F5F7FF;
+    .container .item__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 64px;
+        border-radius: 20px;
+        color: #fff;
+        margin: 12px;
+    }
+    
+    .container .item__header i {
+        font-size: 24px;
+    }
+    
+    .container .item__content {
+        text-align: center;
+        color: #000;
+    }
+    
+    .item__content .content__body {
+        color: #4D4D4D;
+    }
+    
+    .icon-wrapper--circle {
+        background-color: #40AD87;
+        height: 64px;
+        width: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 32px;
+    }
+    .contact {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+/* responsive*/
+@import 'responsive';

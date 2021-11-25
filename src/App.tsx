@@ -7,6 +7,8 @@ import Header from './components/widgets/Nav';
 import SignInScreen from './components/screens/SignInScreen';
 import _404 from './components/screens/_404'
 import Footer from './components/widgets/Footer';
+import SignUpScreen from './components/screens/SignUpScreen';
+import ContactScreen from './components/screens/ContactScreen';
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
     <>
       <RouterApp />
       <Footer></Footer>
+    
     </>
   );
 }
