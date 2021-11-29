@@ -3,14 +3,16 @@
 #main .breadcrumb {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    
 }
 
 .breadcrumb a,
 .breadcrumb li {
+
     color: #000;
     text-decoration: none;
     font-size: 12px;
+    
 }
 
 .breadcrumb a:hover {
@@ -28,94 +30,19 @@
     color: #6c757d;
     content: "";
 }
+.breadcrumb-item.active {
+    margin-top: -30px;
+}
 
 form {
-    color: #000;
-    background-color: #F5F7FF;
-    border: none;
-    outline: none;
-    padding: 60px;
+    background-color: #F5F7FF !important;
+    padding: 10px;
+    padding-top: 20px;
+    margin-left: -27px;
+    margin-bottom: 10px;
 }
-
-form .form-header {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-form .form-note {
-    font-size: 14px;
-    color: #000;
-}
-
-form .form-group {}
-
-.form-group label span {
-    color: red;
-}
-
-.form-control:focus {
-    color: #000;
-    background-color: #fff;
-    outline: none;
-    box-shadow: none;
-}
-
-.form-group .form-control {
-    outline: none;
-    border: 1px solid #A2A6B0;
-    border-radius: 4px;
-}
-
-form .form-button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.form-button .form__forgot-password {
+.form-2 {
     text-align: center;
-}
-
-.form-button .form__forgot-password a {
-    margin-left: 48px;
-    text-decoration: none;
-    text-align: center;
-    color: #000;
-}
-
-.form-button .form__forgot-password a:hover {
-    text-decoration: none;
-    color: #40AD87;
-}
-
-.form-control .list {
-    margin-left: 16px;
-}
-
-button {
-    height: 48px;
-    border-radius: 12px;
-    font-size: 15px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-    background-color: #40AD87;
-    color: #fff;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-.button .form__forgot-password a {
-    color: #000;
-}
-
-.button .form__forgot-password a:hover {
-    color: #40AD87;
-    text-decoration: none;
 }
 
 .container .item__header {
@@ -150,13 +77,55 @@ button:hover {
     justify-content: center;
     border-radius: 32px;
 }
+/* form 1 */
+.container form ol li {
+    list-style-type: none;
+    padding-top: 5px;
+    margin-left: -15px;
+}
+/* form 2 */
+.edit {
+    color: #40AD87;
+    padding-right: 30px;
+}
+.edit:hover{
+    color: #316e59;
+    outline: none;
+}
+.acount_b {
+    font-size: 18px;
+    font-weight: 700;
+}
+.ke {
+    height: 1px;
+    background-color: #CACDD8;
+    margin-top: -5px;
+}
+.contact_b{
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+.alex {
+    color: #666666;
+    
+}
+.row {
+    padding-bottom: 7px;
+}
+/* 992 */
+@media screen and (max-width: 992px) {
+    #main {
+        margin-left: -200px;
+    }
+}
 
 
-/* Footer */
 
 .footer {
     background-color: #000;
     color: #fff;
+    /* width: 100%; */
 }
 
 .subscription {
@@ -208,6 +177,10 @@ button:hover {
     color: #40AD87;
 }
 
+.socials {
+    padding-bottom: 16px;
+}
+
 .socials .container {
     display: flex;
     align-items: center;
@@ -245,6 +218,33 @@ button:hover {
     border-radius: 4px;
 }
 
+.copyright p {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .footer {}
+    .email-input {
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
+    .subscription h3 {
+        font-size: 20px;
+    }
+    .socials .container {
+        justify-content: space-between!important;
+    }
+}
+
+@media screen and (min-width:768px)and (max-width: 1024px) {
+    .email-input {
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
+    .socials .container {
+        justify-content: space-between!important;
+    }
+}
 /* Resposive */
 
 @media screen and (max-width: 767px) {
@@ -257,30 +257,8 @@ button:hover {
     .nav-btn {
         display: block!important;
     }
-    .hidden-nav {
-        display: block;
-    }
     .container {
         justify-content: space-between!important;
-    }
-    form .form-button {
-        flex-direction: column-reverse;
-    }
-    form .form__forgot-password {
-        font-size: 10px;
-    }
-    form .form__btn {
-        padding: 0 36px;
-    }
-    form .form__forgot-password {
-        font-size: 12px;
-        text-align: center;
-    }
-    .form-button .form__forgot-password a {
-        margin-left: 0;
-    }
-    form {
-        padding: 16px;
     }
     .copyright p {
         font-size: 12px;
@@ -297,8 +275,7 @@ button:hover {
         margin: 0 24px;
     }
     .nav,
-    .button,
-    .icon {
+    .button {
         display: none!important;
     }
     .container {
@@ -312,9 +289,6 @@ button:hover {
         transform: translateY(-50%);
     }
     .copyright p {
-        font-size: 12px;
-    }
-    #emailHelp .form-text {
         font-size: 12px;
     }
 }
