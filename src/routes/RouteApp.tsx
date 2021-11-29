@@ -6,6 +6,7 @@ import SignUpScreen from '../components/screens/SignUpScreen'
 import HomeScreen from '../components/screens/HomeScreen'
 import ContactScreen from '../components/screens/ContactScreen'
 import ServiceScreen from '../components/screens/ServiceScreen'
+import Category from '../components/screens/Category'
 
 export default function RouteApp() {
     return (
@@ -32,6 +33,9 @@ export default function RouteApp() {
                 </Route>
                 <Route exact path='/SignUpScreen'>
                     <SignUpScreen></SignUpScreen>
+                </Route>
+                <Route exact path='/Category'>
+                    <Category></Category>
                 </Route>
             </Switch> 
         </HashRouter>
