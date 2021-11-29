@@ -9,14 +9,14 @@ import _404 from './components/screens/_404'
 import Footer from './components/widgets/Footer';
 import SignUpScreen from './components/screens/SignUpScreen';
 import ContactScreen from './components/screens/ContactScreen';
+import ServiceScreen from './components/screens/ServiceScreen';
 
 function App() {
   return (
     
     <>
       <RouterApp />
-      <Footer></Footer>
-    
+      <Footer></Footer> 
     </>
   );
 }

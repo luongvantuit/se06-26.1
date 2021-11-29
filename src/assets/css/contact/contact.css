@@ -132,6 +132,10 @@ body {
     margin: 0px 100px 0px 100px;
     padding-left: 0px;
   }
+  .section__2--title-paragraph {
+    margin-top: 100px;
+}
+
 }
 @media screen and (max-width: 768px) {
   .section__3 {
@@ -149,6 +153,10 @@ body {
   .section__2 {
     margin: 0px 50px 0px 50px;
     padding-left: 0px;
+  }
+  .d-flex {
+  
+    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 576px) {

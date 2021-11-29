@@ -14,7 +14,7 @@ export default function ContactScreen() {
             <section className="section__2">
                 <div className="section__2--title">
                     <h5>Contact Us</h5>
-                    <p>We love wearing from you, our Shop from Customers. <br />Please contact us and we will make sure to get
+                    <p className="section__2--title-paragraph">We love wearing from you, our Shop from Customers. <br />Please contact us and we will make sure to get
                         back to you as soon as we possible can.</p>
                 </div>
             </section>

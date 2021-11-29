@@ -19,7 +19,7 @@ export default function _404() {
                         <p id="content">Some thing went wrong.<br />
                             It looks like the link  is broken or the page has been <br />  <span>removed</span></p>
 
-                        <div className="btn"><button id="click">Go back</button></div>
+                        <div className="button"><button id="click">Go back</button></div>
 
                     </div>
 
