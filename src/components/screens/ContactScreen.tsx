@@ -9,8 +9,14 @@ export default function ContactScreen() {
     return (
         <div>
 
-            {/* <section className="section__1">
-            </section> */}
+            <section className="section__1">
+            <nav aria-label="breadcrumb">
+                        <ol className="breadcrumb  mb-5 mt-4">
+                            <li className="breadcrumb-item"><a href="#">Home</a><i className="fas fa-chevron-right"></i></li>
+                            <li className="breadcrumb-item active" aria-current="page">Contact Us</li>
+                        </ol>
+                    </nav>
+            </section>
             <section className="section__2">
                 <div className="section__2--title">
                     <h5>Contact Us</h5>
@@ -24,13 +30,13 @@ export default function ContactScreen() {
                         <div className="row">
                             <div className="col-12 col-md-6">
                                 <div className="mb-3">
-                                    <label htmlFor="exampleInputEmail1" className="form-label">Your Name</label>
+                                    <label htmlFor="exampleInputEmail1" className="form-label">Your Name <span className="star">*</span></label>
                                     <input type="text" className="form-control" placeholder="Your Name" />
                                 </div>
                             </div>
                             <div className="col-12 col-md-6">
                                 <div className="mb-3">
-                                    <label htmlFor="exampleInputPassword1" className="form-label">Your Email</label>
+                                    <label htmlFor="exampleInputPassword1" className="form-label">Your Email  <span className="star">*</span></label>
                                     <input type="email" className="form-control" placeholder="Your Name" />
                                 </div>
                             </div>
@@ -42,8 +48,8 @@ export default function ContactScreen() {
                             </div>
                             <div className="col-12">
                                 <div className="mb-3">
-                                    <label htmlFor="exampleInputPassword1" className="form-label">What Your Mind?</label>
-                                    <textarea className="form-control" placeholder="Jot us a note and well get back to you as quickly as possible" rows={6} defaultValue={" "} />
+                                    <label htmlFor="exampleInputPassword1" className="form-label">What Your Mind?  <span className="star">*</span></label>
+                                    <textarea className="form-control" placeholder='Jot us a note and well get back to you as quickly as possible' rows={6} defaultValue={" "} />
                                 </div>
                             </div>
                             <button type="submit" className="btn ">Submit</button>
