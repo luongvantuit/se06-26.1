@@ -47,7 +47,7 @@ export default function SignUpScreen() {
                                 </div>
                                 <div className="form-group form-check">
                                     <input type="checkbox" className="form-check-input" id="exampleCheck1"></input>
-                                    <label className="form-check-label" htmlFor="exampleCheck1">I agree to <a href="#" className="a">Condition of Use ?</a></label>
+                                    <label className="form-check-label" htmlFor="exampleCheck1">I agree to <a href="#" className="acon">Condition of Use ?</a></label>
                                 </div>
                                 <div className="form-button mt-4 col-sm-12">
                                     <button className="form__btn col-md-4 col-sm-4">Login</button>
