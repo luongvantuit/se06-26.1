@@ -1,0 +1,43 @@
+.Comment {}
+
+.UserInfo {
+    position: relative;
+}
+
+.UserInfo .Avatar {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    margin-top: 48px;
+}
+
+.UserInfo-name {
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    left: 60px;
+    top: 48px;
+}
+
+.Comment-status {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.Comment-date {
+    position: absolute;
+    left: 200px;
+    top: -24px;
+}
+
+.Comment-rating {
+    position: absolute;
+    left: 60px;
+    top: -24px;
+}
+
+.Comment-text {
+    margin-left: 60px;
+}

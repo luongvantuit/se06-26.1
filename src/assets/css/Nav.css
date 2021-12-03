@@ -13,16 +13,20 @@ body {
 
 
 /* header css */
-.me-auto{
+
+.me-auto {
     margin-left: auto;
     margin-right: auto !important;
 }
-.me-auto .nav-item{
+
+.me-auto .nav-item {
     align-self: center;
 }
-.nav-link{
+
+.nav-link {
     text-align: center;
 }
+
 .navbar {
     width: 100%;
     box-shadow: 0 0 8px;
@@ -165,20 +169,25 @@ button>a:hover {
     box-shadow: none;
 }
 
+.hidden-nav {
+    display: none;
+}
+
 
 /* Responsive */
+
 @media screen and (max-width: 1400px) {
     .d-flex input {
         width: 500px;
     }
 }
 
-
 @media screen and (max-width: 1200px) {
     .d-flex input {
         width: 320px;
     }
-    .button .btn-signin button, .button .btn-signup button{
+    .button .btn-signin button,
+    .button .btn-signup button {
         margin-left: 18px;
     }
 }
@@ -187,7 +196,7 @@ button>a:hover {
     .d-flex input {
         width: 100%;
     }
-    .icon{
+    .icon {
         display: none;
     }
     .hidden-nav {
@@ -214,4 +223,3 @@ button>a:hover {
         display: none;
     }
 }
-

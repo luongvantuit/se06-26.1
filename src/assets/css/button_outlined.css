@@ -1,0 +1,22 @@
+.button__outlined {
+    /* background: #ccc; */
+    margin-top: 16px;
+    width: auto;
+    max-width: 128px;
+    color: #40AD87;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #40AD87;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 24px;
+    padding: 8px;
+    text-align: center;
+}
+
+.button__outlined:hover {
+    background-color: #40AD87;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+}

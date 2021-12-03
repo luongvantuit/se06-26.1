@@ -1,0 +1,25 @@
+.product-quantity {}
+
+.product-quantity p {
+    font-weight: 600;
+}
+
+.product-quantity .quantity {
+    align-items: center;
+    justify-content: center;
+    padding-left: 48px;
+    padding-top: 16px;
+}
+
+.quantity>input {
+    border-radius: 0;
+    text-align: center;
+}
+
+.quantity .qtt-btn {
+    background-color: #aaa;
+    line-height: 36px;
+    font-size: 12px;
+    padding: 0 12px;
+    cursor: pointer;
+}

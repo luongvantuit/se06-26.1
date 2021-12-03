@@ -1,12 +1,5 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavigationBarItem } from 'typescript';
-import '../widgets/Nav.css'
-
-import { Navbar,Container,NavDropdown,  } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
-import '../widgets/Nav.css'
-
 import 'bootstrap'
 import { NavLink } from 'react-router-dom';
 import '../../assets/css/Nav.css'

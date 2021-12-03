@@ -1,0 +1,17 @@
+.product-delivery {}
+
+.product-delivery>p {
+    font-weight: 600;
+}
+
+.product-delivery .delivery-location,
+.product-delivery .delivery-fee {
+    padding-left: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.product-delivery .fas {
+    padding-right: 8px;
+}

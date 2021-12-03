@@ -1,0 +1,12 @@
+.saleoff-tag {
+    background-color: #40AD87;
+    color: #fff;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sale-percent {
+    font-size: 10px;
+    padding: 2px 4px;
+}
