@@ -6,12 +6,14 @@ import _404 from './components/screens/_404'
 import Footer from './components/widgets/Footer';
 import ProductDetails from './components/screens/ProductDetails';
 import { Comment } from '@babel/types';
+import ProductCarousel from './components/widgets/ProductDetails/ProductCarousel';
 function App() {
   return (
     
     <>
       <RouterApp />
-      <Footer></Footer>      
+      <Footer></Footer>
+      <ProductDetails></ProductDetails>
     </>
   );
 }

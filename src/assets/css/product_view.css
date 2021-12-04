@@ -15,6 +15,7 @@
 
 .product-price {
     display: flex;
+    margin: 16px 0;
 }
 
 .price-original {
@@ -31,6 +32,7 @@
 .payment-btn {
     align-items: center;
     justify-content: space-between;
-    padding: 0 32px;
+    margin-left: 48px;
     margin-top: 32px;
+    margin-right: 32px;
 }

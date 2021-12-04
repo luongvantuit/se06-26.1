@@ -1,5 +1,7 @@
 import React from 'react'
 import 'bootstrap'
+import 'bootstrap/dist/js/bootstrap.bundle'
+import '../../../assets/css/product_carousel.css'
 
 
 const ProductCarousel = () => {

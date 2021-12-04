@@ -9,8 +9,7 @@ import ButtonGreen from "../ButtonGreen";
 const ProductView = () => {
   return (
     <div>
-      <div className="col-6">
-        <div className="container">
+      <div className="container mt-4">
           <h3 className="product-name">
             Earpods Bluetooth i12 TWS 5.0 wireless i12 with HIFI sound quality
           </h3>
@@ -43,7 +42,6 @@ const ProductView = () => {
             <ButtonGreen name="Buy Now" />
           </div>
         </div>
-      </div>
     </div>
   );
 };

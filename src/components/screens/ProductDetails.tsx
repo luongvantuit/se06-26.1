@@ -11,9 +11,13 @@ const ProductDetails = () => {
   return (
     <div>
       <div className="container" style={{marginTop:'80px'}}>
-        <div className="product-general-details d-flex mb-4">
-          <ProductCarousel></ProductCarousel>
+        <div className="product-general-details d-flex mb-4 row">
+          <div className="col-lg-6 col-md-6 col-sm-12">
+          <ProductCarousel ></ProductCarousel>
+          </div>
+          <div className="col-lg-6 col-md-6 col-sm-12">
           <ProductView></ProductView>
+          </div>
         </div>
         <div className="product-description mb-4">
           <SectionHeading name="Description" />
