@@ -11,7 +11,7 @@ import 'bootstrap'
 import { NavLink } from 'react-router-dom';
 import '../../assets/css/Nav.css'
 
-import cart from '../../assets/img/Cart.svg'
+import carts from '../../assets/img/Cart.svg'
 import order from '../../assets/img/Order.svg'
 
 
@@ -84,7 +84,7 @@ const Header = () => {
                     </div>
                     <div className="icon cart">
                         <NavLink to='/ShoppingCart'>
-                            <img src={cart} alt="Cart" />
+                            <img src={carts} alt="Cart" />
                         </NavLink>
                         
                     </div>
