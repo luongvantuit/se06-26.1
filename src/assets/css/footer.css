@@ -109,6 +109,7 @@
     }
     .socials .container {
         justify-content: space-between!important;
+        display: grid;
     }
 }
 

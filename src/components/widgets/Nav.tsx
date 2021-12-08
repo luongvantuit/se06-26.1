@@ -83,7 +83,7 @@ const Header = () => {
                         </NavLink>
                     </div>
                     <div className="icon cart">
-                        <NavLink to='/'>
+                        <NavLink to='/ShoppingCart'>
                             <img src={cart} alt="Cart" />
                         </NavLink>
                         

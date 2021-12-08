@@ -10,8 +10,14 @@ a:hover{
 .cate-banner img {
     width: 100%;
     margin-bottom: 15px;
+    margin-top: 65px;
 }
-
+.btn-modal{
+    display: none;
+}
+.wrapper-category{
+    margin-bottom: 50px;
+}
 /*  CONTENT LEFT  */
 .category-name{
     margin: 10px 0px 20px 0px;
@@ -122,10 +128,12 @@ a:hover{
 .clear-all{
     background: #fff;
     border: 1px solid #CACDD8;
-    padding: 5px 10px;
-    font-size: 14px;
+    padding: 5px 10px !important;
+    font-size: 14px !important;
     font-weight: 500;
-    margin-left: 15px;
+    margin-left: 15px !important;
+    display: unset !important;
+    color: black;
 }
 #sort, #show{
     border: 0px;
@@ -186,6 +194,9 @@ a:hover{
     font-size: 12px;
     margin-left: 5px;
 }
+.star span{
+    margin-right: -4px;
+}
 .cost{
     color: #666;
     text-decoration: line-through;
@@ -208,7 +219,7 @@ a:hover{
     }
 }
 @media (min-width: 992px) {
-    .product{
+    .product-category-page{
         max-width: 20% !important;
         flex: 0 0 20%;
     }
@@ -222,7 +233,9 @@ a:hover{
     .product-5 {
         display: none;
     }
-
+    .product-4{
+        display: unset !important;
+    }
     .product {
         padding: 5px 8px;
     }
@@ -291,9 +304,13 @@ a:hover{
     }
     .current-cate{
         margin-top: 10px;
+        place-content: start;
     }
     .filters button{
         padding: 5px 8px;
+    }
+    .content-left{
+        align-self: start;
     }
 }
 @media (max-width: 576px) {
@@ -305,5 +322,29 @@ a:hover{
     }
     .row-new {
         display: flex;
+    }
+    .content-left{
+        display: none;
+    }
+    .btn-modal{
+        display: unset !important;
+    }
+    .filters-modal{
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .modal-content{
+        border-radius: 20px;
+    }
+    .modal{
+        padding-right: 0px !important;
+    }
+    .cate-banner img {
+        height: 70px;
+    }
+}
+@media (max-width: 430px) {
+    .cate-banner img {
+        height: 55px;
     }
 }

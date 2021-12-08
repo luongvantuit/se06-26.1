@@ -78,6 +78,6 @@ export default function Filter() {
                     </div>
                   </div>
                   <img src="assets/images/ads.jpg" />
-                </div>
+        </div>
     )
 }

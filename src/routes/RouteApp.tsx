@@ -7,6 +7,7 @@ import HomeScreen from '../components/screens/HomeScreen'
 import ContactScreen from '../components/screens/ContactScreen'
 import ServiceScreen from '../components/screens/ServiceScreen'
 import Category from '../components/screens/Category'
+import ShoppingCart from '../components/screens/ShoppingCart'
 
 export default function RouteApp() {
     return (
@@ -36,6 +37,9 @@ export default function RouteApp() {
                 </Route>
                 <Route exact path='/Category'>
                     <Category></Category>
+                </Route>
+                <Route exact path='/ShoppingCart'>
+                    <ShoppingCart></ShoppingCart>
                 </Route>
             </Switch> 
         </HashRouter>
