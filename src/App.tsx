@@ -13,7 +13,6 @@ function App() {
     <>
       <RouterApp />
       <Footer></Footer>
-      <ProductDetails></ProductDetails>
     </>
   );
 }

@@ -11,19 +11,25 @@ const ProductDetails = () => {
   return (
     <div>
       <div className="container" style={{marginTop:'80px'}}>
-        <div className="product-general-details d-flex mb-4 row">
-          <div className="col-lg-6 col-md-6 col-sm-12">
-          <ProductCarousel ></ProductCarousel>
+        <div className="product-general-details d-flex mb-5 row">
+          <div className="col-lg-6 col-md-6 col-sm-12" style={{backgroundColor:'#eee',position:'relative'}}>
+            <ProductCarousel ></ProductCarousel>
+            <div className="arrow arrow-left" style={{height:'57px',width:'20px'}}>
+              <i className="fas fa-chevron-left"></i>
+            </div>
+            <div className="arrow arrow-right" style={{height:'57px',width:'20px'}}>
+            <i className="fas fa-chevron-right"></i>
+            </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12">
+          <div className="col-lg-6 col-md-6 col-sm-12" style={{backgroundColor:'#eee'}}>
           <ProductView></ProductView>
           </div>
         </div>
-        <div className="product-description mb-4">
+        <div className="product-description mb-5">
           <SectionHeading name="Description" />
           <ProductDescription></ProductDescription>
         </div>
-        <div className="product-technical-details mb-4">
+        <div className="product-technical-details mb-5">
           <SectionHeading name="Technical Details" />
           <TechnicalDetails name='Size' content='21x13x96mm'/>
           <TechnicalDetails name='Size' content='21x13x96mm'/>
@@ -31,13 +37,13 @@ const ProductDetails = () => {
           <TechnicalDetails name='Size' content='21x13x96mm'/>
           <TechnicalDetails name='Size' content='21x13x96mm'/>
         </div>
-        <div className="product-reviews mb-4">
+        <div className="product-reviews mb-5">
           <SectionHeading name="Reviews" />
           <Comment
             text="The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles "
             author={{
               avatarUrl:
-                "https://cdn.fbsbx.com/v/t59.2708-21/263380751_594090735250698_6745924652319783863_n.gif?_nc_cat=100&fallback=1&ccb=1-5&_nc_sid=041f46&_nc_ohc=sJ3pOfQz_VIAX95Riku&_nc_oc=AQm2318r8ZvCJJyd03M8V3IVcFC-yDOB8rWb_UNiOF_q3D1HztpUdO52HnDL8iVDqO8&_nc_ht=cdn.fbsbx.com&oh=5f5a37a92c164e39eb46b20577a4eb3a&oe=61AC21CF",
+                "https://www.meme-arsenal.com/memes/da411f886e81c45d29d745ace4e38644.jpg",
               name: "Jinne Amadiha",
             }}
             date="13/02/21"
@@ -101,7 +107,7 @@ const ProductDetails = () => {
             <ProductOutline></ProductOutline>
             <ProductOutline></ProductOutline>
           </div>
-          <div className="d-flex align-items-center justify-content-center">
+          <div className="d-flex align-items-center justify-content-center mb-5">
             <ButtonOutlined name='Show more'/>
           </div>
         </div>

@@ -9,7 +9,7 @@ const Quantity = () => {
               <div className="qtt-btn decrease">
                 <i className="fas fa-minus"></i>
               </div>
-              <input type="number" />
+              <input type="number" placeholder='0'/>
               <div className="qtt-btn increase">
                 <i className="fas fa-plus"></i>
               </div>

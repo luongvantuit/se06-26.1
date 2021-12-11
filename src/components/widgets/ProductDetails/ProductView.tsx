@@ -9,7 +9,7 @@ import ButtonGreen from "../ButtonGreen";
 const ProductView = () => {
   return (
     <div>
-      <div className="container mt-4">
+      <div className="container mt-4 product_view">
           <h3 className="product-name">
             Earpods Bluetooth i12 TWS 5.0 wireless i12 with HIFI sound quality
           </h3>
