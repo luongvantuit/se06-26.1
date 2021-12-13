@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import '..//../assets/css/notification.css'
 import vouncher from '../../assets/img/notification/vouncher.png'
 import backcoin from '../../assets/img/notification/backcoin.png'
