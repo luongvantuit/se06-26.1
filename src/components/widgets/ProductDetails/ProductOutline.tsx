@@ -22,8 +22,8 @@ const ProductOutline = () => {
                     <p><a>Reviews (4)</a></p>
                 </div>
                 <h5><a>Asolo Women's TPS 520 GV EVO</a></h5>
-                <p className="cost">$499.00</p>
-                <h4 className="sale">$499.00</h4>
+                <p className="cost">499.000 vnđ</p>
+                <h4 className="sale">499.000 vnđ</h4>
                 </div>
         
     )
