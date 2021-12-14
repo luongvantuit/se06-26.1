@@ -1,11 +1,11 @@
 import React from 'react'
-import '..//../assets/css/notification.css'
+import image from '../../assets/img/notification/image.jpg'
 import vouncher from '../../assets/img/notification/vouncher.png'
 import backcoin from '../../assets/img/notification/backcoin.png'
-export default function Notifications() {
+import '..//../assets/css/notification.css'
+export default function Notifications(){
     return (
-
-        <div className="container-fluid row">
+         <div className="section__0 container-fluid row">
             <div className="sidebar col-2 col-lg-3">
                 <div className="component d-flex">
                     <span className="fas fa-user component__icon" />
@@ -31,7 +31,7 @@ export default function Notifications() {
             <div className="main col-10 col-lg-9">
                 <div className="wrap">
                     <div className="notification d-flex">
-                        <img className="notification__image " src="./assets/image/image 34.jpg" alt="" />
+                        <img className="notification__image " src={image} alt="" />
                         <p className="notification__paragraph col-md-7 col-lg-9">datasfashion199 đã đánh giá đơn hàng 21126AVCXDTHBJ9. Vui lòng
                             đánh giá sản  phẩm trước ngày 14-12-2012. 21:28 29-11-2021</p>
                         <button className="btn notification__button">Xem chi tiết</button>
@@ -46,7 +46,7 @@ export default function Notifications() {
                         <button className=" btn notification__button">Xem chi tiết</button>
                     </div>
                     <div className="notification d-flex">
-                        <img className="notification__image " src="./assets/image/backcoin.png" alt="" />
+                        <img className="notification__image " src={backcoin} alt="" />
                         <p className="notification__paragraph col-xs-5 col-md-7 col-lg-9">Hàng Hot đến rồi đây! Mau mở ví! <br />
                             💥💥 Voucher hoàn xu Xtra
                             🌈 Đã có sẵn trong kho voucher của bạn
