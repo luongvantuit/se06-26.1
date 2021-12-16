@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../../assets/css/side_nav.css'
-
+import { NavLink } from "react-router-dom";
 const SideNav = () => {
   return (
     <div className="side-nav">
@@ -21,14 +21,14 @@ const SideNav = () => {
             <div className="collapse show" id="shipping-collapse">
               <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li>
-                  <a href="#" className="link-dark rounded">
+                  <NavLink to="#" className="link-dark rounded">
                     Shipping Management
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#" className="link-dark rounded">
+                  <NavLink to="#" className="link-dark rounded">
                   Shipping Settings
-                  </a>
+                  </NavLink>
                 </li>
                 
               </ul>
@@ -46,19 +46,19 @@ const SideNav = () => {
             <div className="collapse" id="orders-collapse">
               <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li>
-                  <a href="#" className="link-dark rounded">
+                  <NavLink to="/OrdersManagement" className="link-dark rounded">
                     My Orders
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#" className="link-dark rounded">
+                  <NavLink to="#" className="link-dark rounded">
                     Cancellation
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#" className="link-dark rounded">
+                  <NavLink to="#" className="link-dark rounded">
                     Returned/ Refunded
-                  </a>
+                  </NavLink>
                 </li>
                 
               </ul>
@@ -76,14 +76,14 @@ const SideNav = () => {
             <div className="collapse" id="products-collapse">
               <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li>
-                  <a href="#" className="link-dark rounded">
+                  <NavLink to="#" className="link-dark rounded">
                     My products
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#" className="link-dark rounded">
+                  <NavLink to="#" className="link-dark rounded">
                     Add new products
-                  </a>
+                  </NavLink>
                 </li>
                 
               </ul>
@@ -102,19 +102,19 @@ const SideNav = () => {
             <div className="collapse" id="finance-collapse">
               <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li>
-                  <a href="#" className="link-dark rounded">
+                  <NavLink to="#" className="link-dark rounded">
                     My income
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#" className="link-dark rounded">
+                  <NavLink to="#" className="link-dark rounded">
                     My Balance
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#" className="link-dark rounded">
+                  <NavLink to="#" className="link-dark rounded">
                     Bank Account
-                  </a>
+                  </NavLink>
                 </li>
                 
               </ul>
@@ -133,9 +133,9 @@ const SideNav = () => {
             <div className="collapse" id="analaysis-collapse">
               <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li>
-                  <a href="#" className="link-dark rounded">
+                  <NavLink to="#" className="link-dark rounded">
                     Business Analaysis
-                  </a>
+                  </NavLink>
                 </li>
                                 
               </ul>
