@@ -1,7 +1,7 @@
 export interface Product {
-    name: string;
-    category: string;
-    descripyion: string;
+    name: string,
+    category: string,
+    descripyion: string,
     imageUrl: {
         "cover": string,
         "image1": string,
@@ -22,5 +22,6 @@ export interface Product {
         width: number,
         length: number,
         height: number
-    }
+    },
+    shippingType: string
 }

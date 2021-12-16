@@ -1,8 +1,48 @@
 import React from "react";
 import SideNav from "../widgets/SideNav";
 import "../../assets/css/order_management.css";
-import OrderListHeader from '../widgets/OrdersManagement/OrderListHeader'
-import OrderListItem from '../widgets/OrdersManagement/OrderListItem'
+import OrderListItem from "../widgets/OrdersManagement/OrderListItem";
+
+
+
+const product = {
+  name: "Earpods Bluetooth i12 TWS 5.0 wireless i12 with HIFI sound quality",
+  category: "Technology",
+  descripyion: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles ",
+  imageUrl: {
+      "cover": "https://cf.shopee.vn/file/7556e874cf766f3cb340e632c684def1",
+      image1:"",        
+      image2:"",        
+      image3:"",        
+      image4:"",        
+      image5:"",        
+      image6:"",        
+      image7:""        
+  },
+  brand: "No Brand",
+  warrantyType: "None",
+  price: 499000,
+  stock: 999,
+  skuCode: "EPXH121621VNA",
+  weight: 500,
+  parcelSize: {
+      width: 5,
+      length: 10,
+      height: 5
+  },
+  shippingType: "Fast"
+}
+
+const order1= {
+  product: product,
+  customer: "lincoln@23",
+  payment: product.price,
+  status:"Delivered",
+  action:"View details"
+}
+
+
+
 const OrdersManagement = () => {
   return (
     <div>
@@ -14,7 +54,7 @@ const OrdersManagement = () => {
         }}
       >
         <SideNav></SideNav>
-        <div  style={{margin:'0 64px', paddingTop:'64px'}}>
+        <div style={{ margin: "0 64px", paddingTop: "64px" }}>
           <h2>My Orders</h2>
           <nav>
             <div className="nav nav-tabs" id="nav-tab" role="tablist">
@@ -75,7 +115,28 @@ const OrdersManagement = () => {
               role="tabpanel"
               aria-labelledby="nav-all-tab"
             >
-              <h1>All products</h1>
+              <table className="order-list-header table table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Products</th>
+                  <th scope="col">Customer</th>
+                  <th scope="col">Payment</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Shipment</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="ordersList">
+                <OrderListItem order={order1}></OrderListItem>
+                <OrderListItem order={order1}></OrderListItem>
+                <OrderListItem order={order1}></OrderListItem>
+                <OrderListItem order={order1}></OrderListItem>
+                <OrderListItem order={order1}></OrderListItem>
+                <OrderListItem order={order1}></OrderListItem>
+                <OrderListItem order={order1}></OrderListItem>
+                <OrderListItem order={order1}></OrderListItem>
+              </tbody>
+            </table>
             </div>
             <div
               className="tab-pane fade"
@@ -83,7 +144,21 @@ const OrdersManagement = () => {
               role="tabpanel"
               aria-labelledby="nav-delivered-tab"
             >
-              <h1>Delivered Orders</h1>
+              <table className="order-list-header table table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Products</th>
+                  <th scope="col">Customer</th>
+                  <th scope="col">Payment</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Shipment</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="ordersList">
+                {/* <OrderListItem></OrderListItem> */}
+              </tbody>
+            </table>
             </div>
             <div
               className="tab-pane fade"
@@ -91,7 +166,21 @@ const OrdersManagement = () => {
               role="tabpanel"
               aria-labelledby="nav-cancelled-tab"
             >
-              <h1>Cancelled Orders</h1>
+              <table className="order-list-header table table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Products</th>
+                  <th scope="col">Customer</th>
+                  <th scope="col">Payment</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Shipment</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="ordersList">
+                {/* <OrderListItem></OrderListItem> */}
+              </tbody>
+            </table>
             </div>
             <div
               className="tab-pane fade"
@@ -99,13 +188,26 @@ const OrdersManagement = () => {
               role="tabpanel"
               aria-labelledby="nav-returned-tab"
             >
-              <h1>Cancelled Orders</h1>
+              <table className="order-list-header table table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Products</th>
+                  <th scope="col">Customer</th>
+                  <th scope="col">Payment</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Shipment</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="ordersList">
+                {/* <OrderListItem></OrderListItem> */}
+              </tbody>
+            </table>
             </div>
           </div>
-          <OrderListHeader></OrderListHeader>
-          <tbody className="ordersList">
-            {/* <OrderListItem></OrderListItem> */}
-          </tbody>
+          <div className="table-resposive-md">
+           
+          </div>
         </div>
       </div>
     </div>

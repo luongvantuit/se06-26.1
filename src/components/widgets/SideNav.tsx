@@ -59,6 +59,10 @@ const SideNav = () => {
                   <NavLink to="#" className="link-dark rounded">
                     Returned/ Refunded
                   </NavLink>
+                </li><li>
+                  <NavLink to="#" className="link-dark rounded">
+                    Delivered
+                  </NavLink>
                 </li>
                 
               </ul>

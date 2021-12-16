@@ -1,28 +1,28 @@
 import React from 'react'
-import { Product } from '../../../Product'
 import { Order } from '../../../Order'
+import '../../../assets/css/order_list_item.css'
+
 
 const OrderListItem = (props: {order: Order}) => {
     return (
-        <div className='orderListItem'>
-            <tr className="row">
-                <th className="orderProduct ">
+        
+            <tr>
+                <td className="orderProduct d-flex align-items-center">
                     <div className="orderProductImg" >
-                        <img src={props.order.product.imageUrl.cover} alt={props.order.product.name} />
-                        <div className="d-flex">
-                            <h3 className="orderProductName">{props.order.product.name}</h3>
-                            <p className="skuCode">{props.order.product.skuCode}</p>
-                        </div>
+                        <img src={props.order.product.imageUrl.cover} alt={props.order.product.name} style={{width:'64px', marginRight:'8px'}}/>
                     </div>
-                </th>
-                <th>{props.order.customer}</th>
-                <th>{props.order.payment}</th>
-                <th>{props.order.status}</th>
-                <th>{props.order.shipping}</th>
-                <th>{props.order.action}</th>
-
+                    <div className="d-flex flex-column justify-content-center align-items-start"  style={{maxWidth:'300px'}}>
+                        <p className="orderProductName text-align-left">{props.order.product.name}</p>
+                        <p className="skuCode">{props.order.product.skuCode}</p>
+                    </div>
+                </td>
+                <td>{props.order.customer}</td>
+                <td>{props.order.payment}</td>
+                <td>{props.order.status}</td>
+                <td>{props.order.product.shippingType}</td>
+                <td>{props.order.action}</td>
             </tr>
-        </div>
+        
     )
 }
 

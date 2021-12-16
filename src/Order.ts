@@ -5,6 +5,5 @@ export interface Order {
     customer: string,
     payment: number,
     status: string,
-    shipping: string,
     action: string
 }
