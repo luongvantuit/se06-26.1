@@ -46,7 +46,7 @@ const SideNav = () => {
             <div className="collapse" id="orders-collapse">
               <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li>
-                  <NavLink to="/OrdersManagement" className="link-dark rounded">
+                  <NavLink to="/OrdersManaggement" className="link-dark rounded">
                     My Orders
                   </NavLink>
                 </li>

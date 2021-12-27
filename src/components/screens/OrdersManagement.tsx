@@ -41,6 +41,22 @@ const order1 = {
   action: "View details",
 };
 
+const order2 = {
+  product: product,
+  customer: "lincoln@23",
+  payment: product.price,
+  status: "Cancelled",
+  action: "View details",
+};
+
+const order3 = {
+  product: product,
+  customer: "lincoln@23",
+  payment: product.price,
+  status: "Returned",
+  action: "View details",
+};
+
 const OrdersManagement = () => {
   return (
     <div>
@@ -196,14 +212,14 @@ const OrdersManagement = () => {
                 <table className="order-list-header table table-hover table-bordered mt-4">
                   <TableHeader></TableHeader>
                   <tbody className="ordersList">
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order2}></OrderListItem>
+                    <OrderListItem order={order2}></OrderListItem>
+                    <OrderListItem order={order2}></OrderListItem>
+                    <OrderListItem order={order2}></OrderListItem>
+                    <OrderListItem order={order2}></OrderListItem>
+                    <OrderListItem order={order2}></OrderListItem>
+                    <OrderListItem order={order2}></OrderListItem>
+                    <OrderListItem order={order2}></OrderListItem>
                   </tbody>
                 </table>
               </div>
@@ -218,14 +234,14 @@ const OrdersManagement = () => {
                 <table className="order-list-header table table-hover table-borderless mt-4">
                   <TableHeader></TableHeader>
                   <tbody className="ordersList">
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
-                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order3}></OrderListItem>
+                    <OrderListItem order={order3}></OrderListItem>
+                    <OrderListItem order={order3}></OrderListItem>
+                    <OrderListItem order={order3}></OrderListItem>
+                    <OrderListItem order={order3}></OrderListItem>
+                    <OrderListItem order={order3}></OrderListItem>
+                    <OrderListItem order={order3}></OrderListItem>
+                    <OrderListItem order={order3}></OrderListItem>
                   </tbody>
                 </table>
               </div>
