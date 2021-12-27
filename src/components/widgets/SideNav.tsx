@@ -2,10 +2,12 @@ import React from "react";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../../assets/css/side_nav.css'
-import { NavLink } from "react-router-dom";
+import { NavLink ,HashRouter} from "react-router-dom";
+
 const SideNav = () => {
   return (
     <div className="side-nav">
+      <HashRouter>
       <div className="flex-shrink-0 p-3 bg-white" style={{width:'280px'}}>
         
         <ul className="list-unstyled ps-0">
@@ -46,7 +48,7 @@ const SideNav = () => {
             <div className="collapse" id="orders-collapse">
               <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li>
-                  <NavLink to="/OrdersManaggement" className="link-dark rounded">
+                  <NavLink to="/OrdersManagement" className="link-dark rounded">
                     My Orders
                   </NavLink>
                 </li>
@@ -149,6 +151,7 @@ const SideNav = () => {
         </ul>
       </div>
       <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossOrigin="anonymous"></script>
+      </HashRouter>
       
     </div>
   );

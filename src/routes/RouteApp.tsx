@@ -6,11 +6,15 @@ import SignUpScreen from '../components/screens/SignUpScreen'
 import HomeScreen from '../components/screens/HomeScreen'
 import ContactScreen from '../components/screens/ContactScreen'
 import ServiceScreen from '../components/screens/ServiceScreen'
+import AddProduct from '../components/screens/AddProduct'
+import OrdersManagement from '../components/screens/OrdersManagement'
+import SideNav from '../components/widgets/SideNav'
 
 export default function RouteApp() {
     return (
         <HashRouter>
             <Header />
+            
             <Switch>
                 <Route exact path='/HomeScreen'>
                     <HomeScreen></HomeScreen>
@@ -32,6 +36,12 @@ export default function RouteApp() {
                 </Route>
                 <Route exact path='/SignUpScreen'>
                     <SignUpScreen></SignUpScreen>
+                </Route>
+                <Route exact path='/AddProduct'>
+                    <AddProduct></AddProduct>
+                </Route>
+                <Route exact path='/OrdersManagement'>
+                    <OrdersManagement></OrdersManagement>
                 </Route>
             </Switch> 
         </HashRouter>
