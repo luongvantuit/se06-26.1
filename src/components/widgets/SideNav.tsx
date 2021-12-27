@@ -27,7 +27,7 @@ const SideNav = () => {
                 </li>
                 <li>
                   <NavLink to="#" className="link-dark rounded">
-                  Shipping Settings
+                      Shipping Settings
                   </NavLink>
                 </li>
                 
@@ -85,7 +85,7 @@ const SideNav = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="#" className="link-dark rounded">
+                  <NavLink to="/AddProduct" className="link-dark rounded">
                     Add new products
                   </NavLink>
                 </li>

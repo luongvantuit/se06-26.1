@@ -2,22 +2,22 @@ import React from "react";
 import SideNav from "../widgets/SideNav";
 import "../../assets/css/order_management.css";
 import OrderListItem from "../widgets/OrdersManagement/OrderListItem";
-
-
+import TableHeader from "../widgets/OrdersManagement/TableHeader";
 
 const product = {
   name: "Earpods Bluetooth i12 TWS 5.0 wireless i12 with HIFI sound quality",
   category: "Technology",
-  descripyion: "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles ",
+  descripyion:
+    "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles ",
   imageUrl: {
-      "cover": "https://cf.shopee.vn/file/7556e874cf766f3cb340e632c684def1",
-      image1:"",        
-      image2:"",        
-      image3:"",        
-      image4:"",        
-      image5:"",        
-      image6:"",        
-      image7:""        
+    cover: "https://cf.shopee.vn/file/7556e874cf766f3cb340e632c684def1",
+    image1: "",
+    image2: "",
+    image3: "",
+    image4: "",
+    image5: "",
+    image6: "",
+    image7: "",
   },
   brand: "No Brand",
   warrantyType: "None",
@@ -26,22 +26,20 @@ const product = {
   skuCode: "EPXH121621VNA",
   weight: 500,
   parcelSize: {
-      width: 5,
-      length: 10,
-      height: 5
+    width: 5,
+    length: 10,
+    height: 5,
   },
-  shippingType: "Fast"
-}
+  shippingType: "Fast",
+};
 
-const order1= {
+const order1 = {
   product: product,
   customer: "lincoln@23",
   payment: product.price,
-  status:"Delivered",
-  action:"View details"
-}
-
-
+  status: "Delivered",
+  action: "View details",
+};
 
 const OrdersManagement = () => {
   return (
@@ -51,6 +49,7 @@ const OrdersManagement = () => {
           marginTop: "64px",
           marginLeft: "280px",
           backgroundColor: "#eee",
+          
         }}
       >
         <SideNav></SideNav>
@@ -115,28 +114,55 @@ const OrdersManagement = () => {
               role="tabpanel"
               aria-labelledby="nav-all-tab"
             >
-              <table className="order-list-header table table-hover table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">Products</th>
-                  <th scope="col">Customer</th>
-                  <th scope="col">Payment</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Shipment</th>
-                  <th scope="col">Actions</th>
-                </tr>
-              </thead>
-              <tbody className="ordersList">
-                <OrderListItem order={order1}></OrderListItem>
-                <OrderListItem order={order1}></OrderListItem>
-                <OrderListItem order={order1}></OrderListItem>
-                <OrderListItem order={order1}></OrderListItem>
-                <OrderListItem order={order1}></OrderListItem>
-                <OrderListItem order={order1}></OrderListItem>
-                <OrderListItem order={order1}></OrderListItem>
-                <OrderListItem order={order1}></OrderListItem>
-              </tbody>
-            </table>
+              <div className="table-resposive-md">
+                <table className="order-list-header table table-hover table-bordered mt-4">
+                  <TableHeader></TableHeader>
+                  <tbody className="ordersList">
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                  </tbody>
+                </table>
+              </div>
+              <nav aria-label="Page navigation example">
+                <ul className="pagination justify-content-center pb-4">
+                  <li className="page-item">
+                    <a className="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">
+                        <i className="fas fa-chevron-left"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link" href="#">
+                      1
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link" href="#">
+                      2
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link" href="#">
+                      3
+                    </a>
+                  </li>
+
+                  <li className="page-item">
+                    <a className="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">
+                        <i className="fas fa-chevron-right"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
             <div
               className="tab-pane fade"
@@ -144,21 +170,21 @@ const OrdersManagement = () => {
               role="tabpanel"
               aria-labelledby="nav-delivered-tab"
             >
-              <table className="order-list-header table table-hover table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">Products</th>
-                  <th scope="col">Customer</th>
-                  <th scope="col">Payment</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Shipment</th>
-                  <th scope="col">Actions</th>
-                </tr>
-              </thead>
-              <tbody className="ordersList">
-                {/* <OrderListItem></OrderListItem> */}
-              </tbody>
-            </table>
+              <div className="table-resposive-md">
+                <table className="order-list-header table table-hover table-bordered mt-4">
+                  <TableHeader></TableHeader>
+                  <tbody className="ordersList">
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                  </tbody>
+                </table>
+              </div>
             </div>
             <div
               className="tab-pane fade"
@@ -166,21 +192,21 @@ const OrdersManagement = () => {
               role="tabpanel"
               aria-labelledby="nav-cancelled-tab"
             >
-              <table className="order-list-header table table-hover table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">Products</th>
-                  <th scope="col">Customer</th>
-                  <th scope="col">Payment</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Shipment</th>
-                  <th scope="col">Actions</th>
-                </tr>
-              </thead>
-              <tbody className="ordersList">
-                {/* <OrderListItem></OrderListItem> */}
-              </tbody>
-            </table>
+              <div className="table-resposive-md">
+                <table className="order-list-header table table-hover table-bordered mt-4">
+                  <TableHeader></TableHeader>
+                  <tbody className="ordersList">
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                  </tbody>
+                </table>
+              </div>
             </div>
             <div
               className="tab-pane fade"
@@ -188,26 +214,24 @@ const OrdersManagement = () => {
               role="tabpanel"
               aria-labelledby="nav-returned-tab"
             >
-              <table className="order-list-header table table-hover table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">Products</th>
-                  <th scope="col">Customer</th>
-                  <th scope="col">Payment</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Shipment</th>
-                  <th scope="col">Actions</th>
-                </tr>
-              </thead>
-              <tbody className="ordersList">
-                {/* <OrderListItem></OrderListItem> */}
-              </tbody>
-            </table>
+              <div className="table-resposive-md">
+                <table className="order-list-header table table-hover table-borderless mt-4">
+                  <TableHeader></TableHeader>
+                  <tbody className="ordersList">
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                    <OrderListItem order={order1}></OrderListItem>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
-          <div className="table-resposive-md">
-           
-          </div>
+          <div className="table-resposive-md"></div>
         </div>
       </div>
     </div>
