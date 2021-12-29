@@ -5,14 +5,18 @@ import 'bootstrap'
 import Nav from './components/widgets/Nav';
 import Header from './components/widgets/Nav';
 import SignInScreen from './components/screens/SignInScreen';
-import User from './components/screens/User';
+import _404 from './components/screens/_404'
+import Footer from './components/widgets/Footer';
+import SignUpScreen from './components/screens/SignUpScreen';
+import ContactScreen from './components/screens/ContactScreen';
+import ServiceScreen from './components/screens/ServiceScreen';
 
 function App() {
   return (
     
     <>
       <RouterApp />
-      
+      <Footer></Footer> 
     </>
   );
 }
