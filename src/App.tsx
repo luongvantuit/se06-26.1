@@ -14,6 +14,7 @@ import Notifications from './components/screens/Notifications';
 import ProductDetails from './components/screens/ProductDetails';
 import { Comment } from '@babel/types';
 import ProductCarousel from './components/widgets/ProductDetails/ProductCarousel';
+import Payment from './components/screens/Payment'
 function App() {
   return (
     
@@ -21,6 +22,7 @@ function App() {
       <RouterApp />
       
       <Footer></Footer>
+    
     </>
   );
 }

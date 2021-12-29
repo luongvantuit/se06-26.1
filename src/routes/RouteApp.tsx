@@ -8,6 +8,7 @@ import ContactScreen from '../components/screens/ContactScreen'
 import ServiceScreen from '../components/screens/ServiceScreen'
 import Category from '../components/screens/Category'
 import ShoppingCart from '../components/screens/ShoppingCart'
+import Payment from '../components/screens/Payment'
 
 export default function RouteApp() {
     return (
@@ -40,6 +41,9 @@ export default function RouteApp() {
                 </Route>
                 <Route exact path='/ShoppingCart'>
                     <ShoppingCart></ShoppingCart>
+                </Route>
+                <Route exact path='/Payment'>
+                    <Payment></Payment>
                 </Route>
             </Switch> 
         </HashRouter>
