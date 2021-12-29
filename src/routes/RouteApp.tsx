@@ -9,6 +9,8 @@ import ServiceScreen from '../components/screens/ServiceScreen'
 import Category from '../components/screens/Category'
 import ShoppingCart from '../components/screens/ShoppingCart'
 import Payment from '../components/screens/Payment'
+import ProductDetails from '../components/screens/ProductDetails'
+import AddProduct from '../components/screens/AddProduct'
 
 export default function RouteApp() {
     return (
@@ -44,6 +46,12 @@ export default function RouteApp() {
                 </Route>
                 <Route exact path='/Payment'>
                     <Payment></Payment>
+                </Route>
+                <Route exact path='/ProductDetails'>
+                    <ProductDetails></ProductDetails>
+                </Route>
+                <Route exact path='/AddProduct'>
+                    <AddProduct></AddProduct>
                 </Route>
             </Switch> 
         </HashRouter>
