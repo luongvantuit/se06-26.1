@@ -11,12 +11,16 @@ import SignUpScreen from './components/screens/SignUpScreen';
 import ContactScreen from './components/screens/ContactScreen';
 import ServiceScreen from './components/screens/ServiceScreen';
 import Notifications from './components/screens/Notifications';
+import ProductDetails from './components/screens/ProductDetails';
+import { Comment } from '@babel/types';
+import ProductCarousel from './components/widgets/ProductDetails/ProductCarousel';
 function App() {
   return (
     
     <>
       <RouterApp />
-      <Notifications></Notifications>
+      
+      <Footer></Footer>
     </>
   );
 }

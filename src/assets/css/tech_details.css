@@ -1,0 +1,18 @@
+.technical_details {
+    padding-left: 64px;
+}
+
+.details {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.details .tech_label {
+    font-weight: 700;
+}
+
+.tech_label::after {
+    content: ':';
+    margin: 0 16px;
+}

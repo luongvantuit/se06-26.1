@@ -37,6 +37,10 @@
     color: #fff;
 }
 
+.category .row {
+    margin-top: 0;
+}
+
 .category ul {
     padding-left: 0;
 }
