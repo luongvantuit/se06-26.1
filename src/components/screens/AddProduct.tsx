@@ -1,7 +1,7 @@
 import React from "react";
 import SideNav from "../widgets/SideNav";
 import "bootstrap";
-import AddImage from "../widgets/AddProduct.tsx/AddImage";
+import AddImage from "../widgets/AddProduct/AddImage"
 import ButtonGreen from "../widgets/ButtonGreen";
 import "../../assets/css/add_product.css";
 const AddProduct = () => {
