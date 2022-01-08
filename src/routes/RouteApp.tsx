@@ -30,10 +30,10 @@ export default function RouteApp() {
                     <ContactScreen></ContactScreen>
                 </Route>
                 <Route exact path='/OrderScreen'>
-                    {/* <OrderScreen></OrderScreen> */}
+                    {/* <OrdersManagement></OrdersManagement> */}
                 </Route>
                 <Route exact path='/CartScreen'>
-                    {/* <CartScreen></CartScreen> */}
+                    <ShoppingCart></ShoppingCart>
                 </Route>
                 <Route exact path='/SignInScreen'>
                     <SignInScreen></SignInScreen>

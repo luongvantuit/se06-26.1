@@ -73,6 +73,11 @@ form .form-button {
     justify-content: center;
 }
 
+form .form-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .form-button .form__forgot-password {
     text-align: center;
     margin: 0px !important;
@@ -156,97 +161,6 @@ button:hover {
 
 
 /* Footer */
-
-.footer {
-    background-color: #000;
-    color: #fff;
-}
-
-.subscription {
-    margin: 32px 0;
-}
-
-.subscription h3 {
-    font-weight: 600;
-    font-size: 28px;
-}
-
-.subscription .email-input {
-    width: 100%;
-    padding: 10px 12px;
-    border-radius: 4px;
-    background-color: #000;
-    outline: none;
-    border: 1px solid #fff;
-}
-
-.subscription .email-input:focus {
-    color: #fff;
-}
-
-.subscription button {
-    width: 100%;
-}
-
-.category {}
-
-.category .category__header {
-    font-weight: 600;
-    color: #fff;
-}
-
-.category ul {
-    padding-left: 0;
-}
-
-.category .list-item {
-    list-style-type: none;
-}
-
-.category li a {
-    color: #808081;
-}
-
-.category__list .list-item span {
-    color: #40AD87;
-}
-
-.socials .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.socials .socials-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.socials .socials-group i {
-    margin-right: 12px;
-}
-
-.socials .socials-group i:hover {
-    cursor: pointer;
-}
-
-.socials .payment {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.payment .brand {
-    background-color: #CCDEFF;
-    padding: 0 12px;
-    height: 24px;
-    margin: 0 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-}
 
 
 /* Resposive */

@@ -15,7 +15,7 @@ import Footer from "../widgets/Footer";
 export default function HomeScreen() {
   return (
     <div>
-      <div className="container">
+      <div className="container" >
         <div
           id="carouselExampleControls"
           className="carousel slide banner-home"
