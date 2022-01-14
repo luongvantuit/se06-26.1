@@ -28,17 +28,17 @@ export default function Notifications(){
                     <a href="#" className="component__advance">My Shop Coins</a>
                 </div>
             </div>
-            <div className="main col-10 col-lg-9">
+            <div className="main col-10 col-lg-8">
                 <div className="wrap">
                     <div className="notification d-flex">
                         <img className="notification__image " src={image} alt="" />
-                        <p className="notification__paragraph col-md-7 col-lg-9">datasfashion199 đã đánh giá đơn hàng 21126AVCXDTHBJ9. Vui lòng
+                        <p className="notification__paragraph col-md-7 col-lg-8">datasfashion199 đã đánh giá đơn hàng 21126AVCXDTHBJ9. Vui lòng
                             đánh giá sản  phẩm trước ngày 14-12-2012. 21:28 29-11-2021</p>
                         <button className="btn notification__button">Xem chi tiết</button>
                     </div>
                     <div className="notification d-flex">
                         <img className="notification__image " src={vouncher} alt="" />
-                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-9">Nóng hổi! Săn SIÊU VOUCHER trước giờ G <br />
+                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-8">Nóng hổi! Săn SIÊU VOUCHER trước giờ G <br />
                             ☄️ Loạt voucher giảm đến 212K
                             🔥 Mã hoàn đến 412K Xu
                             ⏰ Tung mới mỗi 30' từ 21H hôm nay
@@ -47,7 +47,7 @@ export default function Notifications(){
                     </div>
                     <div className="notification d-flex">
                         <img className="notification__image " src={backcoin} alt="" />
-                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-9">Hàng Hot đến rồi đây! Mau mở ví! <br />
+                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-8">Hàng Hot đến rồi đây! Mau mở ví! <br />
                             💥💥 Voucher hoàn xu Xtra
                             🌈 Đã có sẵn trong kho voucher của bạn
                             ⏰ Hiệu lực: 0H 11/12/2021 - 23H59 17/12/2021 <br />
@@ -56,7 +56,7 @@ export default function Notifications(){
                     </div>
                     <div className="notification d-flex">
                         <img className="notification__image " src={backcoin} alt="" />
-                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-9">Hàng Hot đến rồi đây! Mau mở ví! <br />
+                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-8">Hàng Hot đến rồi đây! Mau mở ví! <br />
                             💥💥 Voucher hoàn xu Xtra
                             🌈 Đã có sẵn trong kho voucher của bạn
                             ⏰ Hiệu lực: 0H 11/12/2021 - 23H59 17/12/2021 <br />
@@ -65,7 +65,7 @@ export default function Notifications(){
                     </div>
                     <div className="notification d-flex">
                         <img className="notification__image " src={backcoin} alt="" />
-                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-9">Hàng Hot đến rồi đây! Mau mở ví! <br />
+                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-8">Hàng Hot đến rồi đây! Mau mở ví! <br />
                             💥💥 Voucher hoàn xu Xtra
                             🌈 Đã có sẵn trong kho voucher của bạn
                             ⏰ Hiệu lực: 0H 11/12/2021 - 23H59 17/12/2021 <br />
@@ -74,7 +74,7 @@ export default function Notifications(){
                     </div>
                     <div className="notification d-flex">
                         <img className="notification__image " src={backcoin} alt="" />
-                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-9">Hàng Hot đến rồi đây! Mau mở ví! <br />
+                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-8">Hàng Hot đến rồi đây! Mau mở ví! <br />
                             💥💥 Voucher hoàn xu Xtra
                             🌈 Đã có sẵn trong kho voucher của bạn
                             ⏰ Hiệu lực: 0H 11/12/2021 - 23H59 17/12/2021 <br />
@@ -83,7 +83,7 @@ export default function Notifications(){
                     </div>
                     <div className="notification d-flex">
                         <img className="notification__image " src={backcoin} alt="" />
-                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-9">Hàng Hot đến rồi đây! Mau mở ví! <br />
+                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-8">Hàng Hot đến rồi đây! Mau mở ví! <br />
                             💥💥 Voucher hoàn xu Xtra
                             🌈 Đã có sẵn trong kho voucher của bạn
                             ⏰ Hiệu lực: 0H 11/12/2021 - 23H59 17/12/2021 <br />
@@ -92,7 +92,7 @@ export default function Notifications(){
                     </div>
                     <div className="notification d-flex">
                         <img className="notification__image " src={backcoin} alt="" />
-                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-9">Hàng Hot đến rồi đây! Mau mở ví! <br />
+                        <p className="notification__paragraph col-xs-5 col-md-7 col-lg-8">Hàng Hot đến rồi đây! Mau mở ví! <br />
                             💥💥 Voucher hoàn xu Xtra
                             🌈 Đã có sẵn trong kho voucher của bạn
                             ⏰ Hiệu lực: 0H 11/12/2021 - 23H59 17/12/2021 <br />
