@@ -15,6 +15,7 @@ import OrdersManagement from '../components/screens/OrdersManagement'
 import SideNav from '../components/widgets/SideNav'
 import Messenger from '../components/screens/Messenger'
 import Card from '../components/screens/Card'
+import User from '../components/screens/User'
 
 export default function RouteApp() {
     return (
@@ -63,6 +64,9 @@ export default function RouteApp() {
                 </Route>
                 <Route exact path='/OrdersManagement'>
                     <OrdersManagement></OrdersManagement>
+                </Route>
+                <Route exact path='/User'>
+                    <User></User>
                 </Route>
                 <Route exact path='/Messenger'>
                     <Messenger></Messenger>
