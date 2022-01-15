@@ -4,9 +4,7 @@
     font-family: "Poppins";
     font-style: normal;
   }
-  table {
-    border: 2px solid yellow;
-}
+ 
   body {
     background-color: #ffffff;
     box-sizing: border-box;
@@ -54,13 +52,14 @@
       padding: 15px;
       padding-left: 200px;
       padding-right: 0px;
-      border-bottom: 1px dotted #40AD87;
+      border-bottom: 1px dotted;
      
   }
   .tablePayment{
       float: right;
       border : 1px solid #40AD87;
       background-color: #40AD87;
+     border-radius: 8px;
       
   }
   .tablePayment td {
