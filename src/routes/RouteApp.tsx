@@ -7,6 +7,8 @@ import HomeScreen from '../components/screens/HomeScreen'
 import ContactScreen from '../components/screens/ContactScreen'
 import ServiceScreen from '../components/screens/ServiceScreen'
 import User from '../components/screens/User'
+import Messenger from '../components/screens/Messenger'
+import Card from '../components/screens/Card'
 
 export default function RouteApp() {
     return (
@@ -36,6 +38,12 @@ export default function RouteApp() {
                 </Route>
                 <Route exact path='/User'>
                     <User></User>
+                </Route>
+                <Route exact path='/Messenger'>
+                    <Messenger></Messenger>
+                </Route>
+                <Route exact path='/Card'>
+                    <Card></Card>
                 </Route>
             </Switch> 
         </HashRouter>
