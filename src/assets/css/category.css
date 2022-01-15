@@ -1,0 +1,350 @@
+p{
+    margin: 0px;
+}
+a:hover{
+    cursor: pointer;
+}
+.row{
+    margin-top: 30px;
+}
+.cate-banner img {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 65px;
+}
+.btn-modal{
+    display: none;
+}
+.wrapper-category{
+    margin-bottom: 50px;
+}
+/*  CONTENT LEFT  */
+.category-name{
+    margin: 10px 0px 20px 0px;
+}
+.content-left{
+    padding-right: 20px;
+    text-align: center;
+}
+.back i{
+    font-size: 12px;
+    margin-right: 3px;
+}
+.content-left img{
+    width: 200px;
+    margin-top: 20px;
+}
+.p_filters{
+    font-weight: 800;
+    font-size: 18px;
+}
+.filter-title{
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    margin-top: 10px;
+}
+.filter-title p{
+    font-weight: bold;
+}
+.filter-title i{
+    font-size: 10px;
+}
+.filter-item{
+    display: flex;
+    justify-content: space-between;
+}
+.filter-item p{
+    font-size: 14px;
+}
+.filters{
+    background: #F5F7FF;
+    padding: 10px;
+}
+.filters button{
+    border: 1px solid #A2A6B0;
+    background: #F5F7FF;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 8px 10px;
+}
+.btn-color{
+    display: flex;
+    height: 40px;
+    width: 70px;
+}
+.color{
+    margin-right: 5px;
+}
+.color-1{
+    background: black !important;
+}
+.color-2{
+    background: red !important;
+}
+.apply-filters{
+    background: #40AD87 !important;
+    border: 0px !important;
+    color: white;
+}
+
+/*  SHOW-SORT  */
+.sort-show{
+    justify-content: space-between;
+}
+.sort-show-item{
+    padding: 5px 10px;
+    border: 1px solid #CACDD8;
+    align-items: center;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.sort-show-item small{
+    color: #A2A6B0;
+    margin-right: 3px;
+    font-weight: bold;
+}
+.sort-show-item p{
+    font-size: 14px;
+}
+.current-cate-item {
+    align-items: center;
+    border: 1px solid #CACDD8;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.current-cate-item small{
+    font-size: 14px;
+    margin: 0px 5px;
+    color: #A2A6B0;
+}
+.current-cate-item i{
+    color: #C94D3F;
+    font-size: 18px;
+}
+.clear-all{
+    background: #fff;
+    border: 1px solid #CACDD8;
+    padding: 5px 10px !important;
+    font-size: 14px !important;
+    font-weight: 500;
+    margin-left: 15px !important;
+    display: unset !important;
+    color: black;
+}
+#sort, #show{
+    border: 0px;
+}
+#sort, #show:focus-visible{
+    outline: none;
+}
+
+/* form product */
+.price{
+    justify-content: space-between;
+    align-items: center;
+}
+.price-address{
+    margin-top: 3px;
+}
+.sold{
+    font-size: 13px;
+}
+.address{
+    font-size: 13px;
+    font-weight: 500;
+}
+.product{
+    padding: 5px 10px;
+}
+.img-product{
+    text-align: center;
+}
+.img-product img{
+    width: 80%;
+}
+.product h5{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.in-stock{
+    color: #78A962;
+    align-items: baseline;
+    font-size: 13px;
+}
+.in-stock i{
+    margin-right: 5px;
+}
+.checked{
+    color: #E9A426;
+    font-size: 10px;
+}
+.checked5{
+    color: #CACDD8;
+}
+.evaluate{
+    align-items: center;
+    justify-content: space-between;
+}
+.evaluate p{
+    color: #A2A6B0;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.star span{
+    margin-right: -4px;
+}
+.cost{
+    color: #666;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+.sale{
+    font-size: 16px;
+    margin-bottom: 0px !important;
+}
+.row-new{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .container{
+        max-width: 1000px;
+    }
+    .content-left img {
+        width: 175px ;
+    }
+}
+@media (min-width: 992px) {
+    .product-category-page{
+        max-width: 20% !important;
+        flex: 0 0 20%;
+    }
+}
+@media (max-width: 992px) {
+    .carousel-item img {
+        height: 220px;
+        max-inline-size: -webkit-fill-available;
+    }
+
+    .product-5 {
+        display: none;
+    }
+    .product-4{
+        display: unset !important;
+    }
+    .product {
+        padding: 5px 8px;
+    }
+
+    .star span {
+        margin-right: -5px;
+    }
+
+    .product h5 {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .sort-show-item, .current-cate-item, .clear-all {
+        padding: 3px 5px;
+    }
+
+    #sort, #show {
+        font-size: 13px;
+    }
+
+    .clear-all, .sort-show-item small, .cost, .sold, .current-cate-item, .filter-item p, .bread-crumbs, .back {
+        font-size: 12px;
+    }
+
+    .filter-title p {
+        font-size: 13px;
+    }
+
+    .row {
+        margin-top: 15px;
+    }
+
+    .current-cate-item i, .filters button {
+        font-size: 14px;
+    }
+
+    .category-name {
+        font-size: 22px;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 160px;
+    }
+    .product-3{
+        display: none;
+    }
+    .evaluate{
+        display: block !important;
+    }
+    .evaluate p{
+        margin-left: 0px;
+    }
+    .content-left img {
+        width: 150px;
+    }
+    .clear-all, .sort-show-item small, .cost, .sold, .current-cate-item, .filter-item p, .bread-crumbs, .back {
+        font-size: 11px;
+    }
+    .sort-show-item, .current-cate-item, .clear-all {
+        padding: 2px 3px;
+    }
+    .sort-show-item, .clear-all{
+        margin-left: 2px;
+    }
+    .current-cate{
+        margin-top: 10px;
+        place-content: start;
+    }
+    .filters button{
+        padding: 5px 8px;
+    }
+    .content-left{
+        align-self: start;
+    }
+}
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 130px;
+    }
+    .product-4, .product-3{
+        display: none;
+    }
+    .row-new {
+        display: flex;
+    }
+    .content-left{
+        display: none;
+    }
+    .btn-modal{
+        display: unset !important;
+    }
+    .filters-modal{
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .modal-content{
+        border-radius: 20px;
+    }
+    .modal{
+        padding-right: 0px !important;
+    }
+    .cate-banner img {
+        height: 70px;
+    }
+}
+@media (max-width: 430px) {
+    .cate-banner img {
+        height: 55px;
+    }
+}

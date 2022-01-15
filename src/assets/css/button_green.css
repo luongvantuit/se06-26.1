@@ -1,0 +1,20 @@
+.button__green {
+    background-color: #40AD87;
+    padding: 8px;
+    width: auto;
+    max-width: 128px;
+    min-width: 96px;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    margin: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.button__green:hover {
+    color: #40AD87;
+    background-color: #eee;
+    border: 1px solid #40AD87;
+    transition: all 0.2s ease-in-out;
+}

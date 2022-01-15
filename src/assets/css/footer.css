@@ -37,6 +37,10 @@
     color: #fff;
 }
 
+.category .row {
+    margin-top: 0;
+}
+
 .category ul {
     padding-left: 0;
 }
@@ -99,16 +103,15 @@
 }
 
 @media screen and (max-width: 767px) {
-    .footer {}
+    .btn-subscribe>button {
+        font-size: 12px;
+    }
     .email-input {
         margin-bottom: 24px;
         margin-top: 24px;
     }
     .subscription h3 {
         font-size: 20px;
-    }
-    .socials .container {
-        justify-content: space-between!important;
     }
 }
 

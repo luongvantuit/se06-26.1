@@ -1,0 +1,127 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"); */
+* {
+    box-sizing: border-box;
+    font-family: "Poppins";
+    font-style: normal;
+  }
+ 
+  body {
+    background-color: #ffffff;
+    box-sizing: border-box;
+  }
+  h5 {
+      margin-top: 5px;
+  }
+  .btn {
+      border-radius: 5px;
+      color: #000;
+  }
+  .payment__top {
+      margin-top: 150px;
+  }
+  
+  .shop__right--btn {
+      background-color: #40AD87;
+      margin-left: 10px;
+      width: 200px;
+  }
+  .shop__right :hover {
+      background-color: #008254;
+      color: #ffffff;
+  }
+  .payment__main {
+      margin-top: 15px;
+      border-bottom: 1px dotted #40AD87;
+      padding-bottom: 15px;
+  }
+  .shop__right--btn--icon {
+      padding-right: 5px;
+  }
+  .payment__bottom {
+      margin-top: 15px;
+      margin-bottom: 15px;
+     
+  }
+  .shop__image--img {
+      width: 360px;
+      height: 110px;
+      padding-bottom: 5px;
+  }
+  
+  .shop__image {
+      padding: 15px;
+      padding-left: 200px;
+      padding-right: 0px;
+      border-bottom: 1px dotted;
+     
+  }
+  .tablePayment{
+      float: right;
+      border : 1px solid #40AD87;
+      background-color: #40AD87;
+     border-radius: 8px;
+      
+  }
+  .tablePayment td {
+      padding: 5px 15px 5px 15px;
+  }
+  .tablePayment__collumn--right{
+      padding-left: 10px;
+      color: #000;
+  }
+  .buttonPayment {
+      float: right;
+      clear: both;
+      background-color: #40AD87;
+      margin-top: 15px;
+  }
+  .buttonPayment:hover {
+      background-color: #008254;
+      color: #ffffff;
+  }
+  @media screen and (max-width:1024px) {
+    
+    .shop__left--title {
+        font-size: 16px;
+        padding: 20px 0px 0px 0px;
+    }
+    h5 {
+        margin-top: 0px;
+    }
+  }
+  @media screen and (max-width:992px) {
+    .shop__right--btn {
+        font-size: 13px;
+        width: 150px;
+
+    }
+    .shop__left--title {
+        font-size: 16px;
+        padding: 13px 0px 0px 0px;
+    }
+  }
+  @media screen and (max-width:768px) {
+    .shop__right--btn {
+        font-size: 12px;
+        width: 150px;
+
+    }
+    .shop__left--title {
+        font-size: 14px;
+        padding: 13px 0px 0px 0px;
+    }
+  }
+  @media screen and (max-width:576px) {
+      .shop__image {
+          padding-left: 0px;
+       
+      }
+      .shop__right--btn {
+        font-size: 10px;
+    }
+       
+  }
+  /* .shop__image :last-child {
+      margin-bottom: 15px;
+  } */
+  
