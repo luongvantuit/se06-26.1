@@ -14,7 +14,7 @@ export default function Card() {
     return (
         <div>
             <div id='main-card'>
-                <div className='container'>
+                <div className='container hearder-green'>
                     <div className='nen'>
                         <nav aria-label="breadcrumb-card">
                                 <li className="breadcrumb-card  mb-5 mt-4" >

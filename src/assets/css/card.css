@@ -161,6 +161,11 @@
         padding-left: 70px;
     }
 } */
+@media screen and (max-width: 992px) {
+    .hearder-green{
+        position: unset !important;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .nen nav {

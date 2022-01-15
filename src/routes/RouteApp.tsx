@@ -6,11 +6,6 @@ import SignUpScreen from '../components/screens/SignUpScreen'
 import HomeScreen from '../components/screens/HomeScreen'
 import ContactScreen from '../components/screens/ContactScreen'
 import ServiceScreen from '../components/screens/ServiceScreen'
-<<<<<<< HEAD
-import User from '../components/screens/User'
-import Messenger from '../components/screens/Messenger'
-import Card from '../components/screens/Card'
-=======
 import Category from '../components/screens/Category'
 import ShoppingCart from '../components/screens/ShoppingCart'
 import Payment from '../components/screens/Payment'
@@ -18,7 +13,8 @@ import ProductDetails from '../components/screens/ProductDetails'
 import AddProduct from '../components/screens/AddProduct'
 import OrdersManagement from '../components/screens/OrdersManagement'
 import SideNav from '../components/widgets/SideNav'
->>>>>>> 36506db3bf70ae4e067e4db31631c76516db192e
+import Messenger from '../components/screens/Messenger'
+import Card from '../components/screens/Card'
 
 export default function RouteApp() {
     return (
