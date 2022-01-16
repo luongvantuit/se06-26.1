@@ -1,8 +1,25 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import React, { useState } from "react";
+import { NavLink, useHistory } from "react-router-dom";
 import "../../assets/css/signin.css";
+import auth from "../../firebase/firebase.auth";
 
 export default function SignInScreen() {
+  const [authenticated,setAuthenticated] =useState<boolean>(false);
+  const [email,setEmail] =useState('');
+  const [password,setPassword] =useState('');
+  const [error,setError] =useState('');
+  const history = useHistory();
+  const validateEmail = (email: string) =>{
+    return email.match(
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+  };
+  const signInWithEmailAndPassword = ()=>{
+     if(error !== '') setError('');
+     setAuthenticated(true);
+     signInWithEmailAndPassword() 
+  }
   return (
     <div>
       <div id="main">
@@ -57,14 +74,14 @@ export default function SignInScreen() {
                     <input
                       type="checkbox"
                       className="form-check-input"
-                      id="exampleCheck1"
+                      id="rememberPass"
                     ></input>
-                    <label className="form-check-label" htmlFor="exampleCheck1">
+                    <label className="form-check-label" htmlFor="rememberPass">
                       Remember Password
                     </label>
                   </div>
                   <div className="form-button mt-4 row">
-                    <button className="form__btn-signin col-md-4 col-sm-12">
+                    <button className="form__btn-signin col-md-4 col-sm-12" onClick={()=> signInWithEmailAndPassword ()}>
                       Sign in
                     </button>
                     <div className="form__forgot-password col-md-8 col-sm-12 mb-3">

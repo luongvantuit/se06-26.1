@@ -1,13 +1,40 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink, useHistory } from "react-router-dom";
 import "../../assets/css/signup.css";
-import payment1 from "../../assets/img/payment-methods/light/payment1.svg";
-import payment2 from "../../assets/img/payment-methods/light/payment2.svg";
-import payment3 from "../../assets/img/payment-methods/light/payment3.svg";
-import payment4 from "../../assets/img/payment-methods/light/payment4.svg";
-import payment5 from "../../assets/img/payment-methods/light/payment5.svg";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import auth from "../../firebase/firebase.auth";
 
 export default function SignUpScreen() {
+  const [registered,setRegistered] =useState<boolean>(false);
+  const [email,setEmail] =useState('');
+  const [name,setName] =useState('');
+  const [password,setPassword] =useState('');
+  const [confirm,setConfirm] =useState('');
+  const [error,setError] =useState('');
+  const history = useHistory();
+  const validateEmail = (email: string) =>{
+    return email.match(
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+  };
+  const signUpWithEmailAndPassword = ()=>{
+      if (password != confirm) setError('Confirm password is not matched. Please try again');
+      if( !validateEmail(email) ) setError('Email isn\'t correct');
+      if( error !=='' ) setError('');
+      setRegistered(true);
+      createUserWithEmailAndPassword(auth,email,password)
+      .then(user =>{
+        console.log(user);
+        history.push('/SignInScreen')
+      }).catch(error => {
+        console.log(error)
+        setError(error);
+        setRegistered(false);
+      })
+
+
+
+  }
   return (
     <div>
       <div id="main">
@@ -35,49 +62,62 @@ export default function SignUpScreen() {
                     If you have an account, sign in with your email address.
                   </p>
                   <div className="form-group mb-4 mt-4">
-                    <label htmlFor="exampleInputEmail1">
+                    <label htmlFor="inputEmail">
                       Email or Phone number <span className="span">*</span>
                     </label>
                     <input
+
                       type="email"
                       className="form-control"
-                      id="exampleInputEmail1"
+                      id="inputEmail"
                       aria-describedby="emailHelp"
                       placeholder="Enter email or Phone number"
+                      onChange={event => setEmail(event.target.value)}
+                      value={email}
+                      required
                     ></input>
                   </div>
                   <div className="form-group mb-4 mt-4">
-                    <label htmlFor="exampleInputEmail1">
-                      Username <span className="span">*</span>
+                    <label htmlFor="userName">
+                      Full Name <span className="span">*</span>
                     </label>
                     <input
-                      type="email"
+                      type="text"
                       className="form-control"
-                      id="exampleInputEmail1"
+                      id="userName"
                       aria-describedby="emailHelp"
                       placeholder="Your Name"
+                      onChange={event => setName(event.target.value)}
+                      value={name}
+                      required
                     ></input>
                   </div>
                   <div className="form-group mb-4 mt-4">
-                    <label htmlFor="exampleInputPassword1">
+                    <label htmlFor="inputPassword">
                       Password <span className="span">*</span>
                     </label>
                     <input
                       type="password"
                       className="form-control"
-                      id="exampleInputPassword1"
+                      id="inputPassword"
                       placeholder="Enter the Password"
+                      onChange={event => setPassword(event.target.value)}
+                      value={password}
+                      required
                     ></input>
                   </div>
                   <div className="form-group mb-4 mt-4">
-                    <label htmlFor="exampleInputPassword1">
+                    <label htmlFor="passwordRepeat">
                       Confirm Password <span className="span">*</span>
                     </label>
                     <input
                       type="password"
                       className="form-control"
-                      id="exampleInputPassword1"
+                      id="passwordRepeat"
                       placeholder="Confirm password"
+                      onChange={event => setConfirm(event.target.value)}
+                      value={confirm}
+                      
                     ></input>
                   </div>
                   <div className="form-group form-check">
@@ -94,8 +134,11 @@ export default function SignUpScreen() {
                     </label>
                   </div>
                   <div className="form-button mt-4 col-sm-12">
-                    <button className="form__btn col-md-4 col-sm-4">
-                      Login
+                    <button 
+                      disabled= {registered}
+                      className="form__btn col-md-4 col-sm-4"
+                      onClick={() =>signUpWithEmailAndPassword()}>
+                      Sign Up
                     </button>
                   </div>
                 </form>
