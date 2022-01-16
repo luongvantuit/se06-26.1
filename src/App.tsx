@@ -15,13 +15,14 @@ import ProductDetails from './components/screens/ProductDetails';
 import { Comment } from '@babel/types';
 import ProductCarousel from './components/widgets/ProductDetails/ProductCarousel';
 import Payment from './components/screens/Payment'
+
 function App() {
   return (
     
     <>
       <RouterApp />
-      
       <Footer></Footer>
+  
     
     </>
   );
