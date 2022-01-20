@@ -13,8 +13,8 @@
 }
 
 .button__green:hover {
-    color: #40AD87;
-    background-color: #eee;
-    border: 1px solid #40AD87;
+    color: #fff;
+    background-color: #3ba07d;
+    /* border: 1px solid #40AD87; */
     transition: all 0.2s ease-in-out;
 }

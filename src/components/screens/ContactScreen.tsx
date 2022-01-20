@@ -48,11 +48,11 @@ export default function ContactScreen() {
                             </div>
                             <div className="col-12">
                                 <div className="mb-3">
-                                    <label htmlFor="exampleInputPassword1" className="form-label">What Your Mind?  <span className="star">*</span></label>
+                                    <label htmlFor="exampleInputPassword1" className="form-label">What You Mind?  <span className="star">*</span></label>
                                     <textarea className="form-control" placeholder='Jot us a note and well get back to you as quickly as possible' rows={6} defaultValue={" "} />
                                 </div>
                             </div>
-                            <button type="submit" className="btn ">Submit</button>
+                            <button type="submit" className="button__green ">Submit</button>
                         </div>
                     </form>
                 </div>

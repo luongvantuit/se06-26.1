@@ -1,20 +1,21 @@
 export interface Product {
     name: string,
     category: string,
-    descripyion: string,
+    description: string,
     imageUrl: {
-        "cover": string,
-        "image1": string,
-        "image2": string,
-        "image3": string,
-        "image4": string,
-        "image5": string,
-        "image6": string,
-        "image7": string,
+        cover: string,
+        image1: string,
+        image2: string,
+        image3: string,
+        image4: string,
+        image5: string,
+        image6: string,
+        image7: string,
     },
     brand: string,
     warrantyType: string,
     price: number,
+    saleOff: number,
     stock: number,
     skuCode: string,
     weight: number,
@@ -23,5 +24,6 @@ export interface Product {
         length: number,
         height: number
     },
-    shippingType: string
+    shippingType: string,
+    sale: number
 }

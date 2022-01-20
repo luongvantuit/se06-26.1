@@ -7,7 +7,7 @@ import "../../../assets/css/product_carousel.css";
 
 const ProductCarousel = () => {
   return (
-    <div>
+    <div className="product-carousel">
       <Carousel showArrows={true} showIndicators={false}>
         <div className="image">
           <img src="https://cf.shopee.vn/file/7556e874cf766f3cb340e632c684def1" />

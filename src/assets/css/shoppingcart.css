@@ -1,19 +1,25 @@
-.shopping-cart{
+.shopping-cart {
     margin-top: 100px;
     margin-bottom: 50px;
 }
-.info-product{
+
+.info-product {
     font-size: 13px;
 }
-.table th, .table td {
+
+.table th,
+.table td {
     padding: 5px;
     vertical-align: middle;
     font-weight: 500;
 }
-th, .qty{
+
+th,
+.qty {
     text-align: center;
 }
-td button{
+
+td button {
     width: 30px;
     height: 30px;
     border-radius: 30px;
@@ -22,39 +28,55 @@ td button{
     color: #A2A6B0;
     font-size: 14px;
     margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.cart-title{
+
+button>.fas {
+    margin-left: 0!important;
+}
+
+.cart-title {
     margin-bottom: 20px;
     margin-top: 10px;
 }
-.cart-right{
+
+.cart-right {
     background: #F5F7FF;
     padding: 20px;
 }
-.cart-address{
+
+.cart-address {
     display: grid;
     margin-top: 8px;
 }
-.cart-address select{
+
+.cart-address select {
     padding: 4px;
 }
-.summary label{
+
+.summary label {
     margin-bottom: 2px;
     font-size: 13px;
 }
-.summary h6{
+
+.summary h6 {
     margin-bottom: 2px;
 }
-.discount-code h6{
+
+.discount-code h6 {
     margin-top: 20px;
     margin-bottom: 5px;
 }
-.discount-code input{
+
+.discount-code input {
     width: 100%;
     margin-bottom: 10px;
     padding: 0px 5px;
 }
-.discount-code button{
+
+.discount-code button {
     width: 100%;
     border: 1px solid #40AD87;
     border-radius: 20px;
@@ -62,13 +84,15 @@ td button{
     padding: 3px 5px;
     color: #40AD87;
 }
-.cost-item{
+
+.cost-item {
     display: flex;
     justify-content: space-between;
     font-size: 13px;
     font-weight: 500;
 }
-.costs-checkout{
+
+.costs-checkout {
     background: #40AD87;
     width: 100%;
     border-radius: 20px;
@@ -77,24 +101,28 @@ td button{
     color: white;
     margin-top: 10px;
 }
-.details-address{
+
+.details-address {
     width: 100%;
     padding: 0px 5px;
 }
-@media (max-width: 992px){
-    .cart-left{
+
+@media (max-width: 992px) {
+    .cart-left {
         padding: 5px;
     }
-    .cart-right{
+    .cart-right {
         padding: 10px;
     }
-    .table th, .table td {
+    .table th,
+    .table td {
         padding: 3px;
     }
     .info-product {
         font-size: 12px !important;
     }
-    .table th, .table td {
+    .table th,
+    .table td {
         padding: 3px;
         font-size: 14px;
     }
@@ -110,12 +138,14 @@ td button{
         padding: 2px;
         font-size: 13px;
     }
-    .discount-code button, .costs-checkout{
+    .discount-code button,
+    .costs-checkout {
         font-size: 14px;
     }
 }
-@media (max-width: 576px){
-    .cart-img{
+
+@media (max-width: 576px) {
+    .cart-img {
         display: none !important;
     }
 }
