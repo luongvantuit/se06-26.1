@@ -127,7 +127,7 @@ export default function SignUpScreen() {
                       id="exampleCheck1"
                     ></input>
                     <label className="form-check-label" htmlFor="exampleCheck1">
-                      I agree to{" "}
+                      I agree to
                       <a href="#" className="acon">
                         Condition of Use ?
                       </a>

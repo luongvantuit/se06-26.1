@@ -10,11 +10,6 @@ export default function SignInScreen() {
   const [password,setPassword] =useState('');
   const [error,setError] =useState('');
   const history = useHistory();
-  const validateEmail = (email: string) =>{
-    return email.match(
-      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    );
-  };
   const signInWithEmailAndPassword = ()=>{
      if(error !== '') setError('');
      setAuthenticated(true);

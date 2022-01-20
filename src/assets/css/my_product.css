@@ -1,24 +1,27 @@
-.add_product {
+.myProducts {
     margin-top: 64px;
     margin-left: 280px;
+    padding: 64px;
     background-color: #eee;
-    /* width: 100%; */
 }
 
-.productInfo {
+.searchProducts,
+.listProduct {
+    margin-top: 64px;
     background-color: #fff;
-    width: auto;
-    margin: 0 128px;
+    /* margin: 0 128px; */
     padding: 32px;
+    margin: 0;
 }
 
 @media (max-width: 576px) {
-    .add_product {
+    .myProducts {
         margin-top: 64px;
         margin-left: 0;
         background-color: #eee;
     }
-    .productInfo {
+    .searchProducts,
+    .listProduct {
         margin-top: 64px;
         background-color: #fff;
         /* margin: 0 128px; */
@@ -28,12 +31,13 @@
 }
 
 @media (max-width: 768px) {
-    .add_product {
+    .myProducts {
         margin-top: 64px;
         margin-left: 0;
         background-color: #eee;
     }
-    .productInfo {
+    .searchProducts,
+    .listProduct {
         margin-top: 64px;
         background-color: #fff;
         /* margin: 0 128px; */
@@ -43,12 +47,13 @@
 }
 
 @media (max-width: 992px) {
-    .add_product {
+    .myProducts {
         margin-top: 64px;
         margin-left: 0;
         background-color: #eee;
     }
-    .productInfo {
+    .searchProducts,
+    .listProduct {
         margin-top: 64px;
         background-color: #fff;
         /* margin: 0 128px; */

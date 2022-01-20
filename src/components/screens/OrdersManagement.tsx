@@ -1,13 +1,12 @@
 import React from "react";
 import SideNav from "../widgets/SideNav";
 import "../../assets/css/order_management.css";
-import OrderListItem from "../widgets/OrdersManagement/OrderListItem";
-import TableHeader from "../widgets/OrdersManagement/TableHeader";
+import { Order } from "../../Order";
 
 const product = {
   name: "Earpods Bluetooth i12 TWS 5.0 wireless i12 with HIFI sound quality",
   category: "Technology",
-  descripyion:
+  description:
     "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles ",
   imageUrl: {
     cover: "https://cf.shopee.vn/file/7556e874cf766f3cb340e632c684def1",
@@ -22,6 +21,7 @@ const product = {
   brand: "No Brand",
   warrantyType: "None",
   price: 499000,
+  saleOff: 69,
   stock: 999,
   skuCode: "EPXH121621VNA",
   weight: 500,
@@ -31,6 +31,7 @@ const product = {
     height: 5,
   },
   shippingType: "Fast",
+  sale:1
 };
 
 const order1 = {
@@ -43,7 +44,7 @@ const order1 = {
 
 const order2 = {
   product: product,
-  customer: "lincoln@23",
+  customer: "padspas@23",
   payment: product.price,
   status: "Cancelled",
   action: "View details",
@@ -51,12 +52,56 @@ const order2 = {
 
 const order3 = {
   product: product,
-  customer: "lincoln@23",
+  customer: "ipqwen@23",
   payment: product.price,
   status: "Returned",
   action: "View details",
 };
+const TableHeader = () => {
+  return (
+    <thead>
+      <tr>
+        <th scope="col">[Products]</th>
+        <th scope="col">Customer</th>
+        <th scope="col">Payment</th>
+        <th scope="col">Status</th>
+        <th scope="col">Shipment</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+  );
+};
 
+const OrderListItem = (props: { order: Order }) => {
+  return (
+    <tr style={{ backgroundColor: "#eee" }}>
+      <td className="orderProduct d-flex align-items-center">
+        <div className="orderProductImg">
+          <img
+            src={props.order.product.imageUrl.cover}
+            alt={props.order.product.name}
+            style={{ width: "64px", marginRight: "8px" }}
+          />
+        </div>
+        <div className="d-flex flex-column justify-content-center align-items-start">
+          <p className="orderProductName text-align-left">
+            {props.order.product.name}
+          </p>
+          <p className="skuCode">[{props.order.product.skuCode}]</p>
+        </div>
+      </td>
+      <td>
+        <a href="">{props.order.customer}</a>
+      </td>
+      <td>{props.order.payment}</td>
+      <td>{props.order.status}</td>
+      <td>{props.order.product.shippingType}</td>
+      <td>
+        <a href="">{props.order.action}</a>
+      </td>
+    </tr>
+  );
+};
 const OrdersManagement = () => {
   return (
     <div>
@@ -65,7 +110,6 @@ const OrdersManagement = () => {
           marginTop: "64px",
           marginLeft: "280px",
           backgroundColor: "#eee",
-          
         }}
       >
         <SideNav></SideNav>

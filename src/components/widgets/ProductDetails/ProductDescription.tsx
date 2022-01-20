@@ -1,5 +1,4 @@
 import React from "react";
-import SectionHeading from "./SectionHeading";
 const ProductDescription = () => {
   return (
     <div>

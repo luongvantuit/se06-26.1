@@ -1,8 +1,4 @@
 import React from "react";
-import {
-  isPropertySignature,
-  walkUpBindingElementsAndPatterns,
-} from "typescript";
 import "../../assets/css/home.css";
 import banner from "../../assets/img/home/banner.jpg";
 import laptop from "../../assets/img/home/laptop_1.jpg";

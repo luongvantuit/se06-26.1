@@ -1,15 +1,24 @@
-import React from "react";
 import SideNav from "../widgets/SideNav";
 import "bootstrap";
-import AddImage from "../widgets/AddProduct/AddImage"
 import ButtonGreen from "../widgets/ButtonGreen";
 import "../../assets/css/add_product.css";
+
+import add from "../../assets/img/plus_circle.svg";
+import "../../assets/css/add_image.css";
+const AddImage = () => {
+  return (
+    <div className="add-image d-flex align-items-center justify-content-center">
+      <img src={add} alt="Add image" />
+    </div>
+  );
+};
+
 const AddProduct = () => {
   return (
     <div>
       <SideNav></SideNav>
       <div className="add_product">
-        <div className="info">
+        <div className="productInfo">
           <h3>Sale Information</h3>
           <div className="form-group row">
             <label htmlFor="productName" className="col-sm-2 col-form-label">
@@ -64,7 +73,10 @@ const AddProduct = () => {
           <div className="form-group row">
             <label className=" col-sm-2 col-form-label">Product Image</label>
             <div className="col-sm-10 d-flex flex-row align-items-center">
-              <div className="d-flex align-items-center row" style={{marginTop:'0'}}>
+              <div
+                className="d-flex align-items-center row"
+                style={{ marginTop: "0" }}
+              >
                 <div className="col-3 col-md-2">
                   <AddImage></AddImage>
                 </div>
@@ -170,7 +182,7 @@ const AddProduct = () => {
           </div>
         </div>
 
-        <div className="info" style={{marginTop:'64px'}}>
+        <div className="productInfo" style={{ marginTop: "64px" }}>
           <h3>Shipment Information</h3>
 
           <div className="form-group row">

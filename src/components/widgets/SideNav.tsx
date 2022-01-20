@@ -15,31 +15,6 @@ const SideNav = () => {
             <button
               className="btn btn-toggle align-items-center rounded collapsed"
               data-bs-toggle="collapse"
-              data-bs-target="#shipping-collapse"
-              aria-expanded="true"
-            >
-              Shipping
-            </button>
-            <div className="collapse show" id="shipping-collapse">
-              <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li>
-                  <NavLink to="#" className="link-dark rounded">
-                    Shipping Management
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="#" className="link-dark rounded">
-                      Shipping Settings
-                  </NavLink>
-                </li>
-                
-              </ul>
-            </div>
-          </li>
-          <li className="mb-1">
-            <button
-              className="btn btn-toggle align-items-center rounded collapsed"
-              data-bs-toggle="collapse"
               data-bs-target="#orders-collapse"
               aria-expanded="false"
             >
@@ -82,7 +57,7 @@ const SideNav = () => {
             <div className="collapse" id="products-collapse">
               <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li>
-                  <NavLink to="#" className="link-dark rounded">
+                  <NavLink to="/MyProduct" className="link-dark rounded">
                     My products
                   </NavLink>
                 </li>
