@@ -7,7 +7,7 @@ import shoes from "../../assets/img/home/shoe_1.jpg";
 import furnitures from "../../assets/img/home/house-furnitures_1.jpg";
 import cosmetic from "../../assets/img/home/cosmetic_1.jpg";
 import Footer from "../widgets/Footer";
-
+import Product from "../widgets/Product";
 export default function HomeScreen() {
   return (
     <div>

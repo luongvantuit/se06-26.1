@@ -1,0 +1,13 @@
+.create-shop {
+    margin: 120px 120px 0 120px;
+    background-color: #fff;
+}
+
+.shop-infomation {
+    padding: 32px;
+}
+
+.actionBtn {
+    /* display: \; */
+    justify-content: end;
+}

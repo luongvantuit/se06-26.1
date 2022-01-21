@@ -18,6 +18,8 @@ export interface Product {
     saleOff: number,
     stock: number,
     skuCode: string,
+    size: string,
+    color: string,
     weight: number,
     parcelSize: {
         width: number,

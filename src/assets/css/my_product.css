@@ -14,6 +14,13 @@
     margin: 0;
 }
 
+.fix-bottom {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+}
+
 @media (max-width: 576px) {
     .myProducts {
         margin-top: 64px;

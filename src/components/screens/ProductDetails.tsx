@@ -323,7 +323,7 @@ const ProductDetails = () => {
             <ProductOutline></ProductOutline>
           </div>
           <div className="d-flex align-items-center justify-content-center mb-5">
-            <ButtonOutlined name="Show more" />
+            <button className="button__outlined" name="Show more" />
           </div>
         </div>
       </div>

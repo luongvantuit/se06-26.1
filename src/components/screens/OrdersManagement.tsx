@@ -24,6 +24,8 @@ const product = {
   saleOff: 69,
   stock: 999,
   skuCode: "EPXH121621VNA",
+  color : '',
+  size:'',
   weight: 500,
   parcelSize: {
     width: 5,
@@ -39,6 +41,7 @@ const order1 = {
   customer: "lincoln@23",
   payment: product.price,
   status: "Delivered",
+  quantity: 1,
   action: "View details",
 };
 
@@ -47,6 +50,7 @@ const order2 = {
   customer: "padspas@23",
   payment: product.price,
   status: "Cancelled",
+  quantity:2,
   action: "View details",
 };
 
@@ -55,6 +59,7 @@ const order3 = {
   customer: "ipqwen@23",
   payment: product.price,
   status: "Returned",
+  quantity:2,
   action: "View details",
 };
 const TableHeader = () => {

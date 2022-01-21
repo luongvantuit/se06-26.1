@@ -1,0 +1,83 @@
+.UserOrderListItem {}
+
+.userOrder {
+    margin-left: 280px;
+    margin-top: 80px;
+    padding-right: 64px;
+}
+
+.order-search {
+    width: 100%;
+    position: relative;
+}
+
+.order-search>.fa-search {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.order-search .order-search-input {
+    width: 100%;
+    line-height: 36px;
+    padding: 0 12px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.userOrdersList {
+    min-height: 800px;
+    margin-top: 16px;
+}
+
+.UserOrderListItem {
+    background-color: #fff;
+}
+
+.UserOrderListItem .order-header {
+    height: 40px;
+    padding: 0 12px;
+}
+
+.order-header .shop {
+    width: 300px;
+}
+
+.order-header .shop .shop-name {
+    color: #000;
+    /* float: left; */
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.order-header .view-shop {
+    border: 2px solid #40AD87;
+    border-radius: 4px;
+    margin-left: 32px;
+    padding: 4px 6px;
+    cursor: pointer;
+}
+
+.order-header .view-shop a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .54);
+    font-size: 12px;
+}
+
+.UserOrderListItem .order-body {
+    /* position: relative; /
+}
+
+.order-body .product {
+    /* float: left; */
+}
+
+.order-body .payment {
+    margin-left: 200px;
+}
+
+.order-body .order-status {
+    margin-left: 64px;
+}
