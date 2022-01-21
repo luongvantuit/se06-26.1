@@ -229,7 +229,7 @@ a:hover{
         height: 220px;
         max-inline-size: -webkit-fill-available;
     }
-
+    
     .product-5 {
         display: none;
     }
@@ -317,9 +317,6 @@ a:hover{
     .carousel-item img {
         height: 130px;
     }
-    .product-4, .product-3{
-        display: none;
-    }
     .row-new {
         display: flex;
     }
@@ -341,6 +338,9 @@ a:hover{
     }
     .cate-banner img {
         height: 70px;
+    }
+    .product-4{
+        display: none !important;
     }
 }
 @media (max-width: 430px) {
