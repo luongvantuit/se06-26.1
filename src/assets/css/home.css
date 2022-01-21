@@ -66,6 +66,9 @@ a:hover{
 .product{
     padding: 10px 15px;
 }
+.product-none{
+    display: none;
+}
 .img-product{
     text-align: center;
 }
@@ -115,7 +118,7 @@ a:hover{
         height: 220px;
         max-inline-size: -webkit-fill-available;
     }
-    .product-4, .product-5{
+    .product-4, .product-5, .product-6{
         display: none;
     }
 }
@@ -146,5 +149,8 @@ a:hover{
     }
     .row-new{
         display: flex;
+    }
+    .product-none{
+        display: unset;
     }
 }

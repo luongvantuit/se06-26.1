@@ -1,4 +1,8 @@
 import React from "react";
+import {
+  isPropertySignature,
+  walkUpBindingElementsAndPatterns,
+} from "typescript";
 import "../../assets/css/home.css";
 import banner from "../../assets/img/home/banner.jpg";
 import laptop from "../../assets/img/home/laptop_1.jpg";
@@ -8,6 +12,7 @@ import furnitures from "../../assets/img/home/house-furnitures_1.jpg";
 import cosmetic from "../../assets/img/home/cosmetic_1.jpg";
 import Footer from "../widgets/Footer";
 import Product from "../widgets/Product";
+
 export default function HomeScreen() {
   return (
     <div>
@@ -111,135 +116,23 @@ export default function HomeScreen() {
               <a className="see-all">See all products</a>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-1">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={laptop} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Acer Aspire 5 A515-46-R14K Slim Laptop</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-none">
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-2">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={laptop} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Acer Aspire 5 A515-46-R14K Slim Laptop</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-3">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={laptop} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Acer Aspire 5 A515-46-R14K Slim Laptop</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-3">
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 product product-4">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={laptop} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Acer Aspire 5 A515-46-R14K Slim Laptop</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 product product-5">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={laptop} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Acer Aspire 5 A515-46-R14K Slim Laptop</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
+          </div>
+          <div className="col-lg-2 col-md-3 col-sm-4 product product-6">
+            <Product_item></Product_item>
           </div>
         </div>
         <div className="row row-2">
@@ -249,135 +142,23 @@ export default function HomeScreen() {
               <a className="see-all">See all products</a>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-1">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={clothes} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Women's Plus Size Casual Hoodies Sweatshirt,Long Sleeve</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-none">
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-2">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={clothes} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Women's Plus Size Casual Hoodies Sweatshirt,Long Sleeve</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-3">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={clothes} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Women's Plus Size Casual Hoodies Sweatshirt,Long Sleeve</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-3">
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 product product-4">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={clothes} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Women's Plus Size Casual Hoodies Sweatshirt,Long Sleeve</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 product product-5">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={clothes} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Women's Plus Size Casual Hoodies Sweatshirt,Long Sleeve</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
+          </div>
+          <div className="col-lg-2 col-md-3 col-sm-4 product product-6">
+            <Product_item></Product_item>
           </div>
         </div>
         <div className="row row-3">
@@ -387,135 +168,23 @@ export default function HomeScreen() {
               <a className="see-all">See all products</a>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-1">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={shoes} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Asolo Women's TPS 520 GV EVO</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-none">
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-2">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={shoes} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Asolo Women's TPS 520 GV EVO</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-3">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={shoes} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Asolo Women's TPS 520 GV EVO</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-3">
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 product product-4">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={shoes} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Asolo Women's TPS 520 GV EVO</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 product product-5">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={shoes} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Asolo Women's TPS 520 GV EVO</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
+          </div>
+          <div className="col-lg-2 col-md-3 col-sm-4 product product-6">
+            <Product_item></Product_item>
           </div>
         </div>
         <div className="row row-4">
@@ -525,135 +194,23 @@ export default function HomeScreen() {
               <a className="see-all">See all products</a>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-1">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={furnitures} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Lexicon Dawson 3-Piece Living Room Set, Gray</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-none">
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-2">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={furnitures} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Lexicon Dawson 3-Piece Living Room Set, Gray</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-3">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={furnitures} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Lexicon Dawson 3-Piece Living Room Set, Gray</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-3">
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 product product-4">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={furnitures} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Lexicon Dawson 3-Piece Living Room Set, Gray</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 product product-5">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={furnitures} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Lexicon Dawson 3-Piece Living Room Set, Gray</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
+          </div>
+          <div className="col-lg-2 col-md-3 col-sm-4 product product-6">
+            <Product_item></Product_item>
           </div>
         </div>
         <div className="row row-5">
@@ -663,135 +220,23 @@ export default function HomeScreen() {
               <a className="see-all">See all products</a>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-1">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={cosmetic} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Makeup Brushes, 7PCS Diamond Handle Makeup Brush Sets</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-none">
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-2">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={cosmetic} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Makeup Brushes, 7PCS Diamond Handle Makeup Brush Sets</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-3">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={cosmetic} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Makeup Brushes, 7PCS Diamond Handle Makeup Brush Sets</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-3">
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 product product-4">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={cosmetic} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Makeup Brushes, 7PCS Diamond Handle Makeup Brush Sets</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-4 product product-5">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={cosmetic} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Makeup Brushes, 7PCS Diamond Handle Makeup Brush Sets</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
+            <Product_item></Product_item>
+          </div>
+          <div className="col-lg-2 col-md-3 col-sm-4 product product-6">
+            <Product_item></Product_item>
           </div>
         </div>
       </div>
