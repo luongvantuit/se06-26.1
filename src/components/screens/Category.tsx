@@ -10,11 +10,6 @@ export default function Category(){
           <div className="cate-banner">
             <img src={banner_category} />
           </div>
-          <div className="bread-crumbs">
-            <a className="crumb1">Home</a>
-            <i className="fas fa-angle-right" />
-            <a className="crumb1">Laptops</a>
-          </div>
           <h4 className="category-name">Laptop (20)</h4>
           <div>
             {/* Button trigger modal */}

@@ -1,8 +1,9 @@
 .button__outlined {
     /* background: #ccc; */
-    margin-top: 16px;
+    margin: 16px;
     width: auto;
     max-width: 128px;
+    min-width: 96px;
     color: #40AD87;
     border-radius: 8px;
     font-size: 15px;
@@ -10,7 +11,6 @@
     border: 1px solid #40AD87;
     cursor: pointer;
     text-decoration: none;
-    margin-left: 24px;
     padding: 8px;
     text-align: center;
 }

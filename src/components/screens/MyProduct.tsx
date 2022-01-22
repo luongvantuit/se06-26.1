@@ -26,6 +26,8 @@ const product = {
   saleOff: 69,
   stock: 999,
   skuCode: "EPXH121621VNA",
+  color:'',
+  size:'',
   weight: 500,
   parcelSize: {
     width: 5,
@@ -78,6 +80,10 @@ const ProductListItem = (props: { product: Product }) => {
   );
 };
 const MyProduct = () => {
+    const productCheckAll = document.getElementById('productCheckAll')
+    function handleCheckAll(){
+        console.log(productCheckAll)
+    }
   return (
     <div>
       <SideNav></SideNav>
@@ -141,6 +147,9 @@ const MyProduct = () => {
                 <ProductListItem product={product}></ProductListItem>
                 <ProductListItem product={product}></ProductListItem>
                 <ProductListItem product={product}></ProductListItem>
+                <ProductListItem product={product}></ProductListItem>
+                <ProductListItem product={product}></ProductListItem>
+                <ProductListItem product={product}></ProductListItem>
               </tbody>
             </div>
           </div>
@@ -184,17 +193,26 @@ const MyProduct = () => {
                 type="checkbox"
                 className="form-check-input"
                 id="productCheckAll"
+                onChange={handleCheckAll}
               ></input>
               <label className="form-check-label" htmlFor="productCheckAll">
                 Select All
               </label>
             </div>
+                
             <div className="deleteBtn button__green col-sm-9 ">Delete</div>
+            <div className="deleteBtn button__green col-sm-9 ">Create New Product</div>
+
           </div>
         </div>
       </div>
     </div>
   );
 };
+
+const handleDelete=( ) =>{
+
+}
+
 
 export default MyProduct;

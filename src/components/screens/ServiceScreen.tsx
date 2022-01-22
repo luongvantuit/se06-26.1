@@ -1,12 +1,11 @@
 import React from 'react'
 import OrdersManagement from './OrdersManagement'
+import CreateShop from '../screens/CreateShop'
 
 export default function ServiceScreen() {
     return (
-        <div className='mt-5'>
-            <h1>Service</h1>
-            <h3>Service Screen</h3>
-            <OrdersManagement></OrdersManagement>
+        <div className='service' >
+            <CreateShop></CreateShop>
         </div>
     )
 }

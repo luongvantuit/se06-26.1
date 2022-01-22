@@ -173,6 +173,28 @@ button>a:hover {
     display: none;
 }
 
+.user {
+    cursor: pointer;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.btn-group:hover>.dropdown-menu {
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+.dropdown-menu {
+    margin-top: 54px;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
 
 /* Responsive */
 
@@ -202,6 +224,9 @@ button>a:hover {
     .hidden-nav {
         display: block;
     }
+    .user {
+        display: none!important;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -221,5 +246,8 @@ button>a:hover {
     }
     .fa-search {
         display: none;
+    }
+    .user {
+        display: none!important;
     }
 }

@@ -2,7 +2,7 @@
     background-color: #40AD87;
     padding: 8px;
     width: auto;
-    max-width: 128px;
+    max-width: 200px;
     min-width: 96px;
     color: #fff;
     border-radius: 8px;
@@ -17,4 +17,14 @@
     background-color: #3ba07d;
     /* border: 1px solid #40AD87; */
     transition: all 0.2s ease-in-out;
+}
+
+.disabled {
+    background-color: #ddd;
+    cursor: default;
+}
+
+.disabled:hover {
+    cursor: not-allowed;
+    background-color: #ddd;
 }

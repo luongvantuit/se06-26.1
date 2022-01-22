@@ -5,9 +5,12 @@ import "../../assets/css/add_product.css";
 
 import add from "../../assets/img/plus_circle.svg";
 import "../../assets/css/add_image.css";
+import '../../assets/js/createProduct'
 const AddImage = () => {
   return (
     <div className="add-image d-flex align-items-center justify-content-center">
+      <input type="file" id='fileUpload'style={{display:'none'}}/>
+      <label htmlFor="fileUpload"></label>
       <img src={add} alt="Add image" />
     </div>
   );
@@ -177,6 +180,34 @@ const AddProduct = () => {
                 id="skuCode"
                 value=""
                 placeholder="Enter SKU code"
+              ></input>
+            </div>
+          </div>
+          <div className="form-group row">
+            <label htmlFor="size" className="col-sm-2 col-form-label">
+              Size
+            </label>
+            <div className="col-sm-10">
+              <input
+                type="text"
+                className="form-control"
+                id="size"
+                value=""
+                placeholder="Enter size"
+              ></input>
+            </div>
+          </div>
+          <div className="form-group row">
+            <label htmlFor="color" className="col-sm-2 col-form-label">
+              Color
+            </label>
+            <div className="col-sm-10">
+              <input
+                type="text"
+                className="form-control"
+                id="color"
+                value=""
+                placeholder="Enter color"
               ></input>
             </div>
           </div>
