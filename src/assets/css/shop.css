@@ -1,0 +1,68 @@
+.shop-wrapper {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.background-shop {
+    text-align: center;
+    padding: 10px;
+    background-image: url(../img/home/banner.jpg);
+    border-radius: 5px;
+}
+
+.avt-shop {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.avt-shop img {
+    width: 50px;
+    margin-right: 16px;
+    border-radius: 30px;
+}
+
+.info-shop div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-shop div svg {
+    height: 16px;
+    margin-right: 5px;
+    stroke: #000;
+}
+
+.info-shop div p a {
+    color: rgb(216, 3, 3) !important;
+}
+
+.info-shop p {
+    margin: 0px;
+}
+
+.name-shop {
+    text-align: left;
+}
+
+.name-shop h5 {
+    margin: 0px;
+}
+
+.follow-chat button {
+    height: 30px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid;
+    padding: 0px 16px;
+    margin: 0px 5px;
+}
+
+.follow-chat button:hover {
+    background: #b6c9d1;
+    cursor: pointer;
+}
+
+.info-shop {
+    padding: 10px 20px;
+}

@@ -2,6 +2,7 @@ import React, { Props } from "react";
 import { Order } from "../../Order";
 import "../../assets/css/user_order.css";
 import { Link } from "react-router-dom";
+import { UserNav } from "./User";
 // import OrderListItem from "../widgets/OrdersManagement/OrderListItem";
 
 const product = {
@@ -66,6 +67,7 @@ const listOrders = [
 const UserOrder = () => {
   return (
     <div className="userOrder">
+      {/* <UserNav></UserNav> */}
       <div >
         <h2 className="mb-4">My Orders</h2>
         {/* Tìm kiếm đơn mua */}
@@ -140,6 +142,11 @@ const UserOrder = () => {
             aria-labelledby="nav-all-tab"
           >
             <div className="userOrdersList">
+              <UserOrderListItem order={listOrders[1]}></UserOrderListItem>
+              <UserOrderListItem order={listOrders[0]}></UserOrderListItem>
+              <UserOrderListItem order={listOrders[1]}></UserOrderListItem>
+              <UserOrderListItem order={listOrders[1]}></UserOrderListItem>
+              <UserOrderListItem order={listOrders[1]}></UserOrderListItem>
               <UserOrderListItem order={listOrders[1]}></UserOrderListItem>
             </div>
           </div>

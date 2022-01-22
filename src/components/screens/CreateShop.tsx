@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../../assets/css/create_shop.css";
 const CreateShop = () => {
   return (
@@ -76,7 +76,7 @@ const CreateShop = () => {
           </div>
         </form>
         <div className="actionBtn d-flex align-items-center">
-          <div className="button__green " ><Link to='/Seller' href="#" className="text-decoration-none text-white">Next</Link></div>
+          <div className="button__green " ><NavLink to='/Seller' href="#" className="text-decoration-none text-white">Next</NavLink></div>
           <div className="button__outlined" style={{margin:'16px'}}>Save</div>
         </div>
       </div>
