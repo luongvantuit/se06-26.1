@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import "../../IProduct";
-import { Product } from "../../IProduct";
+import { IProduct } from "../../IProduct";
 import SideNav from "../widgets/SideNav";
 import "../../assets/css/my_product.css";
 
@@ -37,7 +36,7 @@ const product = {
   shippingType: "Fast",
   sale: 1,
 };
-const ProductListItem = (props: { product: Product }) => {
+const ProductListItem = (props: { product: IProduct }) => {
   return (
     <tr style={{ backgroundColor: "#eee" }}>
       <td>

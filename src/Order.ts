@@ -1,7 +1,7 @@
-import { Product } from './IProduct'
+import { IProduct } from './IProduct'
 
 export interface Order {
-    product: Product,
+    product: IProduct,
     customer: string,
     payment: number,
     status: string,

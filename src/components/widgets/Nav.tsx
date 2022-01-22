@@ -134,6 +134,11 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item hidden-nav">
+                <NavLink to="/User" className="nav-link " href="#">
+                  My Account
+                </NavLink>
+              </li>
+              <li className="nav-item hidden-nav">
                 <NavLink to="/SignInScreen" className="nav-link " href="#">
                   Sign In
                 </NavLink>
@@ -171,7 +176,7 @@ const Header = () => {
             </NavLink>
           </div>
           <div className="icon cart">
-            <NavLink to="/ShoppingCart">
+            <NavLink to="/Cart">
               <img src={carts} alt="Cart" />
             </NavLink>
           </div>
@@ -202,14 +207,14 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <NavLink to='/Notifications' className="dropdown-item" href="#">
                   Notifications
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <NavLink to='/UserOrder' className="dropdown-item" href="#">
                   My Orders
-                </a>
+                </NavLink>
               </li>
               <li>
                 <a className="dropdown-item" href="#">

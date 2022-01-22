@@ -1,6 +1,6 @@
 import React from "react";
-import { Product } from "../../IProduct";
-const Product = (props: { product: Product }) => {
+import { IProduct } from "../../IProduct";
+const Product = (props: { product: IProduct }) => {
   return (
     <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-1">
       <div className="in-stock d-flex">
@@ -25,9 +25,9 @@ const Product = (props: { product: Product }) => {
       <h5>
         <a>{props.product.name}</a>
       </h5>
-      <p className="cost">{props.product.price}</p>
+      <p className="cost">{props.product.price}vnd</p>
       <h4 className="sale">
-        {(props.product.price * props.product.saleOff) / 100}
+        {(props.product.price * props.product.saleOff) / 100} vnd
       </h4>
     </div>
   );

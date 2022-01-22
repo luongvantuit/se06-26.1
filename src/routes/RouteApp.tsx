@@ -15,9 +15,13 @@ import OrdersManagement from "../components/screens/OrdersManagement";
 import SideNav from "../components/widgets/SideNav";
 import Messenger from "../components/screens/Messenger";
 import Card from "../components/screens/Card";
+import Cart from "../components/screens/Cart";
 import User from "../components/screens/User";
 import MyProduct from "../components/screens/MyProduct";
 import UserOrder from "../components/screens/UserOrder";
+import Notifications from "../components/screens/Notifications";
+import Seller from "../components/screens/Seller";
+import Shop from "../components/screens/Shop";
 
 export default function RouteApp() {
   return (
@@ -52,8 +56,11 @@ export default function RouteApp() {
         <Route exact path="/Category">
           <Category></Category>
         </Route>
-        <Route exact path="/ShoppingCart">
-          <ShoppingCart></ShoppingCart>
+        <Route exact path="/Cart">
+          <Cart></Cart>
+        </Route>
+        <Route exact path="/Seller">
+          <Seller></Seller>
         </Route>
         <Route exact path="/Payment">
           <Payment></Payment>
@@ -78,6 +85,12 @@ export default function RouteApp() {
         </Route>
         <Route exact path="/Card">
           <Card></Card>
+        </Route>
+        <Route exact path="/Notifications">
+          <Notifications></Notifications>
+        </Route>
+        <Route exact path="/Shop">
+          <Shop></Shop>
         </Route>
       </Switch>
     </HashRouter>

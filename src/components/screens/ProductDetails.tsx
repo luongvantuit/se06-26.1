@@ -16,6 +16,40 @@ import ButtonOutlined from "../widgets/ButtonOutlined";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Ratings from "../widgets/ProductDetails/Ratings";
+import Product from "../widgets/Product";
+
+const product = {
+  name: "Earpods Bluetooth i12 TWS 5.0 wireless i12 with HIFI sound quality",
+  category: "Technology",
+  description:
+    "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles ",
+  imageUrl: {
+    cover: "https://cf.shopee.vn/file/7556e874cf766f3cb340e632c684def1",
+    image1: "",
+    image2: "",
+    image3: "",
+    image4: "",
+    image5: "",
+    image6: "",
+    image7: "",
+  },
+  brand: "No Brand",
+  warrantyType: "None",
+  price: 499000,
+  saleOff: 69,
+  stock: 999,
+  skuCode: "EPXH121621VNA",
+  color: "",
+  size: "",
+  weight: 500,
+  parcelSize: {
+    width: 5,
+    length: 10,
+    height: 5,
+  },
+  shippingType: "Fast",
+  sale: 1,
+};
 
 const TechnicalDetails = (props: { name: string; content: string }) => {
   return (
@@ -315,12 +349,12 @@ const ProductDetails = () => {
         <div className="product-others ">
           <SectionHeading name="Similar Products" />
           <div className="others row ">
-            <ProductOutline></ProductOutline>
-            <ProductOutline></ProductOutline>
-            <ProductOutline></ProductOutline>
-            <ProductOutline></ProductOutline>
-            <ProductOutline></ProductOutline>
-            <ProductOutline></ProductOutline>
+            <Product product= {product}></Product>
+            <Product product= {product}></Product>
+            <Product product= {product}></Product>
+            <Product product= {product}></Product>
+            <Product product= {product}></Product>
+            <Product product= {product}></Product>
           </div>
           <div className="d-flex align-items-center justify-content-center mb-5">
             <button className="button__outlined" name="Show more" />

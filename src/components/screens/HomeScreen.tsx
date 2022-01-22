@@ -1,8 +1,4 @@
 import React from "react";
-import {
-  isPropertySignature,
-  walkUpBindingElementsAndPatterns,
-} from "typescript";
 import "../../assets/css/home.css";
 import banner from "../../assets/img/home/banner.jpg";
 import laptop from "../../assets/img/home/laptop_1.jpg";
@@ -11,12 +7,45 @@ import shoes from "../../assets/img/home/shoe_1.jpg";
 import furnitures from "../../assets/img/home/house-furnitures_1.jpg";
 import cosmetic from "../../assets/img/home/cosmetic_1.jpg";
 import Footer from "../widgets/Footer";
+
 import Product from "../widgets/Product";
 
+const product = {
+  name: "Earpods Bluetooth i12 TWS 5.0 wireless i12 with HIFI sound quality",
+  category: "Technology",
+  description:
+    "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles ",
+  imageUrl: {
+    cover: "https://cf.shopee.vn/file/7556e874cf766f3cb340e632c684def1",
+    image1: "",
+    image2: "",
+    image3: "",
+    image4: "",
+    image5: "",
+    image6: "",
+    image7: "",
+  },
+  brand: "No Brand",
+  warrantyType: "None",
+  price: 499000,
+  saleOff: 69,
+  stock: 999,
+  skuCode: "EPXH121621VNA",
+  color: "",
+  size: "",
+  weight: 500,
+  parcelSize: {
+    width: 5,
+    length: 10,
+    height: 5,
+  },
+  shippingType: "Fast",
+  sale: 1,
+};
 export default function HomeScreen() {
   return (
     <div>
-      <div className="container" >
+      <div className="container">
         <div
           id="carouselExampleControls"
           className="carousel slide banner-home"
@@ -56,58 +85,8 @@ export default function HomeScreen() {
           <div className="col-12">
             <h1 style={{ fontSize: "25px" }}>New products</h1>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-1">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={laptop} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Acer Aspire 5 A515-46-R14K Slim Laptop</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-2">
-            <div className="in-stock d-flex">
-              <i className="fa fa-check-circle" />
-              <p>
-                <a>in stock</a>
-              </p>
-            </div>
-            <div className="img-product">
-              <img src={laptop} />
-            </div>
-            <div className="star d-flex">
-              <span className="fa fa-star checked checked1" />
-              <span className="fa fa-star checked checked2" />
-              <span className="fa fa-star checked checked3" />
-              <span className="fa fa-star checked checked4" />
-              <span className="fa fa-star checked checked5" />
-              <p>
-                <a>Reviews (4)</a>
-              </p>
-            </div>
-            <h5>
-              <a>Acer Aspire 5 A515-46-R14K Slim Laptop</a>
-            </h5>
-            <p className="cost">$499.00</p>
-            <h4 className="sale">$499.00</h4>
-          </div>
+          <Product product={product}></Product>
+          <Product product={product}></Product>
         </div>
         <div className="row row-1">
           <div className="col-lg-2 col-md-3 col-sm-4 col-12 col-category">
@@ -116,49 +95,39 @@ export default function HomeScreen() {
               <a className="see-all">See all products</a>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-none">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-2">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-3">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-4">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-5">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-6">
-            <Product_item></Product_item>
-          </div>
-        </div>
-        <div className="row row-2">
-          <div className="col-lg-2 col-md-3 col-sm-4 col-12 col-category">
-            <div className="category-home category-clothes">
-              <p className="title-category">Clothes</p>
-              <a className="see-all">See all products</a>
+
+          <Product product={product}></Product>
+          <Product product={product}></Product>
+          <Product product={product}></Product>
+          <Product product={product}></Product>
+          <Product product={product}></Product>
+
+          <div className="row row-2">
+            <div className="col-lg-2 col-md-3 col-sm-4 col-12 col-category">
+              <div className="category-home category-laptop">
+                <p className="title-category">Laptop</p>
+                <a className="see-all">See all products</a>
+              </div>
             </div>
+
+            <Product product={product}></Product>
+            <Product product={product}></Product>
+            <Product product={product}></Product>
+            <Product product={product}></Product>
+            <Product product={product}></Product>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-none">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-2">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-3">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-4">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-5">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-6">
-            <Product_item></Product_item>
+          <div className="row row-3">
+            <div className="col-lg-2 col-md-3 col-sm-4 col-12 col-category">
+              <div className="category-home category-laptop">
+                <p className="title-category">Laptop</p>
+                <a className="see-all">See all products</a>
+              </div>
+            </div>
+            <Product product={product}></Product>
+            <Product product={product}></Product>
+            <Product product={product}></Product>
+            <Product product={product}></Product>
+            <Product product={product}></Product>
           </div>
         </div>
         <div className="row row-3">
@@ -168,76 +137,34 @@ export default function HomeScreen() {
               <a className="see-all">See all products</a>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-none">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-2">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-3">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-4">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-5">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-6">
-            <Product_item></Product_item>
-          </div>
         </div>
         <div className="row row-4">
           <div className="col-lg-2 col-md-3 col-sm-4 col-12 col-category">
-            <div className="category-home category-home-furnitures">
-              <p className="title-category">Furnitures</p>
+            <div className="category-home category-laptop">
+              <p className="title-category">Laptop</p>
               <a className="see-all">See all products</a>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-none">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-2">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-3">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-4">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-5">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-6">
-            <Product_item></Product_item>
-          </div>
+
+          <Product product={product}></Product>
+          <Product product={product}></Product>
+          <Product product={product}></Product>
+          <Product product={product}></Product>
+          <Product product={product}></Product>
         </div>
         <div className="row row-5">
           <div className="col-lg-2 col-md-3 col-sm-4 col-12 col-category">
-            <div className="category-home category-cosmetic">
-              <p className="title-category">Cosmetic</p>
+            <div className="category-home category-laptop">
+              <p className="title-category">Laptop</p>
               <a className="see-all">See all products</a>
             </div>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-none">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-2">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-3">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-4">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-5">
-            <Product_item></Product_item>
-          </div>
-          <div className="col-lg-2 col-md-3 col-sm-4 product product-6">
-            <Product_item></Product_item>
-          </div>
+
+          <Product product={product}></Product>
+          <Product product={product}></Product>
+          <Product product={product}></Product>
+          <Product product={product}></Product>
+          <Product product={product}></Product>
         </div>
       </div>
       <div className="container">
@@ -315,7 +242,6 @@ export default function HomeScreen() {
           </div>
         </div>
       </div>
-      
-    </div>
+    </div>   
   );
 }
