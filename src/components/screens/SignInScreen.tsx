@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
-import { NavLink, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "../../assets/css/signin.css";
 import auth from "../../firebase/firebase.auth";
 
@@ -80,9 +80,9 @@ export default function SignInScreen() {
                       Sign in
                     </button>
                     <div className="form__forgot-password col-md-8 col-sm-12 mb-3">
-                      <NavLink to="/" href="#">
+                      <a href="#">
                         Forgot your password ?
-                      </NavLink>
+                      </a>
                     </div>
                   </div>
                 </form>
@@ -102,7 +102,7 @@ export default function SignInScreen() {
                       <li className="list__item">Track orders and more</li>
                     </ul>
                     <button className="form-button col-sm-12 text-center">
-                      <NavLink to="/SignUpScreen" className={'text-decoration-none'}>Create account</NavLink>
+                      <a href="/signup" className={'text-decoration-none'}>Create account</a>
                     </button>
                   </div>
                 </form>

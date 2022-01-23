@@ -78,7 +78,7 @@ const CreateShop = () => {
           <AddImage></AddImage>
         </form>
         <div className="actionBtn d-flex align-items-center">
-          <div className="button__green " ><NavLink to='/Seller' href="#" className="text-decoration-none text-white">Next</NavLink></div>
+          <div className="button__green " ><a href="/seller" className="text-decoration-none text-white">Next</a></div>
           <div className="button__outlined" style={{margin:'16px'}}>Save</div>
         </div>
       </div>

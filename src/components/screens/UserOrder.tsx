@@ -188,7 +188,7 @@ const UserOrderListItem = (props: any) => {
       <div className="order-header">
         <div className="shop  d-flex align-items-center">
         <p className="shop-name">SE06</p>
-        <div className="view-shop d-flex align-items-center"><Link href="" to='/Shop'>View Shop</Link></div>
+        <div className="view-shop d-flex align-items-center"><a href="/shop" >View Shop</a></div>
         </div>
       </div>
       <div className="line" style={{marginBottom:'16px',backgroundColor:'#aaa'}}></div>

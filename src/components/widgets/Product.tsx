@@ -25,9 +25,7 @@ const Product = (props: any) => {
         <a>{props.product.displayName}</a>
       </h5>
       <p className="cost">{props.product.price}vnd</p>
-      <h4 className="sale">
-        {(props.product.price * 70) / 100} vnd
-      </h4>
+      <h4 className="sale">{(props.product.price * 70) / 100} vnd</h4>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import vector from '../../assets/image/contact/vector.svg'
 import time from '../../assets/image/contact/time.svg'
 import mail from '../../assets/image/contact/mail.svg'

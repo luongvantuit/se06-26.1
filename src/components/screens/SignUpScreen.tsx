@@ -12,14 +12,8 @@ export default function SignUpScreen() {
   const [confirm,setConfirm] =useState('');
   const [error,setError] =useState('');
   const history = useHistory();
-  const validateEmail = (email: string) =>{
-    return email.match(
-      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    );
-  };
   const signUpWithEmailAndPassword = ()=>{
       if (password != confirm) setError('Confirm password is not matched. Please try again');
-      if( !validateEmail(email) ) setError('Email isn\'t correct');
       if( error !=='' ) setError('');
       setRegistered(true);
       createUserWithEmailAndPassword(auth,email,password)
@@ -171,9 +165,9 @@ export default function SignUpScreen() {
                     <div className="form-footer">
                       <p>
                         Already have an account?
-                        <NavLink to="/SignInScreen" className="acon">
+                        <a href="/signin" className="acon">
                           Log in
-                        </NavLink>
+                        </a>
                       </p>
                     </div>
                   </div>

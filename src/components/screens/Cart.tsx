@@ -107,9 +107,9 @@ const CartItem = (props:any) => {
         <div className="shop  d-flex align-items-center">
           <p className="shop-name">SE06</p>
           <div className="view-shop d-flex align-items-center">
-            <Link href="" to="/Shop">
+            <a href="/Shop">
               View Shop
-            </Link>
+            </a>
           </div>
         </div>
       </div>

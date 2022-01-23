@@ -1,8 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import "bootstrap";
-import { NavLink } from "react-router-dom";
 import "../../assets/css/Nav.css";
 
 import carts from "../../assets/img/Cart.svg";
@@ -13,7 +11,7 @@ const Header = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <NavLink to="/HomeScreen" className="navbar-brand" href="#">
+          <a href="/home" className="navbar-brand">
             <div className="logo ">
               <svg
                 width="31"
@@ -75,7 +73,7 @@ const Header = () => {
                 <h1>SE06</h1>
               </div>
             </div>
-          </NavLink>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -102,63 +100,62 @@ const Header = () => {
             </form>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink
-                  to="/HomeScreen"
+                <a
+                  href="/HomeScreen"
                   className="nav-link active"
                   aria-current="page"
-                  href="#"
                 >
                   Home
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item">
-                <NavLink to="/ServiceScreen" className="nav-link" href="#">
+                <a href="/ServiceScreen" className="nav-link">
                   Customer Service
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item ">
-                <NavLink to="/ContactScreen" className="nav-link " href="#">
+                <a href="/ContactScreen" className="nav-link ">
                   Contact Us
-                </NavLink>
+                </a>
               </li>
 
               <li className="nav-item hidden-nav">
-                <NavLink to="/Cart" className="nav-link " href="#">
+                <a href="/Cart" className="nav-link ">
                   Cart
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item hidden-nav">
-                <NavLink to="/UserOrder" className="nav-link " href="#">
+                <a href="/UserOrder" className="nav-link ">
                   Orders
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item hidden-nav">
-                <NavLink to="/User" className="nav-link " href="#">
+                <a href="/User" className="nav-link ">
                   My Account
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item hidden-nav">
-                <NavLink to="/SignInScreen" className="nav-link " href="#">
+                <a href="/SignInScreen" className="nav-link ">
                   Sign In
-                </NavLink>
+                </a>
               </li>
             </ul>
 
             <div className="button d-none">
               <div className="btn-signin">
-                <NavLink to="/SignInScreen">
+                <a href="/SignInScreen">
                   <button>Sign In</button>
-                </NavLink>
+                </a>
               </div>
               <div className="btn-signup">
-                <NavLink to="/SignUpScreen">
+                <a href="/SignUpScreen">
                   <button>Sign Up</button>
-                </NavLink>
+                </a>
               </div>
             </div>
           </div>
           <div className="icon order">
-            <NavLink to="/UserOrder">
+            <a href="/UserOrder">
               <svg
                 width="28"
                 height="28"
@@ -172,23 +169,22 @@ const Header = () => {
                 />
               </svg>
               {/* <img src={order} alt="Orders" />  */}
-            </NavLink>
+            </a>
           </div>
           <div className="icon cart">
-            <NavLink to="/Cart">
+            <a href="/Cart">
               <img src={carts} alt="Cart" />
-            </NavLink>
+            </a>
           </div>
           <div className="btn-group">
             <div
               className="btn dropdown"
-              
               id="defaultDropdown"
               data-bs-toggle="dropdown"
               data-bs-auto-close="true"
               aria-expanded="false"
             >
-              <NavLink to="/User" className="text-black text-decoration-none">
+              <a href="/User" className="text-black text-decoration-none">
                 <UserDisplay
                   width={32}
                   height={32}
@@ -197,28 +193,24 @@ const Header = () => {
                   }
                   displayName={"Name"}
                 ></UserDisplay>
-              </NavLink>
+              </a>
             </div>
             <ul className="dropdown-menu" aria-labelledby="defaultDropdown">
               <li>
-                <a className="dropdown-item" href="#">
-                  My Account
-                </a>
+                <a className="dropdown-item">My Account</a>
               </li>
               <li>
-                <NavLink to='/Notifications' className="dropdown-item" href="#">
+                <a href="/Notifications" className="dropdown-item">
                   Notifications
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to='/UserOrder' className="dropdown-item" href="#">
-                  My Orders
-                </NavLink>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Logout
                 </a>
+              </li>
+              <li>
+                <a href="/UserOrder" className="dropdown-item">
+                  My Orders
+                </a>
+              </li>
+              <li>
+                <a className="dropdown-item">Logout</a>
               </li>
             </ul>
           </div>
