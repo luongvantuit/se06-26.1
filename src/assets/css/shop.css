@@ -16,9 +16,10 @@
 }
 
 .avt-shop img {
-    width: 50px;
+    width: 64px;
+    height: 64px;
     margin-right: 16px;
-    border-radius: 30px;
+    border-radius: 50%;
 }
 
 .info-shop div {

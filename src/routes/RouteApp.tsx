@@ -12,7 +12,6 @@ import Payment from "../components/screens/Payment";
 import ProductDetails from "../components/screens/ProductDetails";
 import AddProduct from "../components/screens/AddProduct";
 import OrdersManagement from "../components/screens/OrdersManagement";
-import SideNav from "../components/widgets/SideNav";
 import Messenger from "../components/screens/Messenger";
 import Card from "../components/screens/Card";
 import Cart from "../components/screens/Cart";
@@ -84,7 +83,7 @@ export default function RouteApp() {
           <Messenger></Messenger>
         </Route>
         <Route exact path="/Card">
-          <Card></Card>
+          <Card></Card> 
         </Route>
         <Route exact path="/Notifications">
           <Notifications></Notifications>

@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IProduct } from "../../IProduct";
-import { Order } from "../../Order";
+
 import "../../assets/css/cart.css";
-import OrdersManagement from "./OrdersManagement";
 
 const product = {
   name: "Earpods Bluetooth i12 TWS 5.0 wireless i12 with HIFI sound quality",
@@ -102,7 +100,7 @@ export const CartFunctionFloat = () => {
     );
   };
 
-const CartItem = (props: { order: Order }) => {
+const CartItem = (props:any) => {
   return (
     <div className="Cart-item mt-5">
       <div className="order-header">

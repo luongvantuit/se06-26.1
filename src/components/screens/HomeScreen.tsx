@@ -1,13 +1,6 @@
 import React from "react";
 import "../../assets/css/home.css";
 import banner from "../../assets/img/home/banner.jpg";
-import laptop from "../../assets/img/home/laptop_1.jpg";
-import clothes from "../../assets/img/home/clothes_1.jpg";
-import shoes from "../../assets/img/home/shoe_1.jpg";
-import furnitures from "../../assets/img/home/house-furnitures_1.jpg";
-import cosmetic from "../../assets/img/home/cosmetic_1.jpg";
-import Footer from "../widgets/Footer";
-
 import Product from "../widgets/Product";
 
 const product = {

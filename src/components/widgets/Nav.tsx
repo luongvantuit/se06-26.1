@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 import "../../assets/css/Nav.css";
 
 import carts from "../../assets/img/Cart.svg";
-import { url } from "inspector";
 import { UserDisplay } from "../screens/User";
 
 const Header = () => {

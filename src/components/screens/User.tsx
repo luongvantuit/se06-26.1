@@ -1,12 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "../../assets/css/user.css";
-import payment1 from "../../assets/img/payment-methods/light/payment1.svg";
-import payment2 from "../../assets/img/payment-methods/light/payment2.svg";
-import payment3 from "../../assets/img/payment-methods/light/payment3.svg";
-import payment4 from "../../assets/img/payment-methods/light/payment4.svg";
-import payment5 from "../../assets/img/payment-methods/light/payment5.svg";
-import MyAccount from "./MyAccount";
 import Notifications from "./Notifications";
 import Seller from "./Seller";
 import UserOrder from "./UserOrder";

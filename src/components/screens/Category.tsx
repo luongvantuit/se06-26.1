@@ -1,6 +1,5 @@
 import React from "react";
 import "../../assets/css/category.css";
-import laptop from "../../assets/img/home/laptop_1.jpg";
 import banner_category from "../../assets/img/home/cate-banner.jpg";
 import ads from "../../assets/img/home/ads.jpg";
 import Product from "../widgets/Product";

@@ -105,7 +105,7 @@ const MyAccount = (user: User) => {
             checked
           ></input>
           <label  htmlFor="btnradio1">
-            Radio 1
+            Male
           </label>
 
           <input
@@ -116,7 +116,7 @@ const MyAccount = (user: User) => {
             autoComplete="off"
           ></input>
           <label  htmlFor="btnradio2">
-            Radio 2
+            Female
           </label>
 
           <input
@@ -127,7 +127,7 @@ const MyAccount = (user: User) => {
             autoComplete="off"
           ></input>
           <label  htmlFor="btnradio3">
-            Radio 3
+            Other
           </label>
         </div>
         </div>

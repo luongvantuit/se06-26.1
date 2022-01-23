@@ -1,7 +1,6 @@
 import React from "react";
 import SideNav from "../widgets/SideNav";
 import "../../assets/css/order_management.css";
-import { Order } from "../../Order";
 
 const product = {
   name: "Earpods Bluetooth i12 TWS 5.0 wireless i12 with HIFI sound quality",
@@ -77,7 +76,7 @@ const TableHeader = () => {
   );
 };
 
-const OrderListItem = (props: { order: Order }) => {
+const OrderListItem = (props: any) => {
   return (
     <tr style={{ backgroundColor: "#eee" }}>
       <td className="orderProduct d-flex align-items-center">

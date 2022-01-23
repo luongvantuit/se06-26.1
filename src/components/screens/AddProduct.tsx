@@ -1,22 +1,31 @@
 import SideNav from "../widgets/SideNav";
-import "bootstrap";
-import ButtonGreen from "../widgets/ButtonGreen";
 import "../../assets/css/add_product.css";
-
+import "../../assets/css/button_green.css";
 import add from "../../assets/img/plus_circle.svg";
 import "../../assets/css/add_image.css";
-import '../../assets/js/createProduct'
-const AddImage = () => {
+import "../../assets/js/createProduct";
+
+const createProduct = () => {
+  
+};
+
+export const AddImage = () => {
   return (
     <div className="add-image d-flex align-items-center justify-content-center">
-      <input type="file" id='fileUpload'style={{display:'none'}}/>
-      <label htmlFor="fileUpload"></label>
-      <img src={add} alt="Add image" />
+      <input type="file" id="fileUpload" style={{ display: "none" }} />
+      <label htmlFor="fileUpload">
+        <img src={add} alt="Add image" />
+      </label>
     </div>
   );
 };
 
 const AddProduct = () => {
+  // var productNameRef = useRef("");
+  // var categoryRef = useRef("");
+  // var descriptionRef = useRef("");
+  // var priceRef = useRef<Number>();
+  // var skuRef = useRef("");
   return (
     <div>
       <SideNav></SideNav>
@@ -33,6 +42,7 @@ const AddProduct = () => {
                 className="form-control"
                 id="productName"
                 value=""
+                // ref= {productNameRef}
                 placeholder="Enter product name"
               ></input>
             </div>
@@ -108,11 +118,11 @@ const AddProduct = () => {
             </div>
           </div>
           <div className="form-group row">
-            <label htmlFor="categories" className="col-sm-2 col-form-label">
+            <label htmlFor="brand" className="col-sm-2 col-form-label">
               Brand
             </label>
             <div className="col-sm-10">
-              <select className="form-control" id="categories">
+              <select className="form-control" id="brand">
                 <option>Brand</option>
                 <option>Brand</option>
                 <option>Brand</option>
@@ -130,11 +140,11 @@ const AddProduct = () => {
             </div>
           </div>
           <div className="form-group row">
-            <label htmlFor="categories" className="col-sm-2 col-form-label">
+            <label htmlFor="warranty" className="col-sm-2 col-form-label">
               Warranty
             </label>
             <div className="col-sm-10">
-              <select className="form-control" id="categories">
+              <select className="form-control" id="warranty">
                 <option>No warranty </option>
                 <option>Shop warranty </option>
                 <option>Brand warranty </option>
@@ -212,12 +222,15 @@ const AddProduct = () => {
             </div>
           </div>
         </div>
-
+        <div className="productInfo" style={{ marginTop: "64px" }}>
+          <h3 className="classification">Product Classofocation</h3>
+          <div className="addClassification"></div>
+        </div>
         <div className="productInfo" style={{ marginTop: "64px" }}>
           <h3>Shipment Information</h3>
 
           <div className="form-group row">
-            <label htmlFor="skuCode" className="col-sm-2 col-form-label">
+            <label htmlFor="weight" className="col-sm-2 col-form-label">
               Weight
             </label>
             <div className="col-sm-10">
@@ -228,6 +241,7 @@ const AddProduct = () => {
                   placeholder="Weight(gr)"
                   aria-label="Weight(gr)"
                   aria-describedby="basic-addon2"
+                  id="weight"
                 ></input>
                 <div className="input-group-append">
                   <span className="input-group-text" id="basic-addon2">
@@ -248,13 +262,14 @@ const AddProduct = () => {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Width(gr)"
-                      aria-label="Width(gr)"
+                      placeholder="Width"
+                      aria-label="Width"
                       aria-describedby="basic-addon2"
+                      id="width"
                     ></input>
                     <div className="input-group-append">
                       <span className="input-group-text" id="basic-addon2">
-                        gr
+                        cm
                       </span>
                     </div>
                   </div>
@@ -264,13 +279,14 @@ const AddProduct = () => {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Length(cm)"
-                      aria-label="Length(cm)"
+                      placeholder="Length"
+                      aria-label="Length"
                       aria-describedby="basic-addon2"
+                      id="length"
                     ></input>
                     <div className="input-group-append">
                       <span className="input-group-text" id="basic-addon2">
-                        gr
+                        cm
                       </span>
                     </div>
                   </div>
@@ -280,13 +296,14 @@ const AddProduct = () => {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Height(cm)"
-                      aria-label="Height(cm)"
+                      placeholder="Height"
+                      aria-label="Height"
                       aria-describedby="basic-addon2"
+                      id="height"
                     ></input>
                     <div className="input-group-append">
                       <span className="input-group-text" id="basic-addon2">
-                        gr
+                        cm
                       </span>
                     </div>
                   </div>
@@ -304,8 +321,12 @@ const AddProduct = () => {
             marginTop: "64px",
           }}
         >
-          <ButtonGreen name={"Submit"}></ButtonGreen>
-          <ButtonGreen name={"Cancel"}></ButtonGreen>
+          <div className="button__green" id="createProduct">
+            Submit
+          </div>
+          <div className="button__green" id="cancelCreateProduct">
+            Cancel
+          </div>
         </div>
       </div>
     </div>

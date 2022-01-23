@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../../assets/css/create_shop.css";
+import { AddImage } from "../screens/AddProduct";
 const CreateShop = () => {
   return (
     <div className="create-shop" id="createShop">
@@ -74,6 +75,7 @@ const CreateShop = () => {
               ></input>
             </div>
           </div>
+          <AddImage></AddImage>
         </form>
         <div className="actionBtn d-flex align-items-center">
           <div className="button__green " ><NavLink to='/Seller' href="#" className="text-decoration-none text-white">Next</NavLink></div>

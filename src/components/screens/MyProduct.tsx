@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { IProduct } from "../../IProduct";
 import SideNav from "../widgets/SideNav";
@@ -36,9 +36,30 @@ const product = {
   shippingType: "Fast",
   sale: 1,
 };
-const ProductListItem = (props: { product: IProduct }) => {
+const ProductListItem = (props:any) => {
+  const [product,setProduct] = useState<Array<IProduct>>([])
+  useEffect(()=> {
+    const productApi = 'http://localhost:9000/api/products'
+    const fetchProduct= async() => {
+        try {
+          fetch(productApi)
+          .then(response => {
+            console.log(response)
+            return response.json()
+          }).then(data =>{
+            setProduct(data)
+          })
+          
+        } catch (error) {
+          console.log("error", error);
+        }
+    }
+    fetchProduct()
+  },[])
   return (
-    <tr style={{ backgroundColor: "#eee" }}>
+    
+    <Fragment>
+      {product.map(item =>(<tr key={item.sid} style={{ backgroundColor: "#eee" }}>
       <td>
         <div className="form-group form-check">
           <input
@@ -51,31 +72,31 @@ const ProductListItem = (props: { product: IProduct }) => {
       <td className="Product d-flex align-items-center">
         <div className="ProductImg">
           <img
-            src={props.product.imageUrl.cover}
-            alt={props.product.name}
+            src={''}
+            alt={item.displayName}
             style={{ width: "64px", marginRight: "8px" }}
           />
         </div>
         <div className="d-flex flex-column justify-content-center align-items-start">
-          <p className="ProductName text-align-left">{props.product.name}</p>
+          <p className="ProductName text-align-left">{item.displayName}</p>
         </div>
       </td>
       <td className="text-center">
-        <p className="skuCode">[{props.product.skuCode}]</p>
+        <p className="skuCode">[{item.sid}]</p>
       </td>
       <td className="text-center">
-        <p>{props.product.price}</p>
+        <p>{item.categories}</p>
       </td>
-      <td className="text-center">{props.product.stock}</td>
-      <td className="text-center">{props.product.sale}</td>
+      <td className="text-center">{item.state}</td>
       <td
         className="d-flex flex-column text-center"
         style={{ fontSize: "12px" }}
       >
-        <Link to={""}>Edit</Link>
-        <Link to={""}>View detail</Link>
+        <Link to='/AddProduct'>Edit</Link>
+        <Link to='/AddProduct'>View detail</Link>
       </td>
-    </tr>
+    </tr>))}
+    </Fragment>
   );
 };
 const MyProduct = () => {
@@ -134,7 +155,6 @@ const MyProduct = () => {
                   <th scope="col">SKU Code</th>
                   <th scope="col">Price</th>
                   <th scope="col">Stock</th>
-                  <th scope="col">Sales</th>
                   <th scope="col">Action</th>
                 </tr>
               </thead>
@@ -208,10 +228,6 @@ const MyProduct = () => {
     </div>
   );
 };
-
-const handleDelete=( ) =>{
-
-}
 
 
 export default MyProduct;

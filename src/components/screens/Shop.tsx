@@ -1,9 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "../../assets/css/shop.css";
 import Avatar from "../../assets/img/home/clothes.jpg";
 import Product from "../widgets/Product";
-import laptop from "../../assets/img/home/laptop_1.jpg";
 import { IShop } from "../../IShop";
 
 const product = {
@@ -43,8 +41,8 @@ export const ShopDisplay = (shop: IShop) => {
   return (
     <div className="col-md-4 background-shop">
       <div className="avt-shop">
-        <img src={shop.avatarUrl} />
-        <div className="name-shop">
+        <img src={shop.displayPhoto} />
+        <div className="name-shop" style={{backgroundImage:`${shop.displayPhotoCover}`,backgroundSize:'cover',backgroundPosition:'top center'}}>
           <h5 className="shopName">{shop.displayName}</h5>
           <small className="onlineTime">Online 5 minutes ago</small>
         </div>
