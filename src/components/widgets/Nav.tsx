@@ -111,7 +111,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/ServiceScreen" className="nav-link" href="#">
+                <NavLink to="/Service" className="nav-link" href="#">
                   Customer Service
                 </NavLink>
               </li>

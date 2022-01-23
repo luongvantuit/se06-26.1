@@ -12,6 +12,7 @@ import ContactScreen from './components/screens/ContactScreen';
 import ServiceScreen from './components/screens/ServiceScreen';
 import Notifications from './components/screens/Notifications';
 import ProductDetails from './components/screens/ProductDetails';
+import Service from './components/screens/Service';
 import { Comment } from '@babel/types';
 import ProductCarousel from './components/widgets/ProductDetails/ProductCarousel';
 import Payment from './components/screens/Payment'

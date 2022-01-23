@@ -17,6 +17,8 @@ import Messenger from '../components/screens/Messenger'
 import Card from '../components/screens/Card'
 import User from '../components/screens/User'
 import MyProduct from '../components/screens/MyProduct'
+import Service from '../components/screens/Service'
+import ShopInformation from '../components/screens/Shop-Information'
 
 export default function RouteApp() {
     return (
@@ -28,7 +30,7 @@ export default function RouteApp() {
                     <HomeScreen></HomeScreen>
                 </Route>
                 <Route exact path='/ServiceScreen'>
-                    <ServiceScreen></ServiceScreen>
+                    <Service></Service>
                 </Route>
                 <Route exact path='/ContactScreen'>
                     <ContactScreen></ContactScreen>
@@ -74,6 +76,12 @@ export default function RouteApp() {
                 </Route>
                 <Route exact path='/Card'>
                     <Card></Card>
+                </Route>
+                <Route exact path='/Service'>
+                    <Service></Service>
+                </Route>
+                <Route exact path='/ShopInformation'>
+                    <ShopInformation></ShopInformation>
                 </Route>
             </Switch> 
         </HashRouter>
