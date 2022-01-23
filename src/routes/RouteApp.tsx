@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from "../components/widgets/Nav";
 import SignInScreen from "../components/screens/SignInScreen";
 import SignUpScreen from "../components/screens/SignUpScreen";
@@ -7,12 +7,10 @@ import HomeScreen from "../components/screens/HomeScreen";
 import ContactScreen from "../components/screens/ContactScreen";
 import ServiceScreen from "../components/screens/ServiceScreen";
 import Category from "../components/screens/Category";
-import ShoppingCart from "../components/screens/ShoppingCart";
 import Payment from "../components/screens/Payment";
 import ProductDetails from "../components/screens/ProductDetails";
 import AddProduct from "../components/screens/AddProduct";
 import OrdersManagement from "../components/screens/OrdersManagement";
-import Messenger from "../components/screens/Messenger";
 import Card from "../components/screens/Card";
 import Cart from "../components/screens/Cart";
 import User from "../components/screens/User";
@@ -24,74 +22,66 @@ import Shop from "../components/screens/Shop";
 
 export default function RouteApp() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Header />
 
       <Switch>
-        <Route exact path="/">
-          <HomeScreen></HomeScreen>
+        <Route exact path="/" component={HomeScreen}>
         </Route>
-        <Route exact path="/HomeScreen">
-          <HomeScreen></HomeScreen>
+        <Route exact path="/home" component={HomeScreen}>
         </Route>
-        <Route exact path="/ServiceScreen">
+        <Route exact path="/service">
           <ServiceScreen></ServiceScreen>
         </Route>
-        <Route exact path="/ContactScreen">
+        <Route exact path="/contact">
           <ContactScreen></ContactScreen>
         </Route>
-        <Route exact path="/UserOrder">
+        <Route exact path="/userorder">
           <UserOrder></UserOrder>
         </Route>
-        <Route exact path="/CartScreen">
-          <ShoppingCart></ShoppingCart>
-        </Route>
-        <Route exact path="/SignInScreen">
+        <Route exact path="/signin">
           <SignInScreen></SignInScreen>
         </Route>
-        <Route exact path="/SignUpScreen">
+        <Route exact path="/signup">
           <SignUpScreen></SignUpScreen>
         </Route>
-        <Route exact path="/Category">
+        <Route exact path="/category">
           <Category></Category>
         </Route>
-        <Route exact path="/Cart">
+        <Route exact path="/cart">
           <Cart></Cart>
         </Route>
-        <Route exact path="/Seller">
+        <Route exact path="/seller">
           <Seller></Seller>
         </Route>
-        <Route exact path="/Payment">
+        <Route exact path="/payment">
           <Payment></Payment>
         </Route>
-        <Route exact path="/ProductDetails">
+        <Route exact path="/productdetails">
           <ProductDetails></ProductDetails>
         </Route>
-        <Route exact path="/AddProduct">
+        <Route exact path="/addproduct">
           <AddProduct></AddProduct>
         </Route>
-        <Route exact path="/MyProduct">
+        <Route exact path="/myproduct">
           <MyProduct></MyProduct>
         </Route>
-        <Route exact path="/OrdersManagement">
+        <Route exact path="/myorders">
           <OrdersManagement></OrdersManagement>
         </Route>
-        <Route exact path="/User">
+        <Route exact path="/user">
           <User></User>
         </Route>
-        <Route exact path="/Messenger">
-          <Messenger></Messenger>
-        </Route>
-        <Route exact path="/Card">
+        <Route exact path="/card">
           <Card></Card> 
         </Route>
-        <Route exact path="/Notifications">
+        <Route exact path="/notifications">
           <Notifications></Notifications>
         </Route>
-        <Route exact path="/Shop">
+        <Route exact path="/shop">
           <Shop></Shop>
         </Route>
       </Switch>
-    </HashRouter>
+    </BrowserRouter>
   );
 }

@@ -41,7 +41,7 @@ export default function Category() {
   return (
     <div className="container wrapper-category">
       <div className="cate-banner">
-        <img src={banner_category} />
+        <img src={banner_category} alt="banner"/>
       </div>
       <h4 className="category-name">Laptop (20)</h4>
       <div>
@@ -213,7 +213,7 @@ export default function Category() {
               <button className="apply-filters">Apply Filters (2)</button>
             </div>
           </div>
-          <img src={ads} />
+          <img src={ads} alt="ads"/>
         </div>
         <div className="content-right">
           <div className="sort-show d-flex">

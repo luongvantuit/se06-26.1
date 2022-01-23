@@ -1,6 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
-import '../../assets/css/messenger.css'
 import person1 from '../../assets/img/mes/person1.png'
 import person2 from '../../assets/img/mes/person2.png'
 import person3 from '../../assets/img/mes/person3.png'

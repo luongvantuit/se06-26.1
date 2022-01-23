@@ -5,7 +5,7 @@ const Product = (props: any) => {
       <div className="in-stock d-flex">
         <i className="fa fa-check-circle" />
         <p>
-          <a>in stock</a>
+          in stock
         </p>
       </div>
       <div className="img-product">
@@ -18,16 +18,14 @@ const Product = (props: any) => {
         <span className="fa fa-star checked checked4" />
         <span className="fa fa-star checked checked5" />
         <p>
-          <a>Reviews (4)</a>
+          <a href="#">Reviews (4)</a>
         </p>
       </div>
       <h5>
-        <a>{props.product.displayName}</a>
+        {props.product.displayName}
       </h5>
       <p className="cost">{props.product.price}vnd</p>
-      <h4 className="sale">
-        {(props.product.price * 70) / 100} vnd
-      </h4>
+      <h4 className="sale">{(props.product.price * 70) / 100} vnd</h4>
     </div>
   );
 };

@@ -1,7 +1,4 @@
-import React, { Props } from "react";
 import "../../assets/css/user_order.css";
-import { Link } from "react-router-dom";
-// import OrderListItem from "../widgets/OrdersManagement/OrderListItem";
 
 const product = {
   name: "Earpods Bluetooth i12 TWS 5.0 wireless i12 with HIFI sound quality",
@@ -180,7 +177,6 @@ const UserOrder = () => {
     </div>
   );
 };
-const UserOrderList = () => {};
 
 const UserOrderListItem = (props: any) => {
   return (
@@ -188,7 +184,7 @@ const UserOrderListItem = (props: any) => {
       <div className="order-header">
         <div className="shop  d-flex align-items-center">
         <p className="shop-name">SE06</p>
-        <div className="view-shop d-flex align-items-center"><Link href="" to='/Shop'>View Shop</Link></div>
+        <div className="view-shop d-flex align-items-center"><a href="/shop" >View Shop</a></div>
         </div>
       </div>
       <div className="line" style={{marginBottom:'16px',backgroundColor:'#aaa'}}></div>

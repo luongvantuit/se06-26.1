@@ -41,7 +41,7 @@ export const ShopDisplay = (shop: IShop) => {
   return (
     <div className="col-md-4 background-shop">
       <div className="avt-shop">
-        <img src={shop.displayPhoto} />
+        <img src={shop.displayPhoto} alt="shop"/>
         <div className="name-shop" style={{backgroundImage:`${shop.displayPhotoCover}`,backgroundSize:'cover',backgroundPosition:'top center'}}>
           <h5 className="shopName">{shop.displayName}</h5>
           <small className="onlineTime">Online 5 minutes ago</small>
@@ -246,7 +246,7 @@ export default function Shop() {
       <div className="row">
         <div className="col-md-4 background-shop">
           <div className="avt-shop">
-            <img src={Avatar} />
+            <img src={Avatar} alt="shop"/>
             <div className="name-shop">
               <h5 className="shopName">Saga</h5>
               <small className="onlineTime">Online 5 minutes ago</small>

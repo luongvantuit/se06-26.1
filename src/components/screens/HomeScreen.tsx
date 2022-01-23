@@ -46,13 +46,13 @@ export default function HomeScreen() {
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={banner} />
+              <img src={banner} alt="banner"/>
             </div>
             <div className="carousel-item">
-              <img src={banner} />
+              <img src={banner} alt="banner" />
             </div>
             <div className="carousel-item">
-              <img src={banner} />
+              <img src={banner} alt="banner" />
             </div>
           </div>
           <a
