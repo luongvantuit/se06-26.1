@@ -1,5 +1,4 @@
-import React from "react";
-// import TechnicalDetails from "../widgets/ProductDetails/TechnicalDetails";
+
 import "../../assets/css/delivery.css";
 import "../../assets/css/section_heading.css";
 import "../../assets/css/saleoff_tag.css";
@@ -9,14 +8,71 @@ import "../../assets/css/product_carousel.css";
 import "../../assets/css/quantity.css";
 import "../../assets/css/product_view.css";
 import '../../assets/css/ratings.css'
+import '../../assets/css/button_outlined.css'
 
 
-import Comment from "../widgets/ProductDetails/Comment";
-import ButtonOutlined from "../widgets/ButtonOutlined";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Ratings from "../widgets/ProductDetails/Ratings";
 import Product from "../widgets/Product";
+import { useEffect,useState } from "react";
+
+
+export const Comment = (props: {
+  text: string;
+  author: { avatarUrl: string; name: string };
+  date: string;
+}) => {
+  return (
+    <div className="Comment">
+      <div className="UserInfo">
+        <img
+          className="Avatar"
+          src={props.author.avatarUrl}
+          alt={props.author.name}
+        />
+        <div className="UserInfo-name">{props.author.name}</div>
+      </div>
+
+      <div className="Comment-status">
+        <div className="Comment-date">{props.date}</div>
+        <div className="Comment-rating">
+          <Ratings ratingPoint={4.5} />
+        </div>
+      </div>
+      <div className="Comment-text">{props.text}</div>
+    </div>
+  );
+};
+
+
+const Ratings = (props: {ratingPoint : Number}) => {
+  return (
+    <div>
+      <div className="rating d-flex">
+        <div className="rating_point">{props.ratingPoint}</div>
+        <div className="stars">
+          <div className="star">
+            <div className="fas fa-star"></div>
+          </div>
+          <div className="star">
+            <div className="fas fa-star"></div>
+          </div>
+          <div className="star">
+            <div className="fas fa-star"></div>
+          </div>
+          <div className="star">
+            <div className="fas fa-star"></div>
+          </div>
+          <div className="star">
+            <div className="fas fa-star"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
 
 const product = {
   name: "Earpods Bluetooth i12 TWS 5.0 wireless i12 with HIFI sound quality",
@@ -100,37 +156,6 @@ const SaleoffTag = (props: { percent: string }) => {
   );
 };
 
-const ProductOutline = () => {
-  return (
-    <div className="col-lg-2 col-md-3 col-sm-4 col-6 product product-1">
-      <div className="in-stock d-flex">
-        <i className="fa fa-check-circle" />
-        <p>
-          <a>in stock</a>
-        </p>
-      </div>
-      <div className="img-product">
-        <img src="https://salt.tikicdn.com/cache/400x400/ts/product/f7/80/81/07e4daa7d4bd3ba47cb29b287f877c46.jpg" />
-      </div>
-      <div className="star d-flex">
-        <span className="fa fa-star checked checked1" />
-        <span className="fa fa-star checked checked2" />
-        <span className="fa fa-star checked checked3" />
-        <span className="fa fa-star checked checked4" />
-        <span className="fa fa-star checked checked5" />
-        <p>
-          <a>Reviews (4)</a>
-        </p>
-      </div>
-      <h5>
-        <a>Asolo Women's TPS 520 GV EVO</a>
-      </h5>
-      <p className="cost">499.000 vnđ</p>
-      <h4 className="sale">499.000 vnđ</h4>
-    </div>
-  );
-};
-
 const ButtonGreen = (props: { name: string }) => {
   return (
     <div>
@@ -179,9 +204,37 @@ const ProductView = () => {
 };
 
 const ProductCarousel = () => {
+  const [photos,setPhotos] = useState<Array<String>>([])
+  useEffect(()=>{
+    const productApi ='http://localhost:9000/api/products'
+    const fetchPhoto = async (productId:string) => {
+
+        
+      try {
+        await fetch(productApi+'/'+productId,{
+          method: 'GET',
+          mode: 'cors',
+          headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          }
+        })
+        .then(response => {
+          return response.json()
+        }).then(data => {
+          setPhotos(data)
+        })
+      } catch (error){
+        console.log(error)
+      }
+    }
+    fetchPhoto('iiid')
+  },[])
   return (
+    
     <div className="product-carousel">
       <Carousel showArrows={true} showIndicators={false}>
+        ()
         <div className="image">
           <img src="https://cf.shopee.vn/file/7556e874cf766f3cb340e632c684def1" />
         </div>
@@ -343,7 +396,7 @@ const ProductDetails = () => {
             date="13/02/21"
           />
           <div className="d-flex align-items-center justify-content-center">
-            <ButtonOutlined name="Show more" />
+            <div className="button__outlined" >Show more</div>
           </div>
         </div>
         <div className="product-others ">

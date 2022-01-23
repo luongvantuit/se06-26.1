@@ -1,20 +1,11 @@
 import React from "react";
-import {
-  isPropertySignature,
-  walkUpBindingElementsAndPatterns,
-} from "typescript";
 import "../../assets/css/shoppingcart.css";
-import Footer from "../widgets/Footer";
 import cart from "../../assets/img/img-shopping-cart/cart.jpg";
 
 export default function ShoppingCart() {
+
   return (
     <div className="container shopping-cart">
-      <div className="bread-crumbs">
-        <a className="crumb1">Home</a>
-        <i className="fas fa-angle-right" />
-        <a className="crumb1">Shopping Cart</a>
-      </div>
       <h4 className="category-name cart-title">Shopping Cart</h4>
       <div className="row">
         <div className="col-md-9 cart-left">

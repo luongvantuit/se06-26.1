@@ -1,7 +1,5 @@
 import React from "react";
 import image from "../../assets/img/notification/image.jpg";
-import vouncher from "../../assets/img/notification/vouncher.png";
-import backcoin from "../../assets/img/notification/backcoin.png";
 import "..//../assets/css/notification.css";
 import { UserNav } from "./User";
 export const NotificationItem = () => {

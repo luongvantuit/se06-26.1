@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import '../../assets/css/_404.css'
 import notFound from '../../assets/image/g12.svg'
 

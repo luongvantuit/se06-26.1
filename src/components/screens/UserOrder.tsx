@@ -1,8 +1,6 @@
 import React, { Props } from "react";
-import { Order } from "../../Order";
 import "../../assets/css/user_order.css";
 import { Link } from "react-router-dom";
-import { UserNav } from "./User";
 // import OrderListItem from "../widgets/OrdersManagement/OrderListItem";
 
 const product = {
@@ -184,7 +182,7 @@ const UserOrder = () => {
 };
 const UserOrderList = () => {};
 
-const UserOrderListItem = (props: { order: Order }) => {
+const UserOrderListItem = (props: any) => {
   return (
     <div className="UserOrderListItem mt-5">
       <div className="order-header">
