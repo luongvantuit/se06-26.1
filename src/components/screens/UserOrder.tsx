@@ -1,7 +1,4 @@
-import React, { Props } from "react";
 import "../../assets/css/user_order.css";
-import { Link } from "react-router-dom";
-// import OrderListItem from "../widgets/OrdersManagement/OrderListItem";
 
 const product = {
   name: "Earpods Bluetooth i12 TWS 5.0 wireless i12 with HIFI sound quality",
@@ -180,7 +177,6 @@ const UserOrder = () => {
     </div>
   );
 };
-const UserOrderList = () => {};
 
 const UserOrderListItem = (props: any) => {
   return (

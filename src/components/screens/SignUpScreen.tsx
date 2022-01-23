@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, useHistory } from "react-router-dom";
+import {useHistory } from "react-router-dom";
 import "../../assets/css/signup.css";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import auth from "../../firebase/firebase.auth";
@@ -13,7 +13,7 @@ export default function SignUpScreen() {
   const [error,setError] =useState('');
   const history = useHistory();
   const signUpWithEmailAndPassword = ()=>{
-      if (password != confirm) setError('Confirm password is not matched. Please try again');
+      if (password !== confirm) setError('Confirm password is not matched. Please try again');
       if( error !=='' ) setError('');
       setRegistered(true);
       createUserWithEmailAndPassword(auth,email,password)

@@ -5,16 +5,13 @@ import add from "../../assets/img/plus_circle.svg";
 import "../../assets/css/add_image.css";
 import "../../assets/js/createProduct";
 
-const createProduct = () => {
-  
-};
 
 export const AddImage = () => {
   return (
     <div className="add-image d-flex align-items-center justify-content-center">
       <input type="file" id="fileUpload" style={{ display: "none" }} />
       <label htmlFor="fileUpload">
-        <img src={add} alt="Add image" />
+        <img src={add} alt="product" />
       </label>
     </div>
   );

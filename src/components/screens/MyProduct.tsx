@@ -92,8 +92,8 @@ const ProductListItem = (props:any) => {
         className="d-flex flex-column text-center"
         style={{ fontSize: "12px" }}
       >
-        <Link to='/AddProduct'>Edit</Link>
-        <Link to='/AddProduct'>View detail</Link>
+        <a href='/addproduct'>Edit</a>
+        <a href='/addproduct'>View detail</a>
       </td>
     </tr>))}
     </Fragment>

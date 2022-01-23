@@ -11,7 +11,7 @@ const Header = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a href="/home" className="navbar-brand">
+          <a href="/" className="navbar-brand">
             <div className="logo ">
               <svg
                 width="31"
@@ -101,7 +101,7 @@ const Header = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a
-                  href="/HomeScreen"
+                  href="/home"
                   className="nav-link active"
                   aria-current="page"
                 >
@@ -109,33 +109,33 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="/ServiceScreen" className="nav-link">
+                <a href="/service" className="nav-link">
                   Customer Service
                 </a>
               </li>
               <li className="nav-item ">
-                <a href="/ContactScreen" className="nav-link ">
+                <a href="/contact" className="nav-link ">
                   Contact Us
                 </a>
               </li>
 
               <li className="nav-item hidden-nav">
-                <a href="/Cart" className="nav-link ">
+                <a href="/cart" className="nav-link ">
                   Cart
                 </a>
               </li>
               <li className="nav-item hidden-nav">
-                <a href="/UserOrder" className="nav-link ">
+                <a href="/userorder" className="nav-link ">
                   Orders
                 </a>
               </li>
               <li className="nav-item hidden-nav">
-                <a href="/User" className="nav-link ">
+                <a href="/user" className="nav-link ">
                   My Account
                 </a>
               </li>
               <li className="nav-item hidden-nav">
-                <a href="/SignInScreen" className="nav-link ">
+                <a href="/signin" className="nav-link ">
                   Sign In
                 </a>
               </li>
@@ -143,19 +143,19 @@ const Header = () => {
 
             <div className="button d-none">
               <div className="btn-signin">
-                <a href="/SignInScreen">
+                <a href="/signin">
                   <button>Sign In</button>
                 </a>
               </div>
               <div className="btn-signup">
-                <a href="/SignUpScreen">
+                <a href="/signup">
                   <button>Sign Up</button>
                 </a>
               </div>
             </div>
           </div>
           <div className="icon order">
-            <a href="/UserOrder">
+            <a href="/userorder">
               <svg
                 width="28"
                 height="28"
@@ -168,11 +168,10 @@ const Header = () => {
                   fill="black"
                 />
               </svg>
-              {/* <img src={order} alt="Orders" />  */}
             </a>
           </div>
           <div className="icon cart">
-            <a href="/Cart">
+            <a href="/cart">
               <img src={carts} alt="Cart" />
             </a>
           </div>
@@ -200,12 +199,12 @@ const Header = () => {
                 <a className="dropdown-item">My Account</a>
               </li>
               <li>
-                <a href="/Notifications" className="dropdown-item">
+                <a href="/notifications" className="dropdown-item">
                   Notifications
                 </a>
               </li>
               <li>
-                <a href="/UserOrder" className="dropdown-item">
+                <a href="/userorder" className="dropdown-item">
                   My Orders
                 </a>
               </li>

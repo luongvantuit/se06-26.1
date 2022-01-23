@@ -62,7 +62,7 @@ const SideNav = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="addproduct" className="link-dark rounded">
+                  <a href="/addproduct" className="link-dark rounded">
                     Add new products
                   </a>
                 </li>

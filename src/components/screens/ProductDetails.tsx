@@ -236,22 +236,22 @@ const ProductCarousel = () => {
       <Carousel showArrows={true} showIndicators={false}>
         ()
         <div className="image">
-          <img src="https://cf.shopee.vn/file/7556e874cf766f3cb340e632c684def1" />
+          <img src="https://cf.shopee.vn/file/7556e874cf766f3cb340e632c684def1" alt="carousel"/>
         </div>
         <div className="image">
-          <img src="https://cf.shopee.vn/file/d05bac8361e1ff7ae83bf9855dcde2a3" />
+          <img src="https://cf.shopee.vn/file/d05bac8361e1ff7ae83bf9855dcde2a3" alt="carousel"/>
         </div>
         <div className="image">
-          <img src="https://cf.shopee.vn/file/d05bac8361e1ff7ae83bf9855dcde2a3" />
+          <img src="https://cf.shopee.vn/file/d05bac8361e1ff7ae83bf9855dcde2a3" alt="carousel"/>
         </div>
         <div className="image">
-          <img src="https://cf.shopee.vn/file/b8c36cdcb50d58a62f362fb6cfed124c" />
+          <img src="https://cf.shopee.vn/file/b8c36cdcb50d58a62f362fb6cfed124c" alt="carousel"/>
         </div>
         <div className="image">
-          <img src="https://cf.shopee.vn/file/b8c36cdcb50d58a62f362fb6cfed124c" />
+          <img src="https://cf.shopee.vn/file/b8c36cdcb50d58a62f362fb6cfed124c" alt="carousel"/>
         </div>
         <div className="image">
-          <img src="https://cf.shopee.vn/file/b8c36cdcb50d58a62f362fb6cfed124c" />
+          <img src="https://cf.shopee.vn/file/b8c36cdcb50d58a62f362fb6cfed124c" alt="carousel"/>
         </div>
       </Carousel>
     </div>
