@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+.btn-search-nav {
+    height: 100% !important;
+}
+
 body {
     display: block;
 }

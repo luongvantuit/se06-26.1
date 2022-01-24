@@ -18,6 +18,7 @@ import Card from '../components/screens/Card'
 import User from '../components/screens/User'
 import MyProduct from '../components/screens/MyProduct'
 import Service from '../components/screens/Service'
+import Notifications from '../components/screens/Notifications'
 import ShopInformation from '../components/screens/Shop-Information'
 
 export default function RouteApp() {
@@ -82,6 +83,9 @@ export default function RouteApp() {
                 </Route>
                 <Route exact path='/ShopInformation'>
                     <ShopInformation></ShopInformation>
+                </Route>
+                <Route exact path='/Notifications'>
+                    <Notifications></Notifications>
                 </Route>
             </Switch> 
         </HashRouter>

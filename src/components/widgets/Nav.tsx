@@ -94,7 +94,7 @@ const Header = () => {
                 placeholder="Search for products"
                 aria-label="Search"
               ></input>
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-outline-success btn-search-nav" type="submit">
                 Search
               </button>
               <i className="fas fa-search"></i>
@@ -138,7 +138,7 @@ const Header = () => {
               </li>
             </ul>
             <div className="icon order">
-              <NavLink to="/">
+              <NavLink to="/Notifications">
                 <svg
                   width="28"
                   height="28"

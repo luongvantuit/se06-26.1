@@ -1,7 +1,6 @@
 import React from "react"
 import { NavLink } from "react-router-dom";
 import '../../assets/css/shop-info.css';
-import Avatar from "../../assets/img/logo.png";
 import Product_item from "../widgets/Product_item";
 import laptop from '../../assets/img/home/laptop_1.jpg'
 
@@ -17,7 +16,7 @@ export default function ShopInformation() {
           <div className="row">
             <div className="col-md-4 background-shop">
               <div className="avt-shop">
-                <img src={Avatar} />
+                <img src={laptop} />
                 <div className="name-shop">
                   <h5>Saga</h5>
                   <small>Online 5 minutes ago</small>
